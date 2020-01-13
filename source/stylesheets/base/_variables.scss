@@ -8,9 +8,9 @@
 // Containers
 //==============================================================================
 
-$x-small                  : 600px                                      !default;
-$small                    : 800px                                      !default;
-$medium                   : 1000px                                     !default;
+$x-small                  : 480px                                      !default;
+$small                    : 768px                                      !default;
+$medium                   : 992px                                     !default;
 $large                    : 1200px                                     !default;
 
 //==============================================================================
@@ -20,6 +20,11 @@ $large                    : 1200px                                     !default;
 $mobile                   : $x-small                                   !default;
 $tablet                   : $small                                     !default;
 $desktop                  : $medium                                    !default;
+$lgdesktop                : $large                                     !default;
+$mq-mobile                : "screen and (min-width : 480px)"           !default;
+$mq-tablet                : "screen and (min-width : 768px)"           !default;
+$mq-desktop               : "screen and (min-width : 992px)"           !default;
+$mq-lgdesktop             : "screen and (min-width : 1200px)"          !default;
 
 //==============================================================================
 // Global Colors
