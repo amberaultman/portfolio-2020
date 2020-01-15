@@ -1,88 +1,6 @@
 /**
  * Layout
- */
-
-// Grid
-body {
-  min-height: 100vh;
-  display: grid;
-  grid-gap: 4%;
-}
-
-section {
-  padding: 4%;
-}
-
-section.intro {
-  .about-me {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-gap: 4%;
-    p, > a {
-      grid-column: span 12;
-      @media #{$mq-tablet} {
-        grid-column: 7 / span 6;
-      }
-    }
-    img {
-      width: 100%;
-      grid-column: span 12;
-      grid-row: span 4;
-      @media #{$mq-tablet} {
-        grid-column: 1 / span 6;
-      }
-    }
-    .links {
-      grid-column: span 12;
-      display: grid;
-      grid-gap: 4%;
-      grid-template-rows: repeat(2, 1fr);
-      grid-template-columns: repeat(2, 1fr);
-      @media #{$mq-tablet} {
-        grid-column: 7 / span 6;
-      }
-    }
-  }
-}
-
-main {
-  display: grid;
-  // grid-gap: 4em;
-  // grid-template-columns: repeat(2, 1fr);
-  // grid-template-rows: auto auto auto;
-  grid-template-areas: 
-    'work'
-    'writing'
-    'speaking'
-    'experiences'
-    ;
-  @media #{$mq-mobile} {
-    grid-template-areas: 
-    'work work'
-    'writing speaking'
-    'experiences experiences'
-    ;
-  }
-
-}
-
-section.work {
-  grid-area: work;
-}
-
-section.writing {
-  grid-area: writing;
-}
-
-section.speaking {
-  grid-area: speaking;
-}
-
-section.experiences {
-  grid-area: experiences;
-}
-
-
+ **/
 
 // HTML base
 html {
@@ -92,11 +10,24 @@ html {
   font-size: $font-size;
 }
 
-// Body base and grid
+// Body base
 body {
   color: $font-color;
-  background: $background;
   font-size: $body-font-size;
+  min-height: 100vh;
+}
+
+nav {
+  background: $alternate-background;
+  height: 84px;
+}
+
+main {
+  background: $background;
+}
+
+section {
+  padding: 4%;
 }
 
 p,
@@ -105,4 +36,8 @@ ul,
 dl,
 table {
   margin: 0 0 $margins 0;
+}
+
+.card {
+  background: $alternate-background;
 }

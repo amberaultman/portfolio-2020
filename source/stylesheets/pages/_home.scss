@@ -1,0 +1,93 @@
+/**
+ * Grid
+ **/
+
+main.home {
+    display: grid;
+    grid-template-areas: 
+      'work'
+      'writing'
+      'speaking'
+      'experiences'
+      ;
+    @media #{$mq-mobile} {
+      grid-template-areas: 
+      'work work'
+      'writing speaking'
+      'experiences experiences'
+      ;
+    }
+  }
+  
+  section.work {
+    grid-area: work;
+  }
+  
+  section.writing {
+    grid-area: writing;
+  }
+  
+  section.speaking {
+    grid-area: speaking;
+  }
+  
+  section.experiences {
+    grid-area: experiences;
+  }
+  
+
+section.about {
+    @include grid-12;
+    p, > a {
+    grid-column: span 12;
+    @media #{$mq-tablet} {
+        grid-column: 7 / span 6;
+    }
+    }
+    img {
+    width: 100%;
+    grid-column: span 12;
+    grid-row: span 4;
+    @media #{$mq-tablet} {
+        grid-column: 1 / span 6;
+    }
+    }
+    .links {
+    grid-column: span 12;
+    @include grid-12;
+    grid-template-rows: repeat(2, 1fr);
+    @media #{$mq-tablet} {
+        grid-column: 7 / span 6;
+    }
+    }
+}
+  
+  section.work, section.experiences {
+    .work-container, .experiences-container {
+      @include grid-12;
+    }
+    .card {
+      grid-column: span 12;
+      @media #{$mq-tablet} {
+        grid-column: span 4;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+
+// Intro
+
+section.intro {
+    border: 1px red solid;
+    background: linear-gradient(180deg, $alternate-background 40%, $background 40%);
+}
+
+
+// About
+
+section.about {
+    background: $accent-color;
+}

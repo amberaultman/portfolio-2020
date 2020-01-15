@@ -3,39 +3,40 @@ title: Welcome to Middleman
 ---
 
 %header
+    %nav
     %section.intro
         %h1 Hey, I'm Amber.
         %h2 I lead strategy and teams to build meaningful, digital interactions.
-        .about-me
-            %img{:src => "https://via.placeholder.com/600x600"}
-            %p 
-                I’m Amber Aultman, a design leader currently living in Phoenix, AZ. I’m the Head of Design at Tuft & Needle where I'm responsible for the visual experience of our brand: everything from product packaging and retail signage to our internal apps, e-commerce platform, and other digital channels. I’m crazy passionate about mentoring my team and making sure the customer experience stays paramount as we transistion through a merger. I’m also the past President of AIGA Jacksonville and a former teacher at Bloc.io. 
-            %p
-                I’m currently accepting speaking and workshop facilitation engagements both locally and abroad. 
-            = link_to('Get in touch', '')
-            .links
-                = link_to 'LinkedIn', 'https://www.linkedin.com/in/amberaultman/', :target => "_blank"
-                = link_to 'Medium', 'https://medium.com/@amberaultman', :target => "_blank"
-                = link_to 'Github', 'https://github.com/amberaultman', :target => "_blank"
-                = link_to 'Email', 'mailto:amber.aultman@gmail.com'
-            .close
+    %section.about
+        %img{:src => "https://via.placeholder.com/600x600"}
+        %p 
+            I’m Amber Aultman, a design leader currently living in Phoenix, AZ. I’m the Head of Design at Tuft & Needle where I'm responsible for the visual experience of our brand: everything from product packaging and retail signage to our internal apps, e-commerce platform, and other digital channels. I’m crazy passionate about mentoring my team and making sure the customer experience stays paramount as we transistion through a merger. I’m also the past President of AIGA Jacksonville and a former teacher at Bloc.io. 
+        %p
+            I’m currently accepting speaking and workshop facilitation engagements both locally and abroad. 
+        = link_to('Get in touch', '')
+        .links
+            = link_to 'LinkedIn', 'https://www.linkedin.com/in/amberaultman/', :target => "_blank"
+            = link_to 'Medium', 'https://medium.com/@amberaultman', :target => "_blank"
+            = link_to 'Github', 'https://github.com/amberaultman', :target => "_blank"
+            = link_to 'Email', 'mailto:amber.aultman@gmail.com'
+        .close
 
-%main
+%main.home
 
     %section.work
         %h2 Work
         .controls
         .work-container
-            .work-item
-                %img
+            .card
+                %img{:src => "https://via.placeholder.com/600x600"}
                 %h4 A new PDP template
                 %p.small Tuft & Needle
-            .work-item
-                %img
+            .card
+                %img{:src => "https://via.placeholder.com/600x600"}
                 %h4 A new PDP template
                 %p.small Tuft & Needle
-            .work-item
-                %img
+            .card
+                %img{:src => "https://via.placeholder.com/600x600"}
                 %h4 A new PDP template
                 %p.small Tuft & Needle
 
@@ -59,16 +60,16 @@ title: Welcome to Middleman
         %h2 Experiences
         .controls
         .experiences-container
-            .experience-item
-                %img
+            .card
+                %img{:src => "https://via.placeholder.com/600x600"}
                 %p.small 2017 – Apr 17
                 %p I'm honored to be serving as AIGA Jacksonville's president as for the next 2 years. Getting to work alongside this great crew is the best part.
-            .experience-item
-                %img
+            .card
+                %img{:src => "https://via.placeholder.com/600x600"}
                 %p.small 2017 – Apr 17
                 %p I'm honored to be serving as AIGA Jacksonville's president as for the next 2 years. Getting to work alongside this great crew is the best part.
-            .experience-item
-                %img
+            .card
+                %img{:src => "https://via.placeholder.com/600x600"}
                 %p.small 2017 – Apr 17
                 %p I'm honored to be serving as AIGA Jacksonville's president as for the next 2 years. Getting to work alongside this great crew is the best part.
         
