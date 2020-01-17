@@ -1,8 +1,22 @@
-/**
- * Variables
- *
- * The majority of the configuration for the toolkit.
- */
+
+ //==============================================================================
+// Fonts
+//==============================================================================
+@font-face {
+    font-family: 'Canela Web';
+    src: url('fonts/Canela-Regular-Web.woff2') format('woff2'),
+         url('fonts/Canela-Regular-Web.woff') format('woff');
+    font-weight:  400;
+    font-style:   normal;
+    font-stretch: normal;
+}
+  
+// .Canela-Regular-Web {
+//     font-family: 'Canela Web';
+//     font-weight:  400;
+//     font-style:   normal;
+//     font-stretch: normal;
+// }
 
 //==============================================================================
 // Containers
@@ -53,7 +67,7 @@ $body-font-size           : 1rem                                       !default;
 $font-style               : normal                                     !default;
 $font-variant             : normal                                     !default;
 $font-weight              : normal                                     !default;
-$font-color               : #2B2823                                    !default;
+$font-color               : $primary-color                             !default;
 $font-family              : -apple-system, 
                             BlinkMacSystemFont, 
                             Helvetica Neue, 
@@ -63,15 +77,12 @@ $font-family              : -apple-system,
 $line-height              : 1.6                                        !default;
 
 // Headings
-$heading-font-color       : #404040 !default;
-$heading-font-weight      : 600 !default;
-$heading-font-family      : -apple-system, 
-                            BlinkMacSystemFont, 
-                            Helvetica Neue, 
-                            Helvetica, 
-                            Arial, 
-                            sans-serif                                 !default;
-$heading-line-height      : 1.2 !default;
+$heading-font-color       : $primary-color                             !default;
+$heading-font-weight      : 400                                        !default;
+$heading-font-family      : 'Canela Web', 
+                            Georgia, 
+                            serif                                 !default;
+$heading-line-height      : 1.2                                        !default;
 
 // Mobile heading font size
 $h1-mobile                : 1.75rem !default;
@@ -81,7 +92,7 @@ $h4-mobile                : 1.1rem !default;
 $h5-mobile                : 1rem !default;
 
 // Heading font size
-$h1                       : 2.25rem !default;
+$h1                       : 6.25rem !default;
 $h2                       : 2rem !default;
 $h3                       : 1.75rem !default;
 $h4                       : 1.5rem !default;
@@ -102,7 +113,7 @@ $content-padding-mobile   : 30px 0                                      !default
 
 $border-width             : 1px                                        !default;
 $border-style             : solid                                      !default;
-$border-color             : #dedede                                    !default;
+$border-color             : #dedede                                  !default;
 $border-radius            : 4px                                        !default;
 $borders                  : $border-width $border-style $border-color  !default;
 
