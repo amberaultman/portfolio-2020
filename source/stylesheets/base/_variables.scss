@@ -1,7 +1,7 @@
 
- //==============================================================================
+//============================
 // Fonts
-//==============================================================================
+//============================
 @font-face {
     font-family: 'Canela Web';
     src: url('fonts/Canela-Regular-Web.woff2') format('woff2'),
@@ -10,106 +10,125 @@
     font-style:   normal;
     font-stretch: normal;
 }
-  
-// .Canela-Regular-Web {
-//     font-family: 'Canela Web';
-//     font-weight:  400;
-//     font-style:   normal;
-//     font-stretch: normal;
-// }
 
-//==============================================================================
-// Containers
-//==============================================================================
+@font-face {
+    font-family: 'TT Commons Bold';
+    src: url('fonts/tt_commons_bold-webfont.woff2') format('woff2'),
+         url('fonts/tt_commons_bold-webfont.woff') format('woff');
+    font-weight:  700;
+    font-style:   normal;
+    font-stretch: normal;
+}
 
-$x-small                  : 480px                                      !default;
-$small                    : 768px                                      !default;
-$medium                   : 992px                                     !default;
-$large                    : 1200px                                     !default;
+@font-face {
+    font-family: 'TT Commons Regular';
+    src: url('fonts/tt_commons_book-webfont.woff2') format('woff2'),
+         url('fonts/tt_commons_book-webfont.woff') format('woff');
+    font-weight:  400;
+    font-style:   normal;
+    font-stretch: normal;
+}
 
-//==============================================================================
-// Breakpoints
-//==============================================================================
+//============================
+// Media Queries
+//============================
 
-$mobile                   : $x-small                                   !default;
-$tablet                   : $small                                     !default;
-$desktop                  : $medium                                    !default;
-$lgdesktop                : $large                                     !default;
-$mq-mobile                : "screen and (min-width : 480px)"           !default;
-$mq-tablet                : "screen and (min-width : 768px)"           !default;
-$mq-desktop               : "screen and (min-width : 992px)"           !default;
-$mq-lgdesktop             : "screen and (min-width : 1200px)"          !default;
+$x-small: 480px !default;
+$small: 768px !default;
+$medium: 992px !default;
+$large: 1200px !default;
 
-//==============================================================================
+$mobile: $x-small !default;
+$tablet: $small !default;
+$desktop: $medium !default;
+$lgdesktop: $large !default;
+$mq-mobile: "screen and (min-width : 480px)" !default;
+$mq-tablet: "screen and (min-width : 768px)" !default;
+$mq-desktop: "screen and (min-width : 992px)" !default;
+$mq-lgdesktop: "screen and (min-width : 1200px)" !default;
+
+//============================
 // Global Colors
-//==============================================================================
+//============================
 
-$background               : #FFF6ED                                    !default;
-$primary-color            : #2B2823                                    !default;
-$secondary-color          : #395DE3                                    !default;
-$accent-color             : #F3D170                                    !default;
-$alternate-background     : white                                      !default;
-// $alternate-color          : #404040                                    !default;
-$link-color               : $primary-color                               !default;
-$link-hover-color         : $secondary-color                             !default;
+$background: #FFF6ED !default;
+$primary-color: #2B2823 !default;
+$secondary-color: #395DE3 !default;
+$accent-color: #F3D170 !default;
+$alternate-background: white !default;
+$link-color: $primary-color !default;
+$link-hover-color: $secondary-color !default;
 // $highlight                : #ffeea8                                    !default;
 // $error                    : #D33C40                                    !default;
 // $success                  : #29de7d                                    !default;
 // $bq-border                : 16px solid #f0f0f0                         !default;
 
-//==============================================================================
+//============================
 // Typography
-//==============================================================================
+//============================
 
 // Body
-$font-size                : 1rem                                       !default;
-$body-font-size           : 1rem                                       !default;
-$font-style               : normal                                     !default;
-$font-variant             : normal                                     !default;
-$font-weight              : normal                                     !default;
-$font-color               : $primary-color                             !default;
-$font-family              : -apple-system, 
-                            BlinkMacSystemFont, 
-                            Helvetica Neue, 
-                            Helvetica, 
-                            Arial, 
-                            sans-serif                                 !default;
-$line-height              : 1.6                                        !default;
+$body-size: 16px !default;
+$body-line-height: 24px !default;
+
+$body-large-size: 18px !default;
+$body-large-line-height: 28px !default;
+
+$body-small-size: 14px !default;
+$body-small-line-height: 20px !default;
+
+$font-style: normal !default;
+$font-variant: normal !default;
+$font-weight: 400 !default;
+$font-color: $primary-color !default;
+$font-family: 'TT Commons Regular', Helvetica Neue, Helvetica, Arial, sans-serif !default;
 
 // Headings
-$heading-font-color       : $primary-color                             !default;
-$heading-font-weight      : 400                                        !default;
-$heading-font-family      : 'Canela Web', 
-                            Georgia, 
-                            serif                                 !default;
-$heading-line-height      : 1.2                                        !default;
+$heading-font-weight: 400 !default;
+$heading-font-family: 'Canela Web', Georgia, serif !default;
 
-// Mobile heading font size
+// Mobile heading font size       !!START HERE NEXT TIME!!
 $h1-mobile                : 1.75rem !default;
 $h2-mobile                : 1.5rem !default;
 $h3-mobile                : 1.25rem !default;
 $h4-mobile                : 1.1rem !default;
 $h5-mobile                : 1rem !default;
+$h6-mobile                : 1rem !default;
 
 // Heading font size
-$h1                       : 6.25rem !default;
-$h2                       : 2rem !default;
-$h3                       : 1.75rem !default;
-$h4                       : 1.5rem !default;
-$h5                       : 1.25rem !default;
+$h1: 80px !default;
+$h1-line-height: 88px !default;
 
-//==============================================================================
+$h2: 36px !default;
+$h2-line-height: 48px !default;
+
+$h3: 60px !default;
+$h3-line-height: 68px !default;
+
+$h1: 80px !default;
+$h1-line-height: 88px !default;
+
+$h4: 28px !default;
+$h4-line-height: 40px !default;
+
+$h5: 24px !default;
+$h5-line-height: 32px !default;
+
+$h6: 18px !default;
+$h6-line-height: 28px !default;
+
+//============================
 // Spacing
-//==============================================================================
+//============================
 
 $padding                  : 1rem                                        !default;
 $margins                  : 1.5rem                                      !default;
 $content-padding          : 60px 0                                      !default;
 $content-padding-mobile   : 30px 0                                      !default;
 
-//==============================================================================
+//============================
 // Borders
-//==============================================================================
+//============================
 
 $border-width             : 1px                                        !default;
 $border-style             : solid                                      !default;
@@ -117,9 +136,9 @@ $border-color             : #dedede                                  !default;
 $border-radius            : 4px                                        !default;
 $borders                  : $border-width $border-style $border-color  !default;
 
-//==============================================================================
+//============================
 // Buttons
-//==============================================================================
+//============================
 
 $button-background        : $primary-color                             !default;
 $button-background-hover  : $secondary-color                           !default;
@@ -154,9 +173,9 @@ $button-text-transform    : none                                       !default;
 // Round Buttons
 // $round-buttons            : 40px                                       !default;
 
-//==============================================================================
+//============================
 // Forms
-//==============================================================================
+//============================
 
 // $forms                    : ('[type=color], [type=date], [type=datetime], [type=datetime-local], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=url], [type=week], [type=time], select, textarea');
 // $buttons                  : ('.button, a.button, button, [type=submit], [type=reset], [type=button]');
@@ -166,16 +185,16 @@ $button-text-transform    : none                                       !default;
 // $form-border-hover        : 1px solid darken($border-color, 10%)       !default;
 // $form-border-focus        : 1px solid $link-color                      !default;
 
-//==============================================================================
+//============================
 // Tables
-//==============================================================================
+//============================
 
 // $stripes                  : #f8f8f8                                    !default;
 // $caption                  : #ababab                                    !default;
 
-//==============================================================================
+//============================
 // Code
-//==============================================================================
+//============================
 
 // $code-color               : $font-color                                !default;
 // $code-size                : 14px                                       !default;

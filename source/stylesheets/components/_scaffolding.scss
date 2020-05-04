@@ -6,14 +6,14 @@
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font: $font-style $font-variant $font-weight #{$font-size}/#{$line-height} $font-family;
-  font-size: $font-size;
+  font: $font-style $font-variant $font-weight #{$body-size}/#{$body-line-height} $font-family;
+  font-size: $body-size;
 }
 
 // Body base
 body {
   color: $font-color;
-  font-size: $body-font-size;
+  font-size: $body-size;
   min-height: 100vh;
 }
 
@@ -38,6 +38,11 @@ table {
   margin: 0 0 $margins 0;
 }
 
+p.large {
+  font-size: $body-large-size;
+  line-height: $body-large-line-height;
+}
+
 .card {
   background: $alternate-background;
 }
@@ -45,15 +50,25 @@ table {
 
 // Headings
 h1,
-h2,
-h3,
-h4,
-h5 {
+h3 {
   margin: $margins 0;
   font-weight: $heading-font-weight;
   font-family: $heading-font-family;
-  line-height: $heading-line-height;
-  color: $heading-font-color;
+  color: $font-color;
+
+  &:not(:first-child) {
+    margin: 1.5rem 0;
+  }
+}
+
+h2,
+h4,
+h5,
+h6 {
+  margin: $margins 0;
+  font-weight: $font-weight;
+  font-family: $font-family;
+  color: $font-color;
 
   &:not(:first-child) {
     margin: 1.5rem 0;
@@ -78,27 +93,39 @@ h4 {
 
 h5 {
   font-size: $h5-mobile;
+  font-weight: 700;
+}
+
+h6 {
+  font-size: $h6-mobile;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 @media #{$mq-tablet} {
   h1 {
     font-size: $h1;
+    line-height: $h1-line-height;
   }
 
   h2 {
     font-size: $h2;
+    line-height: $h2-line-height;
   }
 
   h3 {
     font-size: $h3;
+    line-height: $h3-line-height;
   }
 
   h4 {
     font-size: $h4;
+    line-height: $h4-line-height;
   }
 
   h5 {
     font-size: $h5;
+    line-height: $h5-line-height;
   }
 }
 

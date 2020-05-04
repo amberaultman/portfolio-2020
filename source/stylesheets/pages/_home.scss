@@ -19,6 +19,13 @@ main.home {
     }
   }
   
+  section.intro {
+    p {
+      font-size: 40px;
+      line-height: 52px;
+      // font-weight: 700;
+    }
+  }
   section.work {
     grid-area: work;
   }
