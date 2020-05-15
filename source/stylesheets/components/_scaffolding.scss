@@ -3,6 +3,10 @@
  **/
 
 // HTML base
+* {
+  box-sizing: border-box;
+}
+
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -12,6 +16,7 @@ html {
 
 // Body base
 body {
+  margin: 0;
   color: $font-color;
   font-size: $body-size;
   min-height: 100vh;
@@ -36,6 +41,11 @@ ul,
 dl,
 table {
   margin: 0 0 $margins 0;
+}
+
+img {
+  display: block;
+  width: 100%;
 }
 
 p.large {
@@ -129,18 +139,50 @@ h6 {
   }
 }
 
-// // Link styling
-// a {
-//   color: $link-color;
-//   text-decoration: none;
+// Link styling
+a {
+  color: $link-color;
+  text-decoration: none;
+  border-bottom: 1px solid $primary-color;
 
-//   &:hover,
-//   &:active,
-//   &:focus {
-//     color: $link-hover-color;
-//     text-decoration: underline;
-//   }
-// }
+  &:hover,
+  &:active,
+  &:focus {
+    color: $link-hover-color;
+    text-decoration: none;
+    border-bottom: 1px solid $secondary-color;
+  }
+}
+
+a.button-primary {
+  display: inline-block;
+  color: white;
+  font-weight: 700;
+  background-color: $primary-color;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 8px 20px;
+  border-radius: 30px;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $secondary-color;
+  }
+}
+
+a.button-tertiary {
+  border-bottom: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+  &:hover,
+  &:active,
+  &:focus {
+    border-bottom: 0;
+  }
+}
 
 // // Highlight
 // mark {

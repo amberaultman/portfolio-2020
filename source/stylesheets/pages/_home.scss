@@ -1,6 +1,55 @@
 /**
  * Grid
  **/
+ 
+section.intro {
+  p {
+    font-size: 40px;
+    line-height: 52px;
+    // font-weight: 700;
+  }
+}
+
+section.about {
+  @include grid-12;
+
+  article {
+    @include flex-column;
+    justify-content: space-between;
+    grid-column: span 12;
+    
+    @media #{$mq-tablet} {
+        grid-column: 7 / span 6;
+      }
+  }
+  img {
+    grid-column: span 12;
+
+    @media #{$mq-tablet} {
+        grid-column: 1 / span 6;
+      }
+  }
+  .bio {
+    flex: 6 2 auto;
+  }
+  .links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex: 0 1 auto;
+    margin-top: 24px;
+
+    a {
+      margin-bottom: 24px;
+    }
+
+    @media #{$mq-tablet} {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  .close {
+    flex: 0 1 auto;
+  }
+}
 
 main.home {
     display: grid;
@@ -19,70 +68,34 @@ main.home {
     }
   }
   
-  section.intro {
-    p {
-      font-size: 40px;
-      line-height: 52px;
-      // font-weight: 700;
-    }
-  }
-  section.work {
-    grid-area: work;
-  }
-  
-  section.writing {
-    grid-area: writing;
-  }
-  
-  section.speaking {
-    grid-area: speaking;
-  }
-  
-  section.experiences {
-    grid-area: experiences;
-  }
-  
 
-section.about {
-    @include grid-12;
-    p, > a {
-    grid-column: span 12;
-    @media #{$mq-tablet} {
-        grid-column: 7 / span 6;
-    }
-    }
-    img {
-    width: 100%;
-    grid-column: span 12;
-    grid-row: span 4;
-    @media #{$mq-tablet} {
-        grid-column: 1 / span 6;
-    }
-    }
-    .links {
-    grid-column: span 12;
-    @include grid-12;
-    grid-template-rows: repeat(2, 1fr);
-    @media #{$mq-tablet} {
-        grid-column: 7 / span 6;
-    }
-    }
+section.work {
+  grid-area: work;
+}
+
+section.writing {
+  grid-area: writing;
+}
+
+section.speaking {
+  grid-area: speaking;
+}
+
+section.experiences {
+  grid-area: experiences;
 }
   
-  section.work, section.experiences {
-    .work-container, .experiences-container {
-      @include grid-12;
-    }
-    .card {
-      grid-column: span 12;
-      @media #{$mq-tablet} {
-        grid-column: span 4;
-      }
-      img {
-        width: 100%;
-      }
+section.work, section.experiences {
+  .work-container, .experiences-container {
+    @include grid-12;
+  }
+  .card {
+    grid-column: span 12;
+    @media #{$mq-tablet} {
+      grid-column: span 4;
     }
   }
+}
 
 
 // Intro

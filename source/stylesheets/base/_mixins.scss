@@ -25,3 +25,8 @@
   grid-gap: 4%;
   grid-template-columns: repeat(12, 1fr);
 }
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
