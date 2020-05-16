@@ -68,14 +68,14 @@ $link-hover-color: $secondary-color !default;
 //============================
 
 // Body
-$body-size: 16px !default;
-$body-line-height: 24px !default;
+$body-size: 18px !default;
+$body-line-height: 28px !default;
 
-$body-large-size: 18px !default;
-$body-large-line-height: 28px !default;
+$body-large-size: 20px !default;
+$body-large-line-height: 32px !default;
 
-$body-small-size: 14px !default;
-$body-small-line-height: 20px !default;
+$body-small-size: 16px !default;
+$body-small-line-height: 24px !default;
 
 $font-style: normal !default;
 $font-variant: normal !default;
@@ -87,13 +87,24 @@ $font-family: 'TT Commons Regular', Helvetica Neue, Helvetica, Arial, sans-serif
 $heading-font-weight: 400 !default;
 $heading-font-family: 'Canela Web', Georgia, serif !default;
 
-// Mobile heading font size       !!START HERE NEXT TIME!!
-$h1-mobile                : 1.75rem !default;
-$h2-mobile                : 1.5rem !default;
-$h3-mobile                : 1.25rem !default;
-$h4-mobile                : 1.1rem !default;
-$h5-mobile                : 1rem !default;
-$h6-mobile                : 1rem !default;
+// Mobile heading font size
+$h1-mobile: 60px !default;
+$h1-mobile-line-height: 68px !default;
+
+$h2-mobile: 1.5rem !default;
+$h2-mobile-line-height: 68px !default;
+
+$h3-mobile: 40px !default;
+$h3-mobile-line-height: 48px !default;
+
+$h4-mobile: 1.1rem !default;
+$h4-mobile-line-height: 68px !default;
+
+$h5-mobile: 1rem !default;
+$h5-mobile-line-height: 68px !default;
+
+$h6-mobile: 1rem !default;
+$h6-mobile-line-height: 68px !default;
 
 // Heading font size
 $h1: 80px !default;

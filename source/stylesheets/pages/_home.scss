@@ -1,33 +1,36 @@
-/**
- * Grid
- **/
- 
+// Intro
+
 section.intro {
+  border: 1px red solid;
+  background: linear-gradient(180deg, $alternate-background 40%, $background 40%);
   p {
-    font-size: 40px;
-    line-height: 52px;
-    // font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+    @media #{$mq-tablet} {
+      font-size: 40px;
+      line-height: 52px;
+    }
   }
 }
 
-section.about {
-  @include grid-12;
+// About
 
+section.about {
+  background: $accent-color;
+  @include grid-12;
   article {
     @include flex-column;
     justify-content: space-between;
     grid-column: span 12;
-    
     @media #{$mq-tablet} {
         grid-column: 7 / span 6;
-      }
+    }
   }
   img {
     grid-column: span 12;
-
     @media #{$mq-tablet} {
         grid-column: 1 / span 6;
-      }
+    }
   }
   .bio {
     flex: 6 2 auto;
@@ -37,11 +40,9 @@ section.about {
     grid-template-columns: repeat(2, 1fr);
     flex: 0 1 auto;
     margin-top: 24px;
-
     a {
       margin-bottom: 24px;
     }
-
     @media #{$mq-tablet} {
       grid-template-columns: repeat(4, 1fr);
     }
@@ -50,6 +51,8 @@ section.about {
     flex: 0 1 auto;
   }
 }
+
+// Main Grid
 
 main.home {
     display: grid;
@@ -86,28 +89,13 @@ section.experiences {
 }
   
 section.work, section.experiences {
-  .work-container, .experiences-container {
+  .card-container {
     @include grid-12;
   }
-  .card {
+  .card, .card-experience {
     grid-column: span 12;
     @media #{$mq-tablet} {
       grid-column: span 4;
     }
   }
-}
-
-
-// Intro
-
-section.intro {
-    border: 1px red solid;
-    background: linear-gradient(180deg, $alternate-background 40%, $background 40%);
-}
-
-
-// About
-
-section.about {
-    background: $accent-color;
 }

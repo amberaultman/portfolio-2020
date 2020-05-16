@@ -34,19 +34,22 @@ title: Hey, I'm Amber Aultman
     %section.work
         %h3 Work
         .controls
-        .work-container
-            .card
+        .card-container
+            = link_to '', :class => "card" do
                 %img{:src => "https://via.placeholder.com/600x600"}
-                %h5 A new PDP template
-                %p.small Tuft & Needle
-            .card
+                .card-details
+                    %h5 A new PDP template
+                    %p.small Tuft & Needle
+            = link_to '', :class => "card" do
                 %img{:src => "https://via.placeholder.com/600x600"}
-                %h5 A new PDP template
-                %p.small Tuft & Needle
-            .card
+                .card-details
+                    %h5 Bringing Ecomm to Beautyrest
+                    %p.small Tuft & Needle
+            = link_to '', :class => "card" do
                 %img{:src => "https://via.placeholder.com/600x600"}
-                %h5 A new PDP template
-                %p.small Tuft & Needle
+                .card-details
+                    %h5 A new DTC priority for Serta and iComfort
+                    %p.small Tuft & Needle
 
     %section.writing
         %h3 Writing
@@ -67,27 +70,30 @@ title: Hey, I'm Amber Aultman
     %section.experiences
         %h3 Experiences
         .controls
-        .experiences-container
-            .card
+        .card-container
+            .card-experience
+                %figcaption
+                    %time 2017 &mdash; JUL 22
+                    %p I'm honored to be serving as AIGA Jacksonville's president as for the next 2 years. Getting to work alongside this great crew is the best part.
                 %img{:src => "https://via.placeholder.com/600x600"}
-                %p.small 2017 – Apr 17
-                %p I'm honored to be serving as AIGA Jacksonville's president as for the next 2 years. Getting to work alongside this great crew is the best part.
-            .card
+            .card-experience
+                %figcaption
+                    %time 2017 &mdash; JUL 22
+                    %p I'm honored to be serving as AIGA Jacksonville's president as for the next 2 years. Getting to work alongside this great crew is the best part.
                 %img{:src => "https://via.placeholder.com/600x600"}
-                %p.small 2017 – Apr 17
-                %p I'm honored to be serving as AIGA Jacksonville's president as for the next 2 years. Getting to work alongside this great crew is the best part.
-            .card
+            .card-experience
+                %figcaption
+                    %time 2017 &mdash; JUL 22
+                    %p I'm honored to be serving as AIGA Jacksonville's president as for the next 2 years. Getting to work alongside this great crew is the best part.
                 %img{:src => "https://via.placeholder.com/600x600"}
-                %p.small 2017 – Apr 17
-                %p I'm honored to be serving as AIGA Jacksonville's president as for the next 2 years. Getting to work alongside this great crew is the best part.
         
 
 %footer
     .links
-        = link_to 'LinkedIn', 'https://www.linkedin.com/in/amberaultman/', :target => "_blank"
-        = link_to 'Medium', 'https://medium.com/@amberaultman', :target => "_blank"
-        = link_to 'Github', 'https://github.com/amberaultman', :target => "_blank"
-        = link_to 'Email', 'mailto:amber.aultman@gmail.com'
+        = link_to 'LinkedIn', 'https://www.linkedin.com/in/amberaultman/', :target => "_blank", :class => "button-tertiary"
+        = link_to 'Medium', 'https://medium.com/@amberaultman', :target => "_blank", :class => "button-tertiary"
+        = link_to 'Github', 'https://github.com/amberaultman', :target => "_blank", :class => "button-tertiary"
+        = link_to 'Email', 'mailto:amber.aultman@gmail.com', :target => "_blank", :class => "button-tertiary"
     .bottom
-        %p Designed and coded by Amber Aultman
-        %p Copyright 2020. All rights reserved.
+        %p.small Designed and coded by Amber Aultman
+        %p.small Copyright 2020. All rights reserved.
