@@ -198,13 +198,18 @@ a.button-tertiary {
 
 // Card styling
 .card {
+  box-sizing: border-box;
   background: $alternate-background;
   border-bottom: 0;
   .card-details {
-    min-height: 100px;
-    margin: 14px 28px;
+    min-height: 66px;
+    margin: 14px 20px;
     @include flex-column;
     justify-content: space-between;
+    @media #{$mq-desktop} {
+      min-height: 100px;
+      margin: 14px 28px;
+    }
   }
   h5, p {
     display: block;
@@ -243,6 +248,15 @@ a.button-tertiary {
       display: block;
     }
   }
+}
+
+// Divider line
+.divider {
+  background-color: $accent-color;
+  width: 60px;
+  height: 4px;
+  border-radius: 4px;
+  margin: 0 auto;
 }
 
 // Footer

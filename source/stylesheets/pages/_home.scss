@@ -1,14 +1,63 @@
 // Intro
 
+nav.home {
+  height: 114px;
+  @media #{$mq-tablet} {
+    height: 160px;
+  }
+  @media #{$mq-desktop} {
+    height: 200px;
+  }
+}
+
 section.intro {
-  border: 1px red solid;
-  background: linear-gradient(180deg, $alternate-background 40%, $background 40%);
+  // background: linear-gradient(180deg, $alternate-background 24%, $background 24%);
+  background-color: $background;
+  h1 {
+    margin-top: -60px;
+  }
+  br {
+    display: block;
+  }
   p {
     font-size: 28px;
     line-height: 36px;
-    @media #{$mq-tablet} {
+  }
+  @media #{$mq-mobile} {
+    br {
+      display: none;
+    }
+    h1 {
+      margin-top: -63px;
+    }
+  }
+  @media #{$mq-tablet} {
+    h1 {
+      margin-top: -88px;
+    }
+    p {
       font-size: 40px;
       line-height: 52px;
+    }
+  }
+  @media #{$mq-desktop} {
+    h1 {
+      margin-top: -100px;
+    }
+  }
+  @media #{$mq-lgdesktop} {
+    h1 {
+      margin-top: -106px;
+    }
+  }
+  @media #{$mq-xldesktop} {
+    h1 {
+      margin-top: -118px;
+    }
+  }
+  @media #{$mq-xxldesktop} {
+    h1 {
+      margin-top: -134px;
     }
   }
 }
@@ -61,12 +110,14 @@ main.home {
       'writing'
       'speaking'
       'experiences'
+      'thanks'
       ;
     @media #{$mq-mobile} {
       grid-template-areas: 
       'work work'
       'writing speaking'
       'experiences experiences'
+      'thanks thanks'
       ;
     }
   }
@@ -97,5 +148,14 @@ section.work, section.experiences {
     @media #{$mq-tablet} {
       grid-column: span 4;
     }
+  }
+}
+
+section.thanks {
+  grid-area: thanks;
+  text-align: center;
+  margin-top: 28px;
+  h3 {
+    font-size: 30px;
   }
 }
