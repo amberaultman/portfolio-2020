@@ -9,8 +9,10 @@ title: Hey, I'm Amber Aultman
             Hey, 
             %br
             I'm Amber.
-        %p I lead strategy and teams to build meaningful, digital interactions.
-    %section.about
+        %p{:onclick => "showHide()"} 
+            I lead strategy and teams to build meaningful, digital interactions.
+            %ion-icon{:name => "chevron-down-outline"}
+    %section#about
         %img{:src => "https://via.placeholder.com/600x600"}
         %article
             .bio
@@ -31,7 +33,7 @@ title: Hey, I'm Amber Aultman
                 = link_to 'Github', 'https://github.com/amberaultman', :target => "_blank", :class => "button-tertiary"
                 = link_to 'Email', 'mailto:amber.aultman@gmail.com', :class => "button-tertiary"
             .close
-                %p Close
+                %ion-icon{:name => "close-outline"}
 
 %main.home
 
@@ -57,14 +59,24 @@ title: Hey, I'm Amber Aultman
 
     %section.writing
         %h3 Writing
-        %h5 Performance reviews: the good, the bad, and what you can do about them
-        %h5 Self-Learning: make your own path
-        %h5 Performance reviews: the good, the bad, and what you can do about them
-        %h5 Self-Learning: make your own path
+        %h5 
+            Performance reviews: the good, the bad, and what you can do about them
+            %ion-icon{:name => "open-outline"}
+        %h5 
+            Self-Learning: make your own path
+            %ion-icon{:name => "open-outline"}
+        %h5 
+            Performance reviews: the good, the bad, and what you can do about them
+            %ion-icon{:name => "open-outline"}
+        %h5 
+            Self-Learning: make your own path
+            %ion-icon{:name => "open-outline"}
 
     %section.speaking
         %h3 Speaking
-        %h5 Self Learning and the Importance of Commitment / Creative Mornings / Phoenix, AZ / 2018
+        %h5 
+            Self Learning and the Importance of Commitment / Creative Mornings / Phoenix, AZ / 2018
+            %ion-icon{:name => "open-outline"}
         %h5 Design Mentor / SXSW / Austin, TX / 2018
         %h5 How to not suck at self-learning / AIGA / Gainesville, FL / 2017
         %h5 Let's Get Digital / AIGA / Jacksonville, FL / 2016
