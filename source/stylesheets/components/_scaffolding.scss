@@ -169,11 +169,12 @@ a {
 a.button-primary {
   display: inline-block;
   color: white;
-  font-weight: 700;
+  font-family: $font-family-bold;
+  // font-weight: 700;
   background-color: $primary-color;
   text-transform: uppercase;
   letter-spacing: 2px;
-  padding: 8px 20px;
+  padding: 10px 22px 8px;
   border-radius: 30px;
 
   &:hover,
@@ -186,7 +187,8 @@ a.button-primary {
 a.button-tertiary {
   border-bottom: 0;
   text-transform: uppercase;
-  font-weight: 700;
+  font-family: $font-family-bold;
+  // font-weight: 700;
   letter-spacing: 2px;
 
   &:hover,
