@@ -18,7 +18,10 @@ section.intro {
   br {
     display: block;
   }
-  p {
+  button {
+    appearance: none;
+    background: transparent;
+    border: none;
     font-size: 28px;
     line-height: 36px;
     margin-bottom: 0;
@@ -44,7 +47,7 @@ section.intro {
     h1 {
       margin-top: -88px;
     }
-    p {
+    button {
       font-size: 40px;
       line-height: 52px;
     }
@@ -74,13 +77,17 @@ section.intro {
 // About
 
 section#about {
-  background: $accent-color;
-  @include grid-12;
-  transition: height .25s ease;
-  height: 0;
+  transition: all .5s ease;
   overflow: hidden;
-  &.slide-open {
-    height: 100%;
+  max-height: 0px;
+  padding: 0;
+  &.slide {
+    max-height: 100vh;
+  }
+  .wrapper {
+    background: $accent-color;
+    @include grid-12;
+    padding: 4%;
   }
   article {
     @include flex-column;
@@ -113,10 +120,15 @@ section#about {
       flex-direction: row;
     }
   }
-  ion-icon {
-    display: block;
-    margin: 0 auto;
-    font-size: 44px;
+  .close {
+    appearance: none;
+    border: none;
+    background: transparent;
+    ion-icon {
+      display: block;
+      margin: 0 auto;
+      font-size: 44px;
+    }
   }
 }
 
@@ -124,7 +136,7 @@ section#about {
 
 main.home {
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
       'work'
       'writing'
       'speaking'
@@ -132,7 +144,7 @@ main.home {
       'thanks'
       ;
     @media #{$mq-mobile} {
-      grid-template-areas: 
+      grid-template-areas:
       'work work'
       'writing speaking'
       'experiences experiences'
@@ -140,7 +152,7 @@ main.home {
       ;
     }
   }
-  
+
 
 section.work {
   grid-area: work;
@@ -157,7 +169,7 @@ section.speaking {
 section.experiences {
   grid-area: experiences;
 }
-  
+
 section.work, section.experiences {
   header {
     display: flex;
