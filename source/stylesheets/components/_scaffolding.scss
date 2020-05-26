@@ -220,7 +220,7 @@ a.button-tertiary {
   &:hover,
   &:active,
   &:focus {
-    border: 3px solid $secondary-color;
+    outline: 3px solid $secondary-color;
     color: $primary-color;
   }
 }

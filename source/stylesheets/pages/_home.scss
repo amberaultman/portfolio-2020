@@ -152,6 +152,30 @@ section.experiences {
 }
   
 section.work, section.experiences {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    p, ion-icon {
+      display: inline-block;
+    }
+    p {
+      margin: 1.5rem 0;
+    }
+    ion-icon {
+      margin: 0 14px -7px;
+      font-size: 28px;
+      &:last-of-type {
+        font-size: 32px;
+      }
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+  h3 {
+    flex: 2 1 auto;
+  }
   .card-container {
     @include grid-12;
   }
@@ -164,6 +188,11 @@ section.work, section.experiences {
 }
 
 section.writing, section.speaking {
+  a:hover {
+    h5, ion-icon {
+      color: $secondary-color;
+    }
+  }
   ion-icon {
     margin-left: 4px;
     margin-bottom: -4px;
