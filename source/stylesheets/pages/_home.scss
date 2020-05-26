@@ -76,11 +76,17 @@ section.intro {
 section#about {
   background: $accent-color;
   @include grid-12;
-  display: none;
+  transition: height .25s ease;
+  height: 0;
+  overflow: hidden;
+  &.slide-open {
+    height: 100%;
+  }
   article {
     @include flex-column;
     justify-content: space-between;
     grid-column: span 12;
+    margin-top: 24px;
     @media #{$mq-tablet} {
         grid-column: 7 / span 6;
     }
@@ -95,15 +101,16 @@ section#about {
     flex: 6 2 auto;
   }
   .links {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
     flex: 0 1 auto;
     margin-top: 24px;
     a {
       margin-bottom: 24px;
     }
-    @media #{$mq-tablet} {
-      grid-template-columns: repeat(4, 1fr);
+    @media #{$mq-mobile} {
+      flex-direction: row;
     }
   }
   ion-icon {

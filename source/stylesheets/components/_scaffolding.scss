@@ -203,11 +203,13 @@ a.button-tertiary {
   box-sizing: border-box;
   background: $alternate-background;
   border-bottom: 0;
+  @include flex-column;
   .card-details {
     min-height: 66px;
-    margin: 14px 20px;
     @include flex-column;
     justify-content: space-between;
+    flex-grow: 2;
+    margin: 14px 20px;
     @media #{$mq-desktop} {
       min-height: 100px;
       margin: 14px 28px;
