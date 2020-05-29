@@ -5,34 +5,35 @@ title: Hey, I'm Amber Aultman
 %header
     %nav.home
     %section.intro
-        %h1 
-            Hey, 
+        %h1
+            Hey,
             %br
             I'm Amber.
-        %p{:onclick => "showHide()"} 
+        %button{:onclick => "showHide()"}
             I lead strategy and teams to build meaningful, digital interactions.
             %ion-icon{:name => "chevron-down-outline"}
     %section#about
-        %img{:src => "https://via.placeholder.com/600x600"}
-        %article
-            .bio
-                %p.large 
-                    I’m Amber Aultman, a design leader currently living in Phoenix, AZ. I’m the Head of Design at 
-                    = link_to 'Tuft & Needle', 'https://www.tuftandneedle.com/', :target => "_blank"
-                    where I'm responsible for the visual experience of our brand: everything from product packaging and retail signage to our internal apps, e-commerce platform, and other digital channels. I’m crazy passionate about mentoring my team and making sure the customer experience stays paramount as we transistion through a merger. I’m also the past President of 
-                    = link_to 'AIGA Jacksonville', 'https://jacksonville.aiga.org/', :target => "_blank"
-                    and a former teacher at 
-                    = link_to 'Bloc.io.', 'https://www.bloc.io/', :target => "_blank"
-                %p.large
-                    I’m currently accepting speaking and workshop facilitation engagements both locally and abroad. 
-                = link_to 'Get in touch', 'mailto:amber.aultman@gmail.com', :class => "button-primary"
-            .links
-                = link_to 'LinkedIn', 'https://www.linkedin.com/in/amberaultman/', :target => "_blank", :class => "button-tertiary"
-                = link_to 'Medium', 'https://medium.com/@amberaultman', :target => "_blank", :class => "button-tertiary"
-                = link_to 'Github', 'https://github.com/amberaultman', :target => "_blank", :class => "button-tertiary"
-                = link_to 'Email', 'mailto:amber.aultman@gmail.com', :class => "button-tertiary"
-            .close
-                %ion-icon{:name => "close-outline"}
+        .wrapper
+            %img{:src => "https://via.placeholder.com/600x600"}
+            %article
+                .bio
+                    %p.large
+                        I’m Amber Aultman, a design leader currently living in Phoenix, AZ. I’m the Head of Design at
+                        = link_to 'Tuft & Needle', 'https://www.tuftandneedle.com/', :target => "_blank"
+                        where I'm responsible for the visual experience of our brand: everything from product packaging and retail signage to our internal apps, e-commerce platform, and other digital channels. I’m crazy passionate about mentoring my team and making sure the customer experience stays paramount as we transistion through a merger. I’m also the past President of
+                        = link_to 'AIGA Jacksonville', 'https://jacksonville.aiga.org/', :target => "_blank"
+                        and a former teacher at
+                        = link_to 'Bloc.io.', 'https://www.bloc.io/', :target => "_blank"
+                    %p.large
+                        I’m currently accepting speaking and workshop facilitation engagements both locally and abroad.
+                    = link_to 'Get in touch', 'mailto:amber.aultman@gmail.com', :class => "button-primary"
+                .links
+                    = link_to 'LinkedIn', 'https://www.linkedin.com/in/amberaultman/', :target => "_blank", :class => "button-tertiary"
+                    = link_to 'Medium', 'https://medium.com/@amberaultman', :target => "_blank", :class => "button-tertiary"
+                    = link_to 'Github', 'https://github.com/amberaultman', :target => "_blank", :class => "button-tertiary"
+                    = link_to 'Email', 'mailto:amber.aultman@gmail.com', :class => "button-tertiary"
+                %button.close
+                    %ion-icon{:name => "close-outline", :onclick => "showHide()"}
 
 %main.home
 
@@ -63,26 +64,26 @@ title: Hey, I'm Amber Aultman
     %section.writing
         %h3 Writing
         = link_to 'https://medium.com/swlh/performance-reviews-the-good-the-bad-and-what-you-can-do-about-them-2a30198cf353', :target => "_blank" do
-            %h5 
+            %h5
                 Performance reviews: the good, the bad, and what you can do about them
                 %ion-icon{:name => "open-outline", :class => "color-dammit"}
         = link_to 'https://medium.com/@amberaultman/self-learning-make-your-own-path-ba75cf7fd212', :target => "_blank" do
-            %h5 
+            %h5
                 Self-Learning: make your own path
                 %ion-icon{:name => "open-outline"}
         = link_to 'https://medium.com/swlh/performance-reviews-the-good-the-bad-and-what-you-can-do-about-them-2a30198cf353', :target => "_blank" do
-            %h5 
+            %h5
                 Performance reviews: the good, the bad, and what you can do about them
                 %ion-icon{:name => "open-outline"}
         = link_to 'https://medium.com/@amberaultman/self-learning-make-your-own-path-ba75cf7fd212', :target => "_blank" do
-            %h5 
+            %h5
                 Self-Learning: make your own path
                 %ion-icon{:name => "open-outline"}
 
     %section.speaking
         %h3 Speaking
         = link_to 'https://creativemornings.com/talks/amber-aultman-2/1', :target => "_blank" do
-            %h5 
+            %h5
                 Self Learning and the Importance of Commitment / Creative Mornings / Phoenix, AZ / 2018
                 %ion-icon{:name => "open-outline"}
         %h5 SXSW Design Mentor / SXSW / Austin, TX / 2018
@@ -118,7 +119,7 @@ title: Hey, I'm Amber Aultman
     %section.thanks
         .divider
         %h3 Thanks for visiting.
-        
+
 
 %footer
     .links
