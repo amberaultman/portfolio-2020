@@ -198,6 +198,12 @@ a.button-tertiary {
   }
 }
 
+button.no-button {
+  appearance: none;
+    background: transparent;
+    border: none;
+}
+
 // Card styling
 .card {
   box-sizing: border-box;

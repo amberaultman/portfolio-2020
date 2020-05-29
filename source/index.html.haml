@@ -9,7 +9,7 @@ title: Hey, I'm Amber Aultman
             Hey,
             %br
             I'm Amber.
-        %button{:onclick => "showHide()"}
+        %button{:onclick => "showHide()", :class => "no-button"}
             I lead strategy and teams to build meaningful, digital interactions.
             %ion-icon{:name => "chevron-down-outline"}
     %section#about
@@ -32,7 +32,7 @@ title: Hey, I'm Amber Aultman
                     = link_to 'Medium', 'https://medium.com/@amberaultman', :target => "_blank", :class => "button-tertiary"
                     = link_to 'Github', 'https://github.com/amberaultman', :target => "_blank", :class => "button-tertiary"
                     = link_to 'Email', 'mailto:amber.aultman@gmail.com', :class => "button-tertiary"
-                %button.close
+                %button.close.no-button
                     %ion-icon{:name => "close-outline", :onclick => "showHide()"}
 
 %main.home
@@ -43,23 +43,47 @@ title: Hey, I'm Amber Aultman
             .controls
                 %ion-icon{:name => "apps-outline"}
                 %p or
-                %ion-icon{:name => "arrow-forward-outline"}
-        .card-container
-            = link_to '', :class => "card" do
-                %img{:src => "https://via.placeholder.com/600x600"}
-                .card-details
-                    %h5 A new PDP template
-                    %p Tuft & Needle
-            = link_to '', :class => "card" do
-                %img{:src => "https://via.placeholder.com/600x600"}
-                .card-details
-                    %h5 Bringing Ecomm to Beautyrest
-                    %p Tuft & Needle
-            = link_to '', :class => "card" do
-                %img{:src => "https://via.placeholder.com/600x600"}
-                .card-details
-                    %h5 A new DTC priority for Serta and iComfort
-                    %p Tuft & Needle
+                %button.no-button
+                    %ion-icon{:name => "arrow-back-outline"}
+                %button.no-button
+                    %ion-icon{:name => "arrow-forward-outline"}
+        .card-container#slider-work
+            .card-wrapper
+                = link_to '', :class => "card" do
+                    %img{:src => "https://via.placeholder.com/600x600"}
+                    .card-details
+                        %h5 A new PDP template
+                        %p Tuft & Needle
+            .card-wrapper
+                = link_to '', :class => "card" do
+                    %img{:src => "https://via.placeholder.com/600x600"}
+                    .card-details
+                        %h5 Bringing Ecomm to Beautyrest
+                        %p Tuft & Needle
+            .card-wrapper
+                = link_to '', :class => "card" do
+                    %img{:src => "https://via.placeholder.com/600x600"}
+                    .card-details
+                        %h5 A new DTC priority for Serta and iComfort
+                        %p Tuft & Needle
+            .card-wrapper
+                = link_to '', :class => "card" do
+                    %img{:src => "https://via.placeholder.com/600x600"}
+                    .card-details
+                        %h5 A new PDP template
+                        %p Tuft & Needle
+            .card-wrapper
+                = link_to '', :class => "card" do
+                    %img{:src => "https://via.placeholder.com/600x600"}
+                    .card-details
+                        %h5 Bringing Ecomm to Beautyrest
+                        %p Tuft & Needle
+            .card-wrapper
+                = link_to '', :class => "card" do
+                    %img{:src => "https://via.placeholder.com/600x600"}
+                    .card-details
+                        %h5 A new DTC priority for Serta and iComfort
+                        %p Tuft & Needle
 
     %section.writing
         %h3 Writing
@@ -99,22 +123,43 @@ title: Hey, I'm Amber Aultman
                 %ion-icon{:name => "apps-outline"}
                 %p or
                 %ion-icon{:name => "arrow-forward-outline"}
-        .card-container
-            .card-experience
-                %figcaption
-                    %time 2017 &mdash; JUL 22
-                    %p I'm honored to be serving as AIGA Jacksonville's president as for the next 2 years. Getting to work alongside this great crew is the best part.
-                %img{:src => "https://via.placeholder.com/600x600"}
-            .card-experience
-                %figcaption
-                    %time 2017 &mdash; JUL 22
-                    %p I'm honored to be serving as AIGA Jacksonville's president as for the next 2 years. Getting to work alongside this great crew is the best part.
-                %img{:src => "https://via.placeholder.com/600x600"}
-            .card-experience
-                %figcaption
-                    %time 2017 &mdash; JUL 22
-                    %p I'm honored to be serving as AIGA Jacksonville's president as for the next 2 years. Getting to work alongside this great crew is the best part.
-                %img{:src => "https://via.placeholder.com/600x600"}
+        .card-container#slider-experience
+            .card-wrapper
+                .card-experience
+                    %figcaption
+                        %time 2017 &mdash; JUL 22
+                        %p I'm honored to be serving as AIGA Jacksonville's president as for the next 2 years. Getting to work alongside this great crew is the best part.
+                    %img{:src => "https://via.placeholder.com/600x600"}
+            .card-wrapper
+                .card-experience
+                    %figcaption
+                        %time 2017 &mdash; JUL 22
+                        %p I'm honored to be serving as AIGA Jacksonville's president as for the next 2 years. Getting to work alongside this great crew is the best part.
+                    %img{:src => "https://via.placeholder.com/600x600"}
+            .card-wrapper
+                .card-experience
+                    %figcaption
+                        %time 2017 &mdash; JUL 22
+                        %p I'm honored to be serving as AIGA Jacksonville's president as for the next 2 years. Getting to work alongside this great crew is the best part.
+                    %img{:src => "https://via.placeholder.com/600x600"}
+            .card-wrapper
+                .card-experience
+                    %figcaption
+                        %time 2017 &mdash; JUL 22
+                        %p I'm honored to be serving as AIGA Jacksonville's president as for the next 2 years. Getting to work alongside this great crew is the best part.
+                    %img{:src => "https://via.placeholder.com/600x600"}
+            .card-wrapper
+                .card-experience
+                    %figcaption
+                        %time 2017 &mdash; JUL 22
+                        %p I'm honored to be serving as AIGA Jacksonville's president as for the next 2 years. Getting to work alongside this great crew is the best part.
+                    %img{:src => "https://via.placeholder.com/600x600"}
+            .card-wrapper
+                .card-experience
+                    %figcaption
+                        %time 2017 &mdash; JUL 22
+                        %p I'm honored to be serving as AIGA Jacksonville's president as for the next 2 years. Getting to work alongside this great crew is the best part.
+                    %img{:src => "https://via.placeholder.com/600x600"}
 
     %section.thanks
         .divider
