@@ -22,7 +22,7 @@ section.intro {
     font-size: 28px;
     line-height: 36px;
     margin-bottom: 0;
-    &:hover {
+    &:hover, &:active {
       color: $secondary-color;
       ion-icon {
         color: $secondary-color;
@@ -125,7 +125,7 @@ section#about {
       display: block;
       margin: 0 auto;
       font-size: 44px;
-      &:hover {
+      &:hover, &:active {
         color: $secondary-color;
       }
     }
@@ -185,17 +185,15 @@ section.work, section.experiences {
     }
     ion-icon {
       margin: 0 14px -7px;
-      font-size: 28px;
-      &:last-of-type {
-        font-size: 32px;
-      }
-      &:hover {
-        color: $secondary-color;
+      font-size: 32px;
+      &:hover:not([disabled]), &:active:not([disabled]) {
+        color: $secondary-color !important;
       }
     }
   }
   h3 {
     flex: 2 1 auto;
+    margin-bottom: 0;
   }
   // .card-container {
   //   @include grid-12;
@@ -208,9 +206,9 @@ section.work, section.experiences {
   // }
 }
 
-.card-container {
-  margin-left: 40px;
-}
+// .card-container {
+//   margin-left: 40px;
+// }
 
 section.writing, section.speaking {
   padding: 8%;
@@ -222,7 +220,7 @@ section.writing, section.speaking {
   ion-icon {
     margin-left: 4px;
     margin-bottom: -4px;
-    &:hover {
+    &:hover, &:active {
       color: $secondary-color;
     }
   }
