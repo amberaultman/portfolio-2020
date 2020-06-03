@@ -156,6 +156,7 @@ main.home {
 
 section.work {
   grid-area: work;
+  max-width: 100vw;
 }
 
 section.writing {
@@ -183,11 +184,24 @@ section.work, section.experiences {
     p {
       margin: 1.5rem 0;
     }
-    ion-icon {
-      margin: 0 14px -7px;
-      font-size: 32px;
-      &:hover:not([disabled]), &:active:not([disabled]) {
-        color: $secondary-color !important;
+    button {
+      ion-icon {
+        margin: 0 14px -7px;
+        font-size: 32px;
+      }
+      &:hover,
+      &:active {
+        ion-icon {
+          cursor: pointer;
+          color: $secondary-color;
+        }
+        &[disabled] {
+          ion-icon {
+            cursor: default;
+            color: $link-color;
+            opacity: .3;
+          }
+        }
       }
     }
   }
