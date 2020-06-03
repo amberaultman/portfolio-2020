@@ -206,10 +206,20 @@ button.no-button {
 }
 
 // Card styling
+
+.card-container {
+  display: flex;
+}
+
+.card-wrapper {
+  display: inline-flex;
+}
+
 .card {
   box-sizing: border-box;
   background: $alternate-background;
   border-bottom: 0;
+  height: 100%;
   @include flex-column;
   .card-details {
     min-height: 66px;

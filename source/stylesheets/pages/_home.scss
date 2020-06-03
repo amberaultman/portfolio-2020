@@ -171,23 +171,38 @@ section.experiences {
 }
 
 section.work, section.experiences {
+  width: 100vw;
   padding: 0;
   header {
     padding: 4%;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    p, ion-icon {
+    p, 
+    ion-icon {
       display: inline-block;
     }
     p {
       margin: 1.5rem 0;
     }
-    ion-icon {
-      margin: 0 14px -7px;
-      font-size: 32px;
-      &:hover:not([disabled]), &:active:not([disabled]) {
-        color: $secondary-color !important;
+    button {
+      ion-icon {
+        margin: 0 14px;
+        font-size: 32px;
+      }
+      &:hover,
+      &:active {
+        ion-icon {
+          cursor: pointer;
+          color: $secondary-color;
+        }
+        &[disabled] {
+          ion-icon {
+            cursor: default;
+            color: $link-color;
+            opacity: .3;
+          }
+        }
       }
     }
   }
@@ -195,32 +210,21 @@ section.work, section.experiences {
     flex: 2 1 auto;
     margin-bottom: 0;
   }
-  // .card-container {
-  //   @include grid-12;
-  // }
-  // .card, .card-experience {
-  //   grid-column: span 12;
-  //   @media #{$mq-tablet} {
-  //     grid-column: span 4;
-  //   }
-  // }
 }
-
-// .card-container {
-//   margin-left: 40px;
-// }
 
 section.writing, section.speaking {
   padding: 8%;
   a:hover {
-    h5, ion-icon {
+    h5, 
+    ion-icon {
       color: $secondary-color;
     }
   }
   ion-icon {
     margin-left: 4px;
     margin-bottom: -4px;
-    &:hover, &:active {
+    &:hover, 
+    &:active {
       color: $secondary-color;
     }
   }
