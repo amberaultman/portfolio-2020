@@ -156,6 +156,7 @@ main.home {
 
 section.work {
   grid-area: work;
+  max-width: 100vw;
 }
 
 section.writing {
@@ -187,7 +188,11 @@ section.work, section.experiences {
     }
     button {
       ion-icon {
+<<<<<<< HEAD
         margin: 0 14px;
+=======
+        margin: 0 14px -7px;
+>>>>>>> f5df9fdb7cef24cf7c71e3e614701cd5bd18b05e
         font-size: 32px;
       }
       &:hover,
