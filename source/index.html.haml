@@ -5,8 +5,8 @@ title: Hey, I'm Amber Aultman
 %header
     %nav.home
     %section.intro
-        %h1
-            Hey,
+        %h1.s1
+            Hi,
             %br
             I'm Amber.
         %button{:onclick => "showHide()", :class => "no-button"}
@@ -39,8 +39,8 @@ title: Hey, I'm Amber Aultman
 
     %section.work
         %header
-            %h3 Work
-            .controls
+            %h2.s3 Work
+            .controls-work
                 %button.no-button
                     %ion-icon{:name => "arrow-back-outline"}
                 %button.no-button
@@ -50,74 +50,76 @@ title: Hey, I'm Amber Aultman
                 = link_to '', :class => "card" do
                     %img{:src => "https://via.placeholder.com/600x600"}
                     .card-details
-                        %h5 A new PDP template
+                        %h3.s5 A new PDP template
                         %p Tuft & Needle
             .card-wrapper
                 = link_to '', :class => "card" do
                     %img{:src => "https://via.placeholder.com/600x600"}
                     .card-details
-                        %h5 Bringing Ecomm to Beautyrest
+                        %h3.s5 Bringing Ecomm to Beautyrest
                         %p Tuft & Needle
             .card-wrapper
                 = link_to '', :class => "card" do
                     %img{:src => "https://via.placeholder.com/600x600"}
                     .card-details
-                        %h5 A new DTC priority for Serta and iComfort
+                        %h3.s5 A new DTC priority for Serta and iComfort
                         %p Tuft & Needle
             .card-wrapper
                 = link_to '', :class => "card" do
                     %img{:src => "https://via.placeholder.com/600x600"}
                     .card-details
-                        %h5 A new PDP template
+                        %h3.s5 A new PDP template
                         %p Tuft & Needle
             .card-wrapper
                 = link_to '', :class => "card" do
                     %img{:src => "https://via.placeholder.com/600x600"}
                     .card-details
-                        %h5 Bringing Ecomm to Beautyrest
+                        %h3.s5 Bringing Ecomm to Beautyrest
                         %p Tuft & Needle
             .card-wrapper
                 = link_to '', :class => "card" do
                     %img{:src => "https://via.placeholder.com/600x600"}
                     .card-details
-                        %h5 A new DTC priority for Serta and iComfort
+                        %h3.s5 A new DTC priority for Serta and iComfort
                         %p Tuft & Needle
 
     %section.writing
-        %h3 Writing
-        = link_to 'https://medium.com/swlh/performance-reviews-the-good-the-bad-and-what-you-can-do-about-them-2a30198cf353', :target => "_blank" do
-            %h5
-                Performance reviews: the good, the bad, and what you can do about them
-                %ion-icon{:name => "open-outline", :class => "color-dammit"}
-        = link_to 'https://medium.com/@amberaultman/self-learning-make-your-own-path-ba75cf7fd212', :target => "_blank" do
-            %h5
-                Self-Learning: make your own path
-                %ion-icon{:name => "open-outline"}
-        = link_to 'https://medium.com/swlh/performance-reviews-the-good-the-bad-and-what-you-can-do-about-them-2a30198cf353', :target => "_blank" do
-            %h5
-                Performance reviews: the good, the bad, and what you can do about them
-                %ion-icon{:name => "open-outline"}
-        = link_to 'https://medium.com/@amberaultman/self-learning-make-your-own-path-ba75cf7fd212', :target => "_blank" do
-            %h5
-                Self-Learning: make your own path
-                %ion-icon{:name => "open-outline"}
+        %h2.s3 Writing
+        %ul
+            = link_to 'https://medium.com/swlh/performance-reviews-the-good-the-bad-and-what-you-can-do-about-them-2a30198cf353', :target => "_blank" do
+                %li.s5
+                    Performance reviews: the good, the bad, and what you can do about them
+                    %ion-icon{:name => "open-outline", :class => "color-dammit"}
+            = link_to 'https://medium.com/@amberaultman/self-learning-make-your-own-path-ba75cf7fd212', :target => "_blank" do
+                %li.s5
+                    Self-Learning: make your own path
+                    %ion-icon{:name => "open-outline"}
+            = link_to 'https://medium.com/swlh/performance-reviews-the-good-the-bad-and-what-you-can-do-about-them-2a30198cf353', :target => "_blank" do
+                %li.s5
+                    Performance reviews: the good, the bad, and what you can do about them
+                    %ion-icon{:name => "open-outline"}
+            = link_to 'https://medium.com/@amberaultman/self-learning-make-your-own-path-ba75cf7fd212', :target => "_blank" do
+                %li.s5
+                    Self-Learning: make your own path
+                    %ion-icon{:name => "open-outline"}
 
     %section.speaking
-        %h3 Speaking
-        = link_to 'https://creativemornings.com/talks/amber-aultman-2/1', :target => "_blank" do
-            %h5
-                Self Learning and the Importance of Commitment / Creative Mornings / Phoenix, AZ / 2018
-                %ion-icon{:name => "open-outline"}
-        %h5 SXSW Design Mentor / SXSW / Austin, TX / 2018
-        %h5 How to not suck at self-learning / AIGA / Gainesville, FL / 2017
-        %h5 Let's Get Digital / AIGA / Jacksonville, FL / 2016
-        %h5 Human Centered Design for Entreprenuers / Innovation Summit / Jacksonville, FL / 2016
-        %h5 Let's Get Digital / AIGA / Jacksonville, FL / 2015
+        %h2.s3 Speaking
+        %ul
+            = link_to 'https://creativemornings.com/talks/amber-aultman-2/1', :target => "_blank" do
+                %li.s5
+                    Self Learning and the Importance of Commitment / Creative Mornings / Phoenix, AZ / 2018
+                    %ion-icon{:name => "open-outline"}
+            %li.s5 SXSW Design Mentor / SXSW / Austin, TX / 2018
+            %li.s5 How to not suck at self-learning / AIGA / Gainesville, FL / 2017
+            %li.s5 Let's Get Digital / AIGA / Jacksonville, FL / 2016
+            %li.s5 Human Centered Design for Entreprenuers / Innovation Summit / Jacksonville, FL / 2016
+            %li.s5.last Let's Get Digital / AIGA / Jacksonville, FL / 2015
 
     %section.experiences
         %header
-            %h3 Experiences
-            .controls
+            %h2.s3 Experiences
+            .controls-experience
                 %button.no-button
                     %ion-icon{:name => "arrow-back-outline"}
                 %button.no-button
@@ -161,8 +163,8 @@ title: Hey, I'm Amber Aultman
                     %img{:src => "https://via.placeholder.com/600x600"}
 
     %section.thanks
-        .divider
-        %h3 Thanks for visiting.
+        %hr
+        %h2.s3 Thanks for visiting.
 
 
 %footer
@@ -172,5 +174,4 @@ title: Hey, I'm Amber Aultman
         = link_to 'Github', 'https://github.com/amberaultman', :target => "_blank", :class => "button-tertiary"
         = link_to 'Email', 'mailto:amber.aultman@gmail.com', :target => "_blank", :class => "button-tertiary"
     .bottom
-        %p.small Designed and coded by Amber Aultman
-        %p.small Copyright 2020. All rights reserved.
+        %p.small Designed and coded by Amber Aultman.

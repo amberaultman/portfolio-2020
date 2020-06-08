@@ -12,7 +12,7 @@ nav.home {
 
 section.intro {
   background-color: $background;
-  h1 {
+  .s1 {
     margin-top: -60px;
   }
   br {
@@ -22,7 +22,11 @@ section.intro {
     font-size: 28px;
     line-height: 36px;
     margin-bottom: 0;
-    &:hover, &:active {
+    margin-top: 4vw;
+    padding: 0;
+
+    &:hover, 
+    &:active {
       color: $secondary-color;
       ion-icon {
         color: $secondary-color;
@@ -32,16 +36,22 @@ section.intro {
   ion-icon {
     margin-bottom: -7px;
   }
+
   @media #{$mq-mobile} {
     br {
       display: none;
     }
-    h1 {
+    .s1 {
       margin-top: -63px;
     }
+    button {
+      font-size: 32px;
+      line-height: 40px;
+    }
   }
+
   @media #{$mq-tablet} {
-    h1 {
+    .s1 {
       margin-top: -88px;
     }
     button {
@@ -49,24 +59,36 @@ section.intro {
       line-height: 52px;
     }
   }
+
   @media #{$mq-desktop} {
-    h1 {
+    .s1 {
       margin-top: -100px;
     }
+    button {
+      font-size: 44px;
+      line-height: 56px;
+    }
   }
+
   @media #{$mq-lgdesktop} {
-    h1 {
-      margin-top: -106px;
+    .s1 {
+      margin-top: -116px;
     }
   }
+  
   @media #{$mq-xldesktop} {
-    h1 {
-      margin-top: -118px;
+    .s1 {
+      margin-top: -138px;
     }
   }
+
   @media #{$mq-xxldesktop} {
-    h1 {
-      margin-top: -134px;
+    .s1 {
+      margin-top: -174px;
+    }
+    button {
+      font-size: 52px;
+      line-height: 64px;
     }
   }
 }
@@ -91,31 +113,20 @@ section#about {
     justify-content: space-between;
     grid-column: span 12;
     margin-top: 24px;
+
     @media #{$mq-tablet} {
         grid-column: 7 / span 6;
     }
   }
   img {
     grid-column: span 12;
+
     @media #{$mq-tablet} {
         grid-column: 1 / span 6;
     }
   }
   .bio {
     flex: 6 2 auto;
-  }
-  .links {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    flex: 0 1 auto;
-    margin-top: 24px;
-    a {
-      margin-bottom: 24px;
-    }
-    @media #{$mq-mobile} {
-      flex-direction: row;
-    }
   }
   .close {
     appearance: none;
@@ -188,12 +199,12 @@ section.work, section.experiences {
     }
     button {
       ion-icon {
-<<<<<<< HEAD
-        margin: 0 14px;
-=======
-        margin: 0 14px -7px;
->>>>>>> f5df9fdb7cef24cf7c71e3e614701cd5bd18b05e
+        margin: 0;
         font-size: 32px;
+
+        @media #{mq-mobile} {
+          margin: 0 14px;
+        }
       }
       &:hover,
       &:active {
@@ -211,16 +222,21 @@ section.work, section.experiences {
       }
     }
   }
-  h3 {
+  .s3 {
     flex: 2 1 auto;
     margin-bottom: 0;
+  }
+  .s5 {
+    margin-bottom: 14px;
+    font-family: $font-family-bold;
+    font-weight: 700;
   }
 }
 
 section.writing, section.speaking {
-  padding: 8%;
+  padding: 4%;
   a:hover {
-    h5, 
+    .s5, 
     ion-icon {
       color: $secondary-color;
     }
@@ -233,13 +249,43 @@ section.writing, section.speaking {
       color: $secondary-color;
     }
   }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    margin: 4vw 0;
+
+    @media #{$mq-xldesktop} {
+      margin: 2vw 0;
+    }
+  }
+  .last {
+    margin-bottom: 0;
+  }
+
+  @media #{$mq-mobile} {
+    padding: 16% 8% 8% 8%;
+  }
+}
+
+section.writing {
+  margin-top: 8vw;
+
+  @media #{$mq-mobile} {
+    margin-top: 0;
+  }
 }
 
 section.thanks {
   grid-area: thanks;
   text-align: center;
-  margin-top: 28px;
-  h3 {
+  margin: 56px 0;
+  .s3 {
     font-size: 30px;
+  }
+  hr {
+    margin-bottom: 24px;
   }
 }

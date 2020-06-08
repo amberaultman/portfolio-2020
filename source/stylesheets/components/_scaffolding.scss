@@ -51,11 +51,26 @@ img {
 .large {
   font-size: $body-size;
   line-height: $body-line-height;
+
   @media #{$mq-tablet} {
     font-size: $body-large-size;
     line-height: $body-large-line-height;
   }
 
+  @media #{$mq-desktop} {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  @media #{$mq-xldesktop} {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  @media #{$mq-xxldesktop} {
+    font-size: 30px;
+    line-height: 48px;
+  }
 }
 
 .small {
@@ -65,89 +80,154 @@ img {
 
 
 // Headings
-h1,
-h3 {
-  margin: $margins 0;
+.s1,
+.s3 {
+  margin: 4vw 0 0 0;
   font-weight: $heading-font-weight;
   font-family: $heading-font-family;
   color: $font-color;
 
-  &:not(:first-child) {
-    margin: 1.5rem 0;
+  @media #{$mq-xldesktop} {
+    margin: 2vw 0 0 0;
   }
 }
 
-h2,
-h4,
-h5,
-h6 {
-  margin: $margins 0;
+.s2,
+.s4,
+.s5,
+.s6 {
+  margin: 4vw 0 0 0;
   font-weight: $font-weight;
   font-family: $font-family;
   color: $font-color;
 
-  &:not(:first-child) {
-    margin: 1.5rem 0;
+  @media #{$mq-xldesktop} {
+    margin: 2vw 0 0 0;
   }
 }
 
-h1 {
-  font-size: $h1-mobile;
-  line-height: $h1-mobile-line-height;
+.s1 {
+  font-size: 60px;
+  line-height: 68px;
 }
 
-h2 {
-  font-size: $h2-mobile;
-  line-height: $h2-mobile-line-height;
+// .s2 {
+//   font-size: 24px;
+//   line-height: 28px;
+// }
+
+.s3 {
+  font-size: 40px;
+  line-height: 48px;
 }
 
-h3 {
-  font-size: $h3-mobile;
-  line-height: $h3-mobile-line-height;
-}
+// .s4 {
+//   font-size: 1rem;
+//   line-height: 1rem;
+// }
 
-h4 {
-  font-size: $h4-mobile;
-  line-height: $h4-mobile-line-height;
-}
-
-h5 {
-  font-size: $h5-mobile;
-  line-height: $h5-mobile-line-height;
-  // font-weight: 700;
-}
-
-h6 {
-  font-size: $h6-mobile;
-  line-height: $h6-mobile-line-height;
-  font-weight: 700;
-  text-transform: uppercase;
+.s5 {
+  font-size: 20px;
+  line-height: 27px;
 }
 
 @media #{$mq-tablet} {
-  h1 {
-    font-size: $h1;
-    line-height: $h1-line-height;
+  .s1 {
+    font-size: 80px;
+    line-height: 88px;
   }
 
-  h2 {
-    font-size: $h2;
-    line-height: $h2-line-height;
+  // .s2 {
+  //   font-size: $.s2;
+  //   line-height: $.s2-line-height;
+  // }
+
+  .s3 {
+    font-size: 56px;
+    line-height: 56px;
   }
 
-  h3 {
-    font-size: $h3;
-    line-height: $h3-line-height;
+  // .s4 {
+  //   font-size: $.s4;
+  //   line-height: $.s4-line-height;
+  // }
+
+  .s5 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+@media #{$mq-desktop} {
+  .s1 {
+    font-size: 88px;
+    line-height: 88px;
   }
 
-  h4 {
-    font-size: $h4;
-    line-height: $h4-line-height;
+  .s5 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+}
+
+@media #{$mq-lgdesktop} {
+  .s1 {
+    font-size: 104px;
+    line-height: 104px;
   }
 
-  h5 {
-    font-size: $h5;
-    line-height: $h5-line-height;
+  // .s2 {
+  //   font-size: $.s2-large;
+  //   line-height: $.s2-large-line-height;
+  // }
+
+  .s3 {
+    font-size: 72px;
+    line-height: 72px;
+  }
+
+  // .s4 {
+  //   font-size: $.s4-large;
+  //   line-height: $.s4-large-line-height;
+  // }
+
+  .s5 {
+    font-size: 30px;
+    line-height: 44px;
+  }
+}
+
+@media #{$mq-xldesktop} {
+  .s1 {
+    font-size: 116px;
+    line-height: 116px;
+  }
+}
+
+@media #{$mq-xxldesktop} {
+  .s1 {
+    font-size: 140px;
+    line-height: 140px;
+  }
+
+  // .s2 {
+  //   font-size: $.s2-xl;
+  //   line-height: $.s2-xl-line-height;
+  // }
+
+  .s3 {
+    font-size: 84px;
+    line-height: 84px;
+  }
+
+  // .s4 {
+  //   font-size: $.s4-xl;
+  //   line-height: $.s4-xl-line-height;
+  // }
+
+  .s5 {
+    font-size: 34px;
+    line-height: 52px;
   }
 }
 
@@ -163,6 +243,7 @@ a {
     color: $link-hover-color;
     text-decoration: none;
     border-bottom: 1px solid $secondary-color;
+    cursor: pointer;
   }
 }
 
@@ -170,7 +251,6 @@ a.button-primary {
   display: inline-block;
   color: white;
   font-family: $font-family-bold;
-  // font-weight: 700;
   background-color: $primary-color;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -181,6 +261,7 @@ a.button-primary {
   &:active,
   &:focus {
     background-color: $secondary-color;
+    cursor: pointer;
   }
 }
 
@@ -188,13 +269,13 @@ a.button-tertiary {
   border-bottom: 0;
   text-transform: uppercase;
   font-family: $font-family-bold;
-  // font-weight: 700;
   letter-spacing: 2px;
 
   &:hover,
   &:active,
   &:focus {
     border-bottom: 0;
+    cursor: pointer;
   }
 }
 
@@ -203,6 +284,11 @@ button.no-button {
   background: transparent;
   border: none;
   text-align: left;
+
+  &:focus {
+    outline: none;
+    cursor: pointer;
+  }
 }
 
 // Card styling
@@ -227,20 +313,22 @@ button.no-button {
     justify-content: space-between;
     flex-grow: 2;
     margin: 14px 20px;
+
     @media #{$mq-desktop} {
       min-height: 100px;
       margin: 14px 28px;
     }
   }
-  h5, p {
+  .s5, p {
     display: block;
     margin: 0;
   }
   &:hover,
   &:active,
   &:focus {
-    outline: 3px solid $secondary-color;
+    border: 3px solid $secondary-color;
     color: $primary-color;
+    cursor: pointer;
   }
 }
 
@@ -256,15 +344,23 @@ button.no-button {
     height: 100%;
     color: white;
     padding: 28px;
+    font-size: $body-small-size;
+    line-height: $body-small-line-height;
+
+    @media #{$mq-tablet} {
+      font-size: $body-size;
+      line-height: $body-line-height;
+    }
   }
   time {
     font-weight: 700;
     display: block;
-    margin-bottom: 28px;
+    margin-bottom: 14px;
   }
   &:hover,
   &:active,
   &:focus {
+    cursor: pointer;
     figcaption {
       display: block;
     }
@@ -272,146 +368,49 @@ button.no-button {
 }
 
 // Divider line
-.divider {
+hr {
   background-color: $accent-color;
+  color: $accent-color;
   width: 60px;
   height: 4px;
+  border-style: solid;
   border-radius: 4px;
   margin: 0 auto;
+}
+
+// Links
+.links {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex: 0 1 auto;
+  margin-top: 24px;
+  a {
+    margin-bottom: 24px;
+  }
+  @media #{$mq-mobile} {
+    flex-direction: row;
+  }
 }
 
 // Footer
 footer {
   padding: 4%;
   padding-bottom: 0;
+  
+  @media #{$mq-tablet} {
+    .links {
+      display: block;
+    }
+    a {
+      display: inline-block;
+      margin-right: 56px;
+    }
+  }
   .bottom {
     width: 100%;
     display: flex;
     justify-content: space-between;
     margin-top: 28px;
   }
-  a {
-    display: inline-block;
-    margin-right: 28px;
-  }
 }
-
-
-// // Highlight
-// mark {
-//   background: $highlight;
-//   padding: 0 0.2rem;
-// }
-
-// // Blockquote
-// blockquote {
-//   margin: 0 0 $margins 0;
-//   border-left: $bq-border;
-//   padding: 0 1.5rem;
-//   font-size: 1.5rem;
-
-//   cite {
-//     display: block;
-//     margin-top: $margins;
-//     font-size: 1rem;
-//     text-align: right;
-//   }
-// }
-
-// // Code block styling
-// pre {
-//   border: 0;
-//   border-radius: $border-radius;
-//   background: $code-background;
-//   padding: 1rem;
-//   tab-size: 2;
-//   color: $code-color;
-//   font-family: $code-family;
-//   font-size: $code-size;
-//   margin: 0 0 $margins 0;
-
-//   code {
-//     font-family: $code-family;
-//     line-height: 1.2;
-//   }
-// }
-
-// // Keyboard input
-// kbd {
-//   background-color: #f7f7f7;
-//   border: 1px solid #ccc;
-//   border-radius: 3px;
-//   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
-//   color: #333;
-//   display: inline-block;
-//   font-family: Helvetica, Arial, sans-serif;
-//   font-size: 13px;
-//   line-height: 1.4;
-//   margin: 0 .1em;
-//   padding: .1em .6em;
-//   text-shadow: 0 1px 0 #fff;
-// }
-
-// // Inline code styling
-// :not(pre)>code {
-//   color: $code-color;
-//   background: $code-background;
-//   font-family: $code-family;
-//   font-size: $code-size;
-//   padding: 0 0.2rem;
-//   border: $borders;
-//   border-radius: $border-radius;
-// }
-
-// // Line break
-// hr {
-//   height: 0;
-//   border: 0;
-//   border-top: $borders;
-// }
-
-// // Definition list
-// dt {
-//   font-weight: 600;
-// }
-
-// dd {
-//   margin-bottom: .5rem;
-// }
-
-// // Full container
-// .full-container {
-//   max-width: 100%;
-//   padding: 0 1rem;
-// }
-
-// // Container
-// .container {
-//   max-width: $large;
-//   padding: 0 $padding;
-//   margin-left: auto;
-//   margin-right: auto;
-// }
-
-// // Small container
-// .small-container {
-//   @extend .container;
-//   max-width: $small;
-// }
-
-// // Medium container
-// .medium-container {
-//   @extend .container;
-//   max-width: $medium;
-// }
-
-// // Content
-// .content-section {
-//   padding: $content-padding-mobile;
-// }
-
-// @include small-breakpoint {
-//   .content-section {
-//     padding: $content-padding;
-//   }
-// }

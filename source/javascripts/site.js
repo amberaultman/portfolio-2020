@@ -21,24 +21,24 @@ var slider = tns({
   nav: false,
   autoHeight: false,
   controlsText: ['<ion-icon name="arrow-back-outline"></ion-icon>', '<ion-icon name="arrow-forward-outline"></ion-icon>'],
-  controlsContainer: '.controls',
+  controlsContainer: '.controls-work',
   responsive: {
-    480: {
+    560: {
       items: 2,
       gutter: 20,
       edgePadding: 40
     },
-    768: {
+    960: {
       items: 3,
       gutter: 30,
       edgePadding: 60
     },
-    1200: {
+    1440: {
       items: 4,
       gutter: 40,
       edgePadding: 80
     },
-    1920: {
+    2600: {
       items: 5,
       gutter: 50,
       edgePadding: 100
@@ -60,24 +60,24 @@ var slider = tns({
   nav: false,
   autoHeight: false,
   controlsText: ['<ion-icon name="arrow-back-outline"></ion-icon>', '<ion-icon name="arrow-forward-outline"></ion-icon>'],
-  controlsContainer: '.controls',
+  controlsContainer: '.controls-experience',
   responsive: {
-    480: {
+    560: {
       items: 2,
       gutter: 20,
       edgePadding: 40
     },
-    768: {
+    960: {
       items: 3,
       gutter: 30,
       edgePadding: 60
     },
-    1200: {
+    1440: {
       items: 4,
       gutter: 40,
       edgePadding: 80
     },
-    1920: {
+    2600: {
       items: 5,
       gutter: 50,
       edgePadding: 100
