@@ -10,6 +10,8 @@ nav.home {
   }
 }
 
+// Intro 
+
 section.intro {
   background-color: $background;
   .s1 {
@@ -93,6 +95,13 @@ section.intro {
   }
 }
 
+ion-icon#arrow {
+  &.rotate {
+    transform: rotate(180deg);
+    transition: all .5s ease;
+  }
+}
+
 // About
 
 section#about {
@@ -102,7 +111,7 @@ section#about {
   padding: 0;
   &.slide {
     max-height: 100vh;
-  }
+    }
   .wrapper {
     background: $accent-color;
     @include grid-12;
