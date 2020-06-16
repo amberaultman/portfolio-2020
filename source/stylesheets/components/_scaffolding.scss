@@ -263,6 +263,17 @@ a.button-primary {
     background-color: $secondary-color;
     cursor: pointer;
   }
+
+  @media #{$mq-xldesktop} {
+    font-size: 20px;
+    letter-spacing: 3px;
+  }
+
+  @media #{$mq-xxldesktop} {
+    font-size: 22px;
+    letter-spacing: 3px;
+    padding: 14px 26px 12px;
+  }
 }
 
 a.button-tertiary {
@@ -276,6 +287,16 @@ a.button-tertiary {
   &:focus {
     border-bottom: 0;
     cursor: pointer;
+  }
+
+  @media #{$mq-xldesktop} {
+    font-size: 20px;
+    letter-spacing: 3px;
+  }
+
+  @media #{$mq-xxldesktop} {
+    font-size: 22px;
+    letter-spacing: 3px;
   }
 }
 

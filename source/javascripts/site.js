@@ -4,7 +4,7 @@ function showHide() {
   let about = document.getElementById("about");
   about.classList.toggle("slide");
   let rotateIcon = document.getElementByID("arrow");
-  rotateIcon.classList.toggle("rotate")
+  rotateIcon.classList.toggle("rotate");
 }
 
 // Tiny Slider modifiers

@@ -59,6 +59,10 @@ section.intro {
     button {
       font-size: 40px;
       line-height: 52px;
+
+      ion-icon {
+        font-size: 32px;
+      }
     }
   }
 
@@ -69,6 +73,10 @@ section.intro {
     button {
       font-size: 44px;
       line-height: 56px;
+
+      ion-icon {
+        font-size: 32px;
+      }
     }
   }
 
@@ -91,6 +99,10 @@ section.intro {
     button {
       font-size: 52px;
       line-height: 64px;
+
+      ion-icon {
+        font-size: 44px;
+      }
     }
   }
 }
@@ -145,8 +157,13 @@ section#about {
       display: block;
       margin: 0 auto;
       font-size: 44px;
+
       &:hover, &:active {
         color: $secondary-color;
+      }
+
+      @media #{$mq-xxldesktop} {
+        font-size: 54px;
       }
     }
   }
@@ -215,12 +232,14 @@ section.work, section.experiences {
           margin: 0 14px;
         }
       }
+
       &:hover,
       &:active {
         ion-icon {
           cursor: pointer;
           color: $secondary-color;
         }
+
         &[disabled] {
           ion-icon {
             cursor: default;
@@ -231,14 +250,24 @@ section.work, section.experiences {
       }
     }
   }
+
   .s3 {
     flex: 2 1 auto;
     margin-bottom: 0;
   }
+
   .s5 {
     margin-bottom: 14px;
     font-family: $font-family-bold;
     font-weight: 700;
+  }
+
+  .controls-work, .controls-experience {
+    @media #{$mq-xxldesktop} {
+      ion-icon {
+        font-size: 44px;
+      }
+    }
   }
 }
 
@@ -253,6 +282,7 @@ section.writing, section.speaking {
   ion-icon {
     margin-left: 4px;
     margin-bottom: -4px;
+    --ionicon-stroke-width: 46px;
     &:hover, 
     &:active {
       color: $secondary-color;
@@ -291,9 +321,23 @@ section.thanks {
   grid-area: thanks;
   text-align: center;
   margin: 56px 0;
+  
   .s3 {
-    font-size: 30px;
+    font-size: 26px;
+
+    @media #{$mq-tablet} {
+      font-size: 38px;
+    }
+
+    @media #{$mq-lgdesktop} {
+      font-size: 50px;
+    }
+
+    @media #{$mq-xxldesktop} {
+      font-size: 62px;
+    }
   }
+
   hr {
     margin-bottom: 24px;
   }
