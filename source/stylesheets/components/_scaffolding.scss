@@ -48,6 +48,26 @@ img {
   width: 100%;
 }
 
+p {
+  font-size: $body-size;
+  line-height: $body-line-height;
+
+  @media #{$mq-desktop} {
+    font-size: $body-large-size;
+    line-height: $body-large-line-height;
+  }
+
+  @media #{$mq-xldesktop} {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  @media #{$mq-xxldesktop} {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
 .large {
   font-size: $body-size;
   line-height: $body-line-height;
