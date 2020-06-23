@@ -332,6 +332,36 @@ button.no-button {
   }
 }
 
+// Nav styling
+
+nav {
+  background-color: white;
+  min-height: 90px;
+  display: flex;
+  justify-content: space-between;
+  padding: 28px 4%;
+  a {
+    border-bottom: 0;
+    &:hover,
+    &:focus {
+      border-bottom: 0;
+    }
+  }
+  p {
+    font-family: $heading-font-family;
+    font-size: 30px;
+    line-height: 32px;
+  }
+  ion-icon {
+    font-size: 32px;
+  }
+}
+
+main {
+  background-color: $background;
+}
+
+
 // Card styling
 
 .card-container {

@@ -1,0 +1,61 @@
+section.hero, section.project-details {
+    background-color: $background;
+}
+
+.work section {
+    @include grid-12;
+    h2, 
+    p, 
+    ol {
+        grid-column: 2 / span 10;
+    }
+    
+    &.hero {
+        p, img {
+            grid-column: span 12;
+        }
+        h1 {
+            grid-column: 2 / span 10;
+        }
+    }
+
+    &.project-details {
+        .problem {
+            grid-column: 2 / span 5;
+        }
+        .result {
+            grid-column: 7 / span 5;
+        }
+        .role {
+            grid-column: 2 / span 10;
+        }
+        hr {
+            grid-column: span 12;
+        }
+    }
+
+    &.summary {
+        p {
+            grid-column: 3 / span 8;
+        }
+    }
+
+    .img-2up {
+        grid-column: span 12;
+        @include grid-12;
+        figure {
+            grid-column: span 6;
+        }
+    }
+
+    .img-1up {
+        grid-column: span 12;
+        @include grid-12;
+        img {
+            grid-column: span 12;
+        }
+        figcaption {
+            grid-column: 2 / span 10;
+        }
+    }
+}
