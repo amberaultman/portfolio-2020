@@ -4,9 +4,11 @@ section.hero, section.project-details {
 
 .work section {
     @include grid-12;
-    h2, 
+    h2,
+    h6, 
     p, 
-    ol {
+    ol,
+    hr {
         grid-column: 2 / span 10;
     }
     
@@ -28,9 +30,6 @@ section.hero, section.project-details {
         }
         .role {
             grid-column: 2 / span 10;
-        }
-        hr {
-            grid-column: span 12;
         }
     }
 
@@ -58,4 +57,51 @@ section.hero, section.project-details {
             grid-column: 2 / span 10;
         }
     }
+
+    .img-left, .img-right {
+        grid-column: span 12;
+        @include grid-12;
+        img {
+            grid-column: span 8;
+        }
+        figcaption {
+            grid-column: span 4;
+        }
+    }
+
+    .img-sequence-left, .img-sequence-right {
+        grid-column: span 12;
+        @include grid-12;
+        img {
+            grid-column: span 8;
+        }
+    }
+
+    .img-sequence-right {
+        img {
+            grid-column: 4 / span 8;
+        }
+    }
+
+    &.closing {
+        p {
+            grid-column: span 4;
+        }
+    }
+
+    // .previous, .next {
+    //     grid-column: span 6;
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: space-between;
+    //     // ion-icon {
+    //     // }
+    //     .card-wrapper {
+    //         flex-grow: 4;
+    //         height: 120px;
+    //     }
+    //     .card-details {
+    //         flex-grow: 3;
+    //     }
+    // }
 }

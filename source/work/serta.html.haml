@@ -106,55 +106,52 @@ title: A new direct-to-consumer priority for Serta
     %section
         %h2.s3 A photoshoot focused on the needs of a modern, responsive website
         %p The photography that the Serta team shot previously didn’t take into account things like responsiveness in a website hero. We also felt that the styling, lighting, and talent direction was not inline with the “elevated, high-tech luxury” vibe of the brand. So while the UX team worked through various use cases, I led the multimedia team in a photoshoot for the website and ad creative. We conducted a single day shoot in New York City. We’re currently testing the impact of the new photos in A/B tests on the site and in ads and early results are showing success.
-        %figure.img-left
+        %figure.img-sequence-left
             %img{:src => "https://via.placeholder.com/620x413"}
-        %figure.img-right
+        %figure.img-sequence-right
             %img{:src => "https://via.placeholder.com/620x413"}
 
     %section.summary
         %p The site launched on schedule on December 16. Since then, we’ve seen the conversion rate increase by ______%_ which has lead to an increased  _$_______ in gross revenue. 
         %p The benchmarking tests that we set up to run every month has shown a positive increase in customers’ experiences with the site. … visual design here too?
 
-    %section
+    %section.closing
         %hr
         %h6.s6 Thank yous
         %p
             %strong Darin Barnes &amp; Rachel Rose
-            %p UX &amp; Visual Design
+            UX &amp; Visual Design
         %p
             %strong Erin Cline &amp; Breanne DeMore
-            %p Copywriting
+            Copywriting
         %p
             %strong Kyle Niemier &amp; Geoff Parker
-            %p Production &amp; Photo Editing
+            Production &amp; Photo Editing
         %p
             %strong Colin Darland &amp; Jackson Hardaker
-            %p Front-End Development
+            Front-End Development
         %p
             %strong Shay Arnett &amp; Jayson Virissimo
-            %p Back-End Development
+            Back-End Development
         %p
             %strong Anna Wolf
-            %p Photography
-
+            Photography
     
-%section.more-work
-    %h2.s2 More work
-    .previous
-        %button.no-button
+    %section.more-work
+        %h2.s2 More work
+        = link_to '', :class => "previous no-button" do
             %ion-icon{:name => "arrow-back-outline"}
-        .card-wrapper
-            .card-details
-                %h3.s5 A new PDP template
-                %p Tuft & Needle / 2019
-            %img{:src => "https://via.placeholder.com/120x120"}
-    .next
-        .card-wrapper
-            %img{:src => "https://via.placeholder.com/120x120"}
-            .card-details
-                %h3.s5 A new PDP template
-                %p Tuft & Needle / 2019
-        %button.no-button
+            .card-wrapper
+                .card-details
+                    %h3.s5 A new PDP template
+                    %p Tuft & Needle / 2019
+                %img{:src => "https://via.placeholder.com/120x120"}
+        = link_to '', :class => "next no-button" do
+            .card-wrapper
+                %img{:src => "https://via.placeholder.com/120x120"}
+                .card-details
+                    %h3.s5 A new PDP template
+                    %p Tuft & Needle / 2019
             %ion-icon{:name => "arrow-forward-outline"}
 
 

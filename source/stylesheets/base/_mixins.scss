@@ -4,6 +4,12 @@
   grid-template-columns: repeat(12, 1fr);
 }
 
+@mixin grid-6 {
+  display: grid;
+  grid-column-gap: 4%;
+  grid-template-columns: repeat(6, 1fr);
+}
+
 @mixin flex-column {
   display: flex;
   flex-direction: column;
