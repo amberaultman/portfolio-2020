@@ -89,19 +89,44 @@ section.hero, section.project-details {
         }
     }
 
-    // .previous, .next {
-    //     grid-column: span 6;
-    //     display: flex;
-    //     align-items: center;
-    //     justify-content: space-between;
-    //     // ion-icon {
-    //     // }
-    //     .card-wrapper {
-    //         flex-grow: 4;
-    //         height: 120px;
-    //     }
-    //     .card-details {
-    //         flex-grow: 3;
-    //     }
-    // }
+    .previous, .next {
+        border-bottom: 0;
+        grid-column: span 6;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .card-wrapper {
+            flex-grow: 4;
+            height: 120px;
+        }
+        img {
+            width: auto;
+        }
+        .card-details {
+            flex-grow: 3;
+            background-color: $alternate-background;
+        }
+        ion-icon {
+            flex-grow: 2;
+            font-size: 32px;
+        }
+    }
+
+    .previous {
+        ion-icon {
+            margin-right: 14px;
+        }
+        .card-details {
+            text-align: right;
+        }
+    }
+
+    .next {
+        ion-icon {
+            margin-left: 14px;
+        }
+        .card-details {
+            text-align: left;
+        }
+    }
 }
