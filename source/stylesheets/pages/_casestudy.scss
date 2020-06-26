@@ -2,7 +2,13 @@ section.hero, section.project-details {
     background-color: $background;
 }
 
+.work {
+    background-color: $background;
+}
+
 .work section {
+    max-width: 1440px;
+    margin: 0 auto;
     @include grid-12;
     h2,
     h6, 

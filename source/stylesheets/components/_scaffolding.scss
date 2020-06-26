@@ -101,6 +101,7 @@ p {
 
 // Headings
 .s1,
+.s2,
 .s3 {
   margin: 4vw 0 0 0;
   font-weight: $heading-font-weight;
@@ -112,7 +113,6 @@ p {
   }
 }
 
-.s2,
 .s4,
 .s5,
 .s6 {
@@ -149,6 +149,15 @@ p {
 .s5 {
   font-size: 20px;
   line-height: 27px;
+}
+
+.s6 {
+  font-size: 22px;
+  line-height: 28px;
+  font-family: $font-family-bold;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 @media #{$mq-tablet} {
@@ -196,10 +205,10 @@ p {
     line-height: 104px;
   }
 
-  // .s2 {
-  //   font-size: $.s2-large;
-  //   line-height: $.s2-large-line-height;
-  // }
+  .s2 {
+    font-size: 80px;
+    line-height: 80px;
+  }
 
   .s3 {
     font-size: 72px;
