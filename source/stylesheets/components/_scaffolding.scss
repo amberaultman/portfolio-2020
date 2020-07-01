@@ -141,10 +141,10 @@ p {
   line-height: 48px;
 }
 
-// .s4 {
-//   font-size: 1rem;
-//   line-height: 1rem;
-// }
+.s4 {
+  font-family: $font-family-bold;
+  font-weight: bold;
+}
 
 .s5 {
   font-size: 20px;
@@ -193,6 +193,16 @@ p {
     line-height: 88px;
   }
 
+  .s2 {
+    font-size: 80px;
+    line-height: 80px;
+  }
+
+  .s4 {
+    font-size: 36px;
+    line-height: 46px;
+  }
+
   .s5 {
     font-size: 26px;
     line-height: 36px;
@@ -206,8 +216,8 @@ p {
   }
 
   .s2 {
-    font-size: 80px;
-    line-height: 80px;
+    font-size: 87px;
+    line-height: 89px;
   }
 
   .s3 {
@@ -215,10 +225,10 @@ p {
     line-height: 72px;
   }
 
-  // .s4 {
-  //   font-size: $.s4-large;
-  //   line-height: $.s4-large-line-height;
-  // }
+  .s4 {
+    font-size: 46px;
+    line-height: 54px;
+  }
 
   .s5 {
     font-size: 30px;

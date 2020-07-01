@@ -2,6 +2,16 @@ section.hero, section.project-details {
     background-color: $background;
 }
 
+section.hero {
+    h1 {
+        z-index: 10;
+    }
+    img {
+        margin-top: -27px;
+        z-index: 0;
+    }
+}
+
 .work {
     background-color: $background;
 }
@@ -12,12 +22,12 @@ section.hero, section.project-details {
     @include grid-12;
     h2,
     h6, 
-    p, 
+    p,
     ol,
     hr {
-        grid-column: 2 / span 10;
+        grid-column: 3 / span 8;
     }
-    
+
     &.hero {
         p, img {
             grid-column: span 12;
@@ -60,7 +70,7 @@ section.hero, section.project-details {
             grid-column: span 12;
         }
         figcaption {
-            grid-column: 2 / span 10;
+            grid-column: 3 / span 8;
         }
     }
 
@@ -72,6 +82,12 @@ section.hero, section.project-details {
         }
         figcaption {
             grid-column: span 4;
+        }
+    }
+
+    .img-right {
+        figcaption {
+            text-align: right;
         }
     }
 
@@ -133,6 +149,19 @@ section.hero, section.project-details {
         }
         .card-details {
             text-align: left;
+        }
+    }
+}
+
+.summary {
+    p {
+        @media #{$mq-desktop} {
+            font-size: 24px;
+            line-height: 36px;
+        }
+        @media #{$mq-lgdesktop} {
+            font-size: 28px;
+            line-height: 42px;
         }
     }
 }
