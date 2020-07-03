@@ -2,16 +2,6 @@ section.hero, section.project-details {
     background-color: $background;
 }
 
-section.hero {
-    h1 {
-        z-index: 10;
-    }
-    img {
-        margin-top: -27px;
-        z-index: 0;
-    }
-}
-
 .project-details {
     hr {
         margin-top: 84px;
@@ -31,7 +21,10 @@ section.hero {
     p,
     ol,
     hr {
-        grid-column: 3 / span 8;
+        grid-column: 2 / span 10;
+        @media #{$mq-tablet} {
+            grid-column: 3 / span 8;
+        }
     }
 
     h2 {
@@ -46,8 +39,18 @@ section.hero {
         p, img {
             grid-column: span 12;
         }
+        img {
+            margin-top: -17px;
+            z-index: 0;
+        }
         h1 {
-            grid-column: 2 / span 10;
+            grid-column: 2 / span 11;
+            z-index: 10;
+        }
+        @media #{$mq-tablet} {
+            h1 {
+                grid-column: 2 / span 10;
+            }
         }
     }
 
@@ -125,37 +128,57 @@ section.hero {
         @include grid-12;
         margin: 56px 0 0;
         img {
-            grid-column: span 8;
+            grid-column: span 12;
+            grid-row: 1;
         }
         figcaption {
-            grid-column: span 4;
+            grid-column: 2 / span 10;
+            grid-row: 2;
+        }
+        @media #{$mq-desktop} {
+            img {
+                grid-column: span 8;
+            }
+            figcaption {
+                grid-column: span 4;
+                grid-row: 1;
+            }
         }
     }
 
-    .img-right {
-        figcaption {
-            text-align: right;
+    @media #{$mq-desktop} {
+        .img-right {
+            figcaption {
+                text-align: right;
+            }
         }
     }
-
+    
     .img-sequence-left, .img-sequence-right {
         grid-column: span 12;
         @include grid-12;
         margin-top: 56px;
         img {
-            grid-column: span 8;
+            grid-column: span 12;
+        }
+        @media #{$mq-tablet} {
+            img {
+                grid-column: span 8;
+            }
         }
     }
 
-    .img-sequence-right {
-        img {
-            grid-column: 5 / span 8;
+    @media #{$mq-tablet} {
+        .img-sequence-right {
+            img {
+                grid-column: 5 / span 8;
+            }
         }
     }
 
     &.closing {
         p {
-            grid-column: span 4;
+            grid-column: 2 / span 10;
             margin-bottom: 56px;
         }
         h6 {
@@ -167,6 +190,16 @@ section.hero {
             display: block;
         }
         padding-bottom: 196px;
+        @media #{$mq-mobile} {
+            p {
+                grid-column: span 6;
+            }
+        }
+        @media #{$mq-tablet} {
+            p {
+                grid-column: span 4;
+            }
+        }
     }
 }
 
@@ -175,22 +208,36 @@ section.hero {
     section {
         max-width: 1440px;
         margin: 0 auto;
+        padding: 42px 4%;
         @include grid-12;
+        @media #{$mq-mobile} {
+            padding: 56px 4%;
+        }
+        @media #{$mq-tablet} {
+            padding: 70px 4%;
+        }
     }
 
-    h2 {
-        grid-column: 3 / span 8;
-        margin-top: -110px;
+    .s2 {
+        grid-column: 2 / span 10;
+        margin-top: -67px;
+        @media #{$mq-mobile} {
+            margin-top: -86px;
+        }
+        @media #{$mq-tablet} {
+            margin-top: -108px;
+        }
+        @media #{$mq-desktop} {
+            margin-top: -124px;
+        }
     }
 
     .previous, .next {
         border-bottom: 0;
-        grid-column: span 6;
+        grid-column: span 12;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-top: 28px;
-        margin-bottom: 28px;
         .card-wrapper {
             flex-grow: 4;
             display: flex;
@@ -208,15 +255,20 @@ section.hero {
         p {
             margin-bottom: 0;
         }
-        p.large {
-            font-family: $font-family-bold;
-            font-weight: 700;
+        p.card-title {
             flex-grow: 3;
             margin-bottom: 14px;
+            @media #{$mq-mobile} {
+
+            }
         }
         ion-icon {
             flex-grow: 2;
             font-size: 32px;
+        }
+        @media #{$mq-tablet} {
+            grid-column: span 6;
+            margin-top: 0;
         }
     }
 
@@ -230,11 +282,15 @@ section.hero {
     }
 
     .next {
+        margin-top: 28px;
         ion-icon {
             margin-left: 14px;
         }
         .card-details {
             text-align: left;
+        }
+        @media #{$mq-tablet} {
+            margin-top: 0;
         }
     }
 }

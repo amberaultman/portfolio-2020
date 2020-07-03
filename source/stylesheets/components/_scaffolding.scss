@@ -12,7 +12,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   font: $font-style $font-variant $font-weight #{$body-size}/#{$body-line-height} $font-family;
   font-size: $body-size;
-  // scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 // Body base
@@ -44,6 +44,11 @@ table {
   margin: 0 0 $margins 0;
 }
 
+ol,
+ul {
+  padding: 0;
+}
+
 img {
   display: block;
   width: 100%;
@@ -67,6 +72,12 @@ p {
     font-size: 24px;
     line-height: 36px;
   }
+}
+
+strong,
+b {
+  font-family: $font-family-bold;
+  font-weight: 700;
 }
 
 .large {
@@ -97,6 +108,21 @@ p {
 .small {
   font-size: $body-small-size;
   line-height: $body-small-line-height;
+
+  @media #{$mq-desktop} {
+    font-size: $body-size;
+    line-height: $body-line-height;
+  }
+
+  @media #{$mq-xldesktop} {
+    font-size: $body-large-size;
+    line-height: $body-large-line-height;
+  }
+
+  @media #{$mq-xxldesktop} {
+    font-size: 22px;
+    line-height: 32px;
+  }
 }
 
 
@@ -161,16 +187,23 @@ p {
   letter-spacing: 2px;
 }
 
+@media #{$mq-mobile} {
+  .s2 {
+    font-size: 44px;
+    line-height: 48px;
+  }
+}
+
 @media #{$mq-tablet} {
   .s1 {
     font-size: 80px;
     line-height: 88px;
   }
 
-  // .s2 {
-  //   font-size: $.s2;
-  //   line-height: $.s2-line-height;
-  // }
+  .s2 {
+    font-size: 54px;
+    line-height: 58px;
+  }
 
   .s3 {
     font-size: 56px;
