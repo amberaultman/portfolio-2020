@@ -25,7 +25,6 @@ section.hero {
 .work section {
     max-width: 1440px;
     margin: 0 auto;
-    // padding-bottom: 84px;
     @include grid-12;
     h2,
     h6, 
@@ -53,48 +52,78 @@ section.hero {
     }
 
     &.project-details {
-        .problem {
-            grid-column: 2 / span 5;
-        }
-        .result {
-            grid-column: 7 / span 5;
-        }
-        .role {
+        .problem, .result, .role {
             grid-column: 2 / span 10;
+        }
+        @media #{$mq-desktop} {
+            .problem {
+                grid-column: 2 / span 5;
+            }
+            .result {
+                grid-column: 7 / span 5;
+            }
+            .role {
+                grid-column: 2 / span 10;
+            }
         }
     }
 
     &.summary {
         p {
-            grid-column: 3 / span 8;
+            grid-column: 2 / span 10;
+        }
+        @media #{$mq-desktop} {
+            p {
+                grid-column: 3 / span 8;
+            }
         }
     }
 
     .img-2up {
         grid-column: span 12;
         @include grid-12;
-        margin: 56px 0;
+        margin: 28px 0;
         figure {
-            grid-column: span 6;
+            grid-column: span 12;
+            @include grid-12;
+        }
+        figcaption {
+            grid-column: 2 / span 10;
+        }
+        img {
+            grid-column: span 12;
+        }
+        @media #{$mq-desktop} {
+            margin: 56px 0;
+            figure {
+                grid-column: span 6;
+                display: inline-block;
+            }
         }
     }
 
     .img-1up {
         grid-column: span 12;
         @include grid-12;
-        margin: 56px 0;
+        margin: 28px 0 0;
         img {
             grid-column: span 12;
         }
         figcaption {
-            grid-column: 3 / span 8;
+            grid-column: 2 / span 10;
+        }
+        @media #{$mq-desktop} {
+            margin: 56px 0 0;
+            figcaption {
+                grid-column: 3 / span 8;
+            }
         }
     }
 
     .img-left, .img-right {
         grid-column: span 12;
         @include grid-12;
-        margin: 56px 0;
+        margin: 56px 0 0;
         img {
             grid-column: span 8;
         }
@@ -112,15 +141,15 @@ section.hero {
     .img-sequence-left, .img-sequence-right {
         grid-column: span 12;
         @include grid-12;
+        margin-top: 56px;
         img {
             grid-column: span 8;
-            margin-bottom: 28px;
         }
     }
 
     .img-sequence-right {
         img {
-            grid-column: 4 / span 8;
+            grid-column: 5 / span 8;
         }
     }
 
