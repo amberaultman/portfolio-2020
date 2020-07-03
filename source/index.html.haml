@@ -3,7 +3,7 @@ title: Hey, I'm Amber Aultman
 ---
 
 %header
-    %nav.home
+    %nav.home#top
     %section.intro
         %h1.s1
             Hi,
@@ -89,7 +89,7 @@ title: Hey, I'm Amber Aultman
             = link_to 'https://medium.com/swlh/performance-reviews-the-good-the-bad-and-what-you-can-do-about-them-2a30198cf353', :target => "_blank" do
                 %li.s5
                     Performance reviews: the good, the bad, and what you can do about them
-                    %ion-icon{:name => "open-outline", :class => "color-dammit"}
+                    %ion-icon{:name => "open-outline"}
             = link_to 'https://medium.com/@amberaultman/self-learning-make-your-own-path-ba75cf7fd212', :target => "_blank" do
                 %li.s5
                     Self-Learning: make your own path
@@ -169,9 +169,14 @@ title: Hey, I'm Amber Aultman
 
 %footer
     .links
-        = link_to 'LinkedIn', 'https://www.linkedin.com/in/amberaultman/', :target => "_blank", :class => "button-tertiary"
-        = link_to 'Medium', 'https://medium.com/@amberaultman', :target => "_blank", :class => "button-tertiary"
-        = link_to 'Github', 'https://github.com/amberaultman', :target => "_blank", :class => "button-tertiary"
-        = link_to 'Email', 'mailto:amber.aultman@gmail.com', :target => "_blank", :class => "button-tertiary"
+        .left
+            = link_to 'LinkedIn', 'https://www.linkedin.com/in/amberaultman/', :target => "_blank", :class => "button-tertiary"
+            = link_to 'Medium', 'https://medium.com/@amberaultman', :target => "_blank", :class => "button-tertiary"
+            = link_to 'Github', 'https://github.com/amberaultman', :target => "_blank", :class => "button-tertiary"
+            = link_to 'Email', 'mailto:amber.aultman@gmail.com', :target => "_blank", :class => "button-tertiary"
+        .right
+            = link_to '#top', :onclick => "smoothScroll()", :class => "button-tertiary smoothly" do
+                %ion-icon{:name => "arrow-up-outline"}
+                Back to top
     .bottom
         %p.small Designed and coded by Amber Aultman.

@@ -12,6 +12,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   font: $font-style $font-variant $font-weight #{$body-size}/#{$body-line-height} $font-family;
   font-size: $body-size;
+  // scroll-behavior: smooth;
 }
 
 // Body base
@@ -490,11 +491,26 @@ footer {
   
   @media #{$mq-tablet} {
     .links {
-      display: block;
+      display: flex;
+      justify-content: space-between;
+    }
+    .left {
+      flex-grow: 4;
+      a {
+        margin-right: 56px;
+      }
+    }
+    .right {
+      a {
+        transition: all .5s ease;
+      }
     }
     a {
       display: inline-block;
-      margin-right: 56px;
+    }
+    ion-icon {
+      font-size: 32px;
+      margin-bottom: -8px;
     }
   }
   .bottom {

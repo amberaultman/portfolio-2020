@@ -7,6 +7,29 @@ function showHide() {
   rotateIcon.classList.toggle("rotate");
 }
 
+// Smooth scrolling
+
+function smoothScroll() {
+  document.querySelector('#top').scrollIntoView({ 
+    behavior: 'smooth' 
+  });
+}
+
+// function smoothScroll() {
+//   let smoothly = document.querySelector('#top').scrollIntoView({ 
+//     behavior: 'smooth' 
+//   });
+//   return smoothly;
+// }
+
+// function smoothScroll() {
+//   let smoothly = document.getElementsByClassName("smoothly");
+//   smoothly.document.querySelector('#top').scrollIntoView({ 
+//     behavior: 'smooth' 
+//   });
+// }
+
+
 // Tiny Slider modifiers
 
 var slider = tns({
