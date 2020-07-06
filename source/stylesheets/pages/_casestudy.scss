@@ -33,13 +33,17 @@ section.hero, section.project-details {
 
     figcaption {
         margin: 14px 0;
+        @media #{$mq-xldesktop} {
+            margin: 28px 0;
+        }
     }
 
     &.hero {
-        p, img {
-            grid-column: span 12;
+        p {
+            grid-column: 2 / span 10;
         }
         img {
+            grid-column: span 12;
             margin-top: -17px;
             z-index: 0;
         }
@@ -47,9 +51,31 @@ section.hero, section.project-details {
             grid-column: 2 / span 11;
             z-index: 10;
         }
+
         @media #{$mq-tablet} {
             h1 {
                 grid-column: 2 / span 10;
+            }
+            img {
+                margin-top: -22px;
+            }
+        }
+
+        @media #{$mq-desktop} {
+            img {
+                margin-top: -33px;
+            }
+        }
+
+        @media #{$mq-xldesktop} {
+            img {
+                margin-top: -36px;
+            }
+        }
+
+        @media #{$mq-xxldesktop} {
+            img {
+                margin-top: -38px;
             }
         }
     }
@@ -82,13 +108,20 @@ section.hero, section.project-details {
         }
     }
 
+    .no-image {
+        margin: 0 0 70px 0;
+    }
+
     .img-2up {
         grid-column: span 12;
         @include grid-12;
-        margin: 28px 0;
+        margin: 28px 0 56px;
         figure {
             grid-column: span 12;
             @include grid-12;
+            &:first-of-type {
+                margin-bottom: 28px;
+            }
         }
         figcaption {
             grid-column: 2 / span 10;
@@ -101,6 +134,9 @@ section.hero, section.project-details {
             figure {
                 grid-column: span 6;
                 display: inline-block;
+                &:first-of-type {
+                    margin-bottom: 0;
+                }
             }
         }
     }
@@ -108,7 +144,7 @@ section.hero, section.project-details {
     .img-1up {
         grid-column: span 12;
         @include grid-12;
-        margin: 28px 0 0;
+        margin: 28px 0 56px;
         img {
             grid-column: span 12;
         }
@@ -126,7 +162,7 @@ section.hero, section.project-details {
     .img-left, .img-right {
         grid-column: span 12;
         @include grid-12;
-        margin: 56px 0 0;
+        margin: 28px 0 56px;
         img {
             grid-column: span 12;
             grid-row: 1;
@@ -154,24 +190,28 @@ section.hero, section.project-details {
         }
     }
     
-    .img-sequence-left, .img-sequence-right {
+    .img-sequence {
         grid-column: span 12;
         @include grid-12;
-        margin-top: 56px;
-        img {
+        margin: 28px 0 56px;
+        .img-sequence-left, .img-sequence-right {
             grid-column: span 12;
-        }
-        @media #{$mq-tablet} {
+            @include grid-12;
             img {
-                grid-column: span 8;
+                grid-column: span 12;
+            }
+            @media #{$mq-tablet} {
+                img {
+                    grid-column: span 8;
+                }
             }
         }
-    }
-
-    @media #{$mq-tablet} {
         .img-sequence-right {
-            img {
-                grid-column: 5 / span 8;
+            margin-top: 28px;
+            @media #{$mq-tablet} {
+                img {
+                    grid-column: 5 / span 8;
+                }
             }
         }
     }
@@ -183,8 +223,7 @@ section.hero, section.project-details {
         }
         h6 {
             text-align: center;
-            margin-bottom: 84px;
-            margin-top: 84px;
+            margin: 28px 0 86px 0;
         }
         strong {
             display: block;
@@ -291,19 +330,6 @@ section.hero, section.project-details {
         }
         @media #{$mq-tablet} {
             margin-top: 0;
-        }
-    }
-}
-
-.summary {
-    p {
-        @media #{$mq-desktop} {
-            font-size: 24px;
-            line-height: 36px;
-        }
-        @media #{$mq-lgdesktop} {
-            font-size: 28px;
-            line-height: 42px;
         }
     }
 }
