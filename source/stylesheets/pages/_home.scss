@@ -125,7 +125,7 @@ section#about {
   max-height: 0px;
   padding: 0;
   &.slide {
-    max-height: 100vh;
+    max-height: 120vh;
     }
   .wrapper {
     background: $accent-color;
@@ -183,7 +183,7 @@ main.home {
       'experiences'
       'thanks'
       ;
-    @media #{$mq-mobile} {
+    @media #{$mq-tablet} {
       grid-template-areas:
       'work work'
       'writing speaking'
@@ -297,7 +297,15 @@ section.writing, section.speaking {
     padding: 0;
   }
   li {
-    margin: 4vw 0;
+    margin: 8vw 0;
+
+    @media #{$mq-mobile} {
+      margin: 6vw 0;
+    }
+
+    @media #{$mq-tablet} {
+      margin: 4vw 0;
+    }
 
     @media #{$mq-xldesktop} {
       margin: 2vw 0;
@@ -307,7 +315,7 @@ section.writing, section.speaking {
     margin-bottom: 0;
   }
 
-  @media #{$mq-mobile} {
+  @media #{$mq-tablet} {
     padding: 16% 8% 8% 8%;
   }
 }
