@@ -470,8 +470,21 @@ nav {
   }
   p {
     font-family: $heading-font-family;
-    font-size: 30px;
-    line-height: 32px;
+    font-size: 24px;
+    line-height: 26px;
+    margin-top: 3px;
+
+    @media #{$mq-tablet} {
+      font-size: 26px;
+      line-height: 28px;
+      margin-top: 1px;
+    }
+
+    @media #{$mq-desktop} {
+      font-size: 30px;
+      line-height: 32px;
+      margin-top: 0;
+    }
   }
   ion-icon {
     font-size: 32px;
@@ -593,31 +606,36 @@ hr {
 footer {
   padding: 4%;
   padding-bottom: 0;
-  
-  @media #{$mq-tablet} {
-    .links {
-      display: flex;
-      justify-content: space-between;
+  ion-icon {
+    font-size: 28px;
+    margin-bottom: -6px;
+  }
+  .left {
+    @include flex-column;
+  }
+  .right {
+    margin-top: 28px;
+  }
+
+  @media #{$mq-mobile} {
+    .right {
+      margin-top: 0;
     }
+  }
+
+  @media #{$mq-tablet} {
     .left {
+      flex-direction: row;
       flex-grow: 4;
       a {
         margin-right: 56px;
       }
     }
-    .right {
-      a {
-        transition: all .5s ease;
-      }
-    }
     a {
       display: inline-block;
     }
-    ion-icon {
-      font-size: 32px;
-      margin-bottom: -8px;
-    }
   }
+
   .bottom {
     width: 100%;
     display: flex;

@@ -1,0 +1,18 @@
+!!!
+%html
+  %head
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{charset: "utf-8"}/
+    %meta{content: "ie=edge", "http-equiv" => "x-ua-compatible"}/
+    %meta{content: "width=device-width, initial-scale=1, shrink-to-fit=no", name: "viewport"}/
+    / Use the title from a page's frontmatter if it has one
+    %title= current_page.data.title || "Middleman"
+    %link{href: "https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css", rel: "stylesheet"}/
+    = stylesheet_link_tag "site"
+    %script{src: "https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js", type: "module"}
+    %script{nomodule: "", src: "https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"}
+  %body
+    = yield
+    = partial "partials/footer"
+    %script{src: "https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"}
+    = javascript_include_tag "site"
