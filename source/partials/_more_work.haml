@@ -1,0 +1,19 @@
+.more-work
+    %section
+        %h2.s2 More work
+        = link_to '', :class => "previous no-button" do
+            %ion-icon{:name => "arrow-back-outline"}
+            .card-wrapper
+                .card-details
+                    %p.card-title
+                        %strong= prev_card_title
+                    %p.small= prev_company_year
+                %img{:src => prev_img_link}
+        = link_to '', :class => "next no-button" do
+            .card-wrapper
+                %img{:src => next_img_link}
+                .card-details
+                    %p.card-title
+                        %strong= next_card_title
+                    %p.small= next_company_year
+            %ion-icon{:name => "arrow-forward-outline"}
