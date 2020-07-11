@@ -48,7 +48,7 @@ title: Hey, I'm Amber Aultman
         .card-container#slider-work
             .card-wrapper
                 = link_to 'work/serta', :class => "card" do
-                    %img{:src => "https://via.placeholder.com/600x600"}
+                    %img{:srcset => "../images/home-serta-400.jpg 400w, ../images/home-serta-600.jpg 600w, ../images/home-serta-1200.jpg 1200w", :sizes => "(max-width: 479px) 100vw, (max-width: 767) 50vw,(max-width: 959) 33vw, 25vw", :src => "../images/home-serta-600.jpg", :alt => "A man and woman drinking wine on an iComfort mattress in a bedroom"}
                     .card-details
                         %h3.s5 A new direct-to-consumer priority for Serta
                         %p Tuft & Needle / 2019
