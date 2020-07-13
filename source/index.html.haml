@@ -54,7 +54,7 @@ title: Hey, I'm Amber Aultman
                         %p Tuft & Needle / 2019
             .card-wrapper
                 = link_to 'work/tn-rebrand', :class => "card" do
-                    %img{:src => "https://via.placeholder.com/600x600"}
+                    %img{:srcset => "../images/home-tnbrand-400.jpg 400w, ../images/home-tnbrand-600.jpg 600w, ../images/home-tnbrand-1200.jpg 1200w", :sizes => "(max-width: 479px) 100vw, (max-width: 767) 50vw,(max-width: 959) 33vw, 25vw", :src => "../images/home-tnbrand-600.jpg", :alt => "Team members sit in a circle to kickoff the brand refresh workshop"}
                     .card-details
                         %h3.s5 Workshop & refresh: the T&N brand
                         %p Tuft & Needle / 2017&ndash;2018
