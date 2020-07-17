@@ -441,12 +441,13 @@ a.button-primary {
   @media #{$mq-xldesktop} {
     font-size: 20px;
     letter-spacing: 3px;
+    padding: 14px 26px 12px;
   }
 
   @media #{$mq-xxldesktop} {
     font-size: 22px;
     letter-spacing: 3px;
-    padding: 14px 26px 12px;
+    padding: 18px 30px 16px;
   }
 }
 
