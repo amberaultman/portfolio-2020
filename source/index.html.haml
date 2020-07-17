@@ -60,7 +60,7 @@ title: Hey, I'm Amber Aultman
                         %p Tuft & Needle / 2017&ndash;2018
             .card-wrapper
                 = link_to 'work/pdp-sandwich', :class => "card" do
-                    %img{:src => "https://via.placeholder.com/600x600"}
+                    %img{:srcset => "../images/home-sandwich-400.jpg 400w, ../images/home-sandwich-600.jpg 600w, ../images/home-sandwich-1200.jpg 1200w", :sizes => "(max-width: 479px) 100vw, (max-width: 767) 50vw,(max-width: 959) 33vw, 25vw", :src => "../images/home-sandwich-600.jpg", :alt => "Team members sit in a circle to kickoff the brand refresh workshop"}
                     .card-details
                         %h3.s5 I’ll take my product page with mayo, please
                         %p Tuft & Needle / 2019
