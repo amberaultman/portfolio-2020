@@ -322,6 +322,14 @@ section.hero, section.project-details {
             flex-grow: 4;
             display: flex;
             height: 100%;
+            &:hover,
+            &:active,
+            &:focus {
+                transition: all .1s ease;
+                outline: 3px solid $secondary-color;
+                color: $primary-color;
+                cursor: pointer;
+            }
         }
         img {
             width: auto;

@@ -65,11 +65,11 @@ title: Hey, I'm Amber Aultman
                         %h3.s5 I’ll take my product page with mayo, please
                         %p Tuft & Needle / 2019
             .card-wrapper
-                = link_to '', :class => "card" do
-                    %img{:src => "https://via.placeholder.com/600x600"}
+                = link_to 'work/configurator', :class => "card" do
+                    %img{:srcset => "../images/home-configurator-400.jpg 400w, ../images/home-configurator-600.jpg 600w, ../images/home-configurator-1200.jpg 1200w", :sizes => "(max-width: 479px) 100vw, (max-width: 767) 50vw,(max-width: 959) 33vw, 25vw", :src => "../images/home-configurator-600.jpg", :alt => "Team members sit in a circle to kickoff the brand refresh workshop"}
                     .card-details
-                        %h3.s5 A new PDP template
-                        %p Tuft & Needle
+                        %h3.s5 Minimizing decision fatigue on product pages
+                        %p Tuft & Needle / 2018
             .card-wrapper
                 = link_to '', :class => "card" do
                     %img{:src => "https://via.placeholder.com/600x600"}
