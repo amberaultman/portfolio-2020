@@ -14,7 +14,7 @@ title: Hey, I'm Amber Aultman
             %ion-icon{:name => "chevron-down-outline", :id => "arrow"}
     %section#about
         .wrapper
-            %img{:src => "https://via.placeholder.com/600x600"}
+            %img{:srcset => "../images/home-about-500.jpg 500w, ../images/home-about-1000.jpg 1000w, ../images/home-about-1300.jpg 1300w, ../images/home-about-2600.jpg 2600w", :sizes => "(max-width: 768px) 100vw, 50vw", :src => "../images/home-about-1300.jpg", :alt => "Me, speaking in front of a room full of people at Creative Mornings PHX."}
             %article
                 .bio
                     %p.medium
@@ -84,7 +84,7 @@ title: Hey, I'm Amber Aultman
                         %p Ignite by Adecco / 2015
             .card-wrapper
                 = link_to 'work/catalyst', :class => "card" do
-                    %img{:srcset => "../images/home-wayfind-400.jpg 400w, ../images/home-wayfind-600.jpg 600w, ../images/home-wayfind-1200.jpg 1200w", :sizes => "(max-width: 479px) 100vw, (max-width: 767) 50vw,(max-width: 959) 33vw, 25vw", :src => "../images/home-wayfind-600.jpg", :alt => "An illustration of two characters looking up at the stars. The Wayfind logo sits in the sky."}
+                    %img{:srcset => "../images/home-catalyst-400.jpg 400w, ../images/home-catalyst-600.jpg 600w, ../images/home-catalyst-1200.jpg 1200w", :sizes => "(max-width: 479px) 100vw, (max-width: 767) 50vw,(max-width: 959) 33vw, 25vw", :src => "../images/home-catalyst-600.jpg", :alt => "Workshop participants rush to the whiteboard for an ideation exercise."}
                     .card-details
                         %h3.s5 Inspiring change with design thinking workshops
                         %p Ignite by Adecco / 2014
