@@ -1,131 +1,16 @@
 ---
-title: Hey, I'm Amber Aultman
+title: All experiences
 ---
 
-%header
-    %nav.home#top
-    %section.intro
-        %h1.s1
-            Hi,
-            %br
-            I'm Amber.
-        %button{:onclick => "showHide()", :class => "no-button"}
-            I lead strategy and teams to build meaningful, digital interactions.
-            %ion-icon{:name => "chevron-down-outline", :id => "arrow"}
-    %section#about
-        .wrapper
-            %img{:srcset => "../images/home-about-500.jpg 500w, ../images/home-about-1000.jpg 1000w, ../images/home-about-1300.jpg 1300w, ../images/home-about-2600.jpg 2600w", :sizes => "(max-width: 768px) 100vw, 50vw", :src => "../images/home-about-1300.jpg", :alt => "Me, speaking in front of a room full of people at Creative Mornings PHX."}
-            %article
-                .bio
-                    %p.medium
-                        I’m Amber Aultman, a design leader currently living in Phoenix, AZ. I’m the Head of Design at
-                        = link_to 'Tuft & Needle', 'https://www.tuftandneedle.com/', :target => "_blank"
-                        where I'm responsible for the visual experience of our brand: everything from product packaging and retail signage to our internal apps, e-commerce platform, and other digital channels. I’m crazy passionate about mentoring my team and making sure the customer experience stays paramount as we transistion through a merger. I’m also the past President of
-                        = link_to 'AIGA Jacksonville', 'https://jacksonville.aiga.org/', :target => "_blank"
-                        and a former teacher at
-                        = link_to 'Bloc.io.', 'https://www.bloc.io/', :target => "_blank"
-                    %p.medium
-                        I’m currently accepting speaking and workshop facilitation engagements both locally and abroad.
-                    = link_to 'Get in touch', 'mailto:amber.aultman@gmail.com', :class => "button-primary"
-                .links
-                    = link_to 'LinkedIn', 'https://www.linkedin.com/in/amberaultman/', :target => "_blank", :class => "button-tertiary"
-                    = link_to 'Medium', 'https://medium.com/@amberaultman', :target => "_blank", :class => "button-tertiary"
-                    = link_to 'Github', 'https://github.com/amberaultman', :target => "_blank", :class => "button-tertiary"
-                    = link_to 'Email', 'mailto:amber.aultman@gmail.com', :class => "button-tertiary"
-                %button.close.no-button
-                    %ion-icon{:name => "close-outline", :onclick => "showHide()"}
+%header.all
+    = partial "partials/nav"
 
-%main.home
+    %section.hero
+        %h1.s1 Experiences
 
-    %section.work
-        %header
-            %h2.s2 Work
-            .controls-work
-                %button.no-button
-                    %ion-icon{:name => "arrow-back-outline"}
-                %button.no-button
-                    %ion-icon{:name => "arrow-forward-outline"}
-        .card-container#slider-work
-            .card-wrapper
-                = link_to 'work/serta', :class => "card" do
-                    %img{:srcset => "../images/home-serta-400.jpg 400w, ../images/home-serta-600.jpg 600w, ../images/home-serta-800.jpg 800w, ../images/home-serta-1200.jpg 1200w", :sizes => "(max-width: 479px) 100vw, (max-width: 767) 50vw,(max-width: 959) 33vw, 25vw", :src => "../images/home-serta-600.jpg", :alt => "A man and woman drinking wine on an iComfort mattress in a bedroom"}
-                    .card-details
-                        %h3.s5 A new direct-to-consumer priority for Serta
-                        %p Tuft & Needle / 2019
-            .card-wrapper
-                = link_to 'work/tn-rebrand', :class => "card" do
-                    %img{:srcset => "../images/home-tnbrand-400.jpg 400w, ../images/home-tnbrand-600.jpg 600w, ../images/home-tnbrand-800.jpg 800w, ../images/home-tnbrand-1200.jpg 1200w", :sizes => "(max-width: 479px) 100vw, (max-width: 767) 50vw,(max-width: 959) 33vw, 25vw", :src => "../images/home-tnbrand-600.jpg", :alt => "Team members sit in a circle to kickoff the brand refresh workshop"}
-                    .card-details
-                        %h3.s5 Workshop & refresh: the T&N brand
-                        %p Tuft & Needle / 2017&ndash;2018
-            .card-wrapper
-                = link_to 'work/pdp-sandwich', :class => "card" do
-                    %img{:srcset => "../images/home-sandwich-400.jpg 400w, ../images/home-sandwich-600.jpg 600w, ../images/home-sandwich-800.jpg 800w, ../images/home-sandwich-1200.jpg 1200w", :sizes => "(max-width: 479px) 100vw, (max-width: 767) 50vw,(max-width: 959) 33vw, 25vw", :src => "../images/home-sandwich-600.jpg", :alt => "Part of the T&amp;N Original Mattress product page special sauce section"}
-                    .card-details
-                        %h3.s5 I’ll take my product page with mayo, please
-                        %p Tuft & Needle / 2019
-            .card-wrapper
-                = link_to 'work/configurator', :class => "card" do
-                    %img{:srcset => "../images/home-configurator-400.jpg 400w, ../images/home-configurator-600.jpg 600w, ../images/home-configurator-800.jpg 800w, ../images/home-configurator-1200.jpg 1200w", :sizes => "(max-width: 479px) 100vw, (max-width: 767) 50vw,(max-width: 959) 33vw, 25vw", :src => "../images/home-configurator-600.jpg", :alt => "One of the early sketches for a better product page"}
-                    .card-details
-                        %h3.s5 Minimizing decision fatigue on product pages
-                        %p Tuft & Needle / 2018
-            .card-wrapper
-                = link_to 'work/ibm', :class => "card" do
-                    %img{:srcset => "../images/home-ibm-400.jpg 400w, ../images/home-ibm-600.jpg 600w, ../images/home-ibm-800.jpg 800w, ../images/home-ibm-1200.jpg 1200w", :sizes => "(max-width: 479px) 100vw, (max-width: 767) 50vw,(max-width: 959) 33vw, 25vw", :src => "../images/home-ibm-600.jpg", :alt => "An illustration of two characters looking up at the stars. The ibm logo sits in the sky."}
-                    .card-details
-                        %h3.s5 A better experience for IBM alumni
-                        %p Ignite by Adecco / 2015
-            .card-wrapper
-                = link_to 'work/wayfind', :class => "card" do
-                    %img{:srcset => "../images/home-wayfind-400.jpg 400w, ../images/home-wayfind-600.jpg 600w, ../images/home-wayfind-800.jpg 800w, ../images/home-wayfind-1200.jpg 1200w", :sizes => "(max-width: 479px) 100vw, (max-width: 767) 50vw,(max-width: 959) 33vw, 25vw", :src => "../images/home-wayfind-600.jpg", :alt => "An illustration of two characters looking up at the stars. The Wayfind logo sits in the sky."}
-                    .card-details
-                        %h3.s5 Wayfind: building a career-pathing app
-                        %p Ignite by Adecco / 2015
-            .card-wrapper
-                = link_to 'work/catalyst', :class => "card" do
-                    %img{:srcset => "../images/home-catalyst-400.jpg 400w, ../images/home-catalyst-600.jpg 600w, ../images/home-catalyst-800.jpg 800w, ../images/home-catalyst-1200.jpg 1200w", :sizes => "(max-width: 479px) 100vw, (max-width: 767) 50vw,(max-width: 959) 33vw, 25vw", :src => "../images/home-catalyst-600.jpg", :alt => "Workshop participants rush to the whiteboard for an ideation exercise."}
-                    .card-details
-                        %h3.s5 Inspiring change with design thinking workshops
-                        %p Ignite by Adecco / 2014
-        %footer
-            = link_to 'View all', 'all-work', :class => "button-tertiary"
-
-    %section.writing
-        %h2.s2 Writing
-        %ul
-            = link_to 'https://medium.com/swlh/performance-reviews-the-good-the-bad-and-what-you-can-do-about-them-2a30198cf353', :target => "_blank" do
-                %li.large
-                    Performance reviews: the good, the bad, and what you can do about them
-                    %ion-icon{:name => "open-outline"}
-            = link_to 'https://medium.com/@amberaultman/self-learning-make-your-own-path-ba75cf7fd212', :target => "_blank" do
-                %li.large
-                    Self-Learning: make your own path
-                    %ion-icon{:name => "open-outline"}
-
-
-    %section.speaking
-        %h2.s2 Speaking
-        %ul
-            = link_to 'https://creativemornings.com/talks/amber-aultman-2/1', :target => "_blank" do
-                %li.large
-                    Self Learning and the Importance of Commitment / Creative Mornings / Phoenix, AZ / 2018
-                    %ion-icon{:name => "open-outline"}
-            %li.large SXSW Design Mentor / SXSW / Austin, TX / 2018
-            %li.large How to not suck at self-learning / AIGA / Gainesville, FL / 2017
-            %li.large Let's Get Digital / AIGA / Jacksonville, FL / 2016
-            %li.large Human Centered Design for Entreprenuers / Innovation Summit / Jacksonville, FL / 2016
-            %li.large.last Let's Get Digital / AIGA / Jacksonville, FL / 2015
-
-    %section.experiences
-        %header
-            %h2.s2 Experiences
-            .controls-experience
-                %button.no-button
-                    %ion-icon{:name => "arrow-back-outline"}
-                %button.no-button
-                    %ion-icon{:name => "arrow-forward-outline"}
-        .card-container#slider-experience
+%main
+    %section.all
+        .card-container
             .card-wrapper
                 .card-experience
                     %figcaption
@@ -300,10 +185,3 @@ title: Hey, I'm Amber Aultman
                         %time 2017 &mdash; JUL 22
                         %p I'm honored to be serving as AIGA Jacksonville's president as for the next 2 years. Getting to work alongside this great crew is the best part.
                     %img{:srcset => "../images/home-ex-1802-400.jpg 400w, ../images/home-ex-1802-600.jpg 600w, ../images/home-ex-1802-900.jpg 900w, ../images/home-ex-1802-1200.jpg 1200w", :sizes => "(max-width: 479px) 100vw, (max-width: 767) 50vw,(max-width: 959) 33vw, 25vw", :src => "../images/home-ex-1802-600.jpg", :alt => "4 sheets of paper with sketches of various forms of apples."}
-        %footer
-            = link_to 'View all', 'all-experiences', :class => "button-tertiary"
-
-    %section.thanks
-        %hr
-        %h2.s2 Thanks for visiting.
-

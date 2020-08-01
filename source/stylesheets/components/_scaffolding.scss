@@ -633,6 +633,29 @@ main {
   }
 }
 
+// All containers
+
+section.all {
+  padding: 4%;
+  padding-bottom: 0;
+
+  .card-container {
+    display: grid;
+    grid-column-gap: 3%;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding-bottom: 140px;
+  }
+
+  .card-wrapper {
+    margin-bottom: 12%;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+
+
 // Divider line
 hr {
   background-color: $accent-color;
