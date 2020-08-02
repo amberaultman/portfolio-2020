@@ -610,14 +610,28 @@ main {
     height: 100%;
     color: white;
     padding: 28px;
-    font-size: $body-small-size;
-    line-height: $body-small-line-height;
+  }
 
-    @media #{$mq-tablet} {
+  p, time {
+    font-size: 15px;
+    line-height: 24px;
+
+    @media #{$mq-mobile} {
+      font-size: $body-small-size;
+      line-height: $body-small-line-height;
+    }
+
+    @media #{$mq-desktop} {
       font-size: $body-size;
       line-height: $body-line-height;
     }
+
+    @media #{$mq-xldesktop} {
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
+
   time {
     font-weight: 700;
     display: block;
@@ -650,7 +664,7 @@ section.all {
     margin-bottom: 12%;
   }
 
-  .card {
+  .card, .card-experience {
     width: 100%;
   }
 }
