@@ -53,6 +53,7 @@ var slider = tns({
   slideBy: 'page',
   mouseDrag: true,
   arrowKeys: true,
+  lazyload: true,
   nav: false,
   autoHeight: false,
   controlsText: ['<ion-icon name="arrow-back-outline"></ion-icon>', '<ion-icon name="arrow-forward-outline"></ion-icon>'],
