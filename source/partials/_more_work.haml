@@ -8,12 +8,13 @@
                     %p.card-title
                         %strong= prev_card_title
                     %p.small= prev_company_year
-                %img{:src => prev_img_link}
+                %img{:srcset => prev_srcset, :sizes => prev_sizes, :src => prev_src, :alt => prev_alt}
         = link_to '', :class => "next no-button" do
             .card-wrapper
-                %img{:src => next_img_link}
+                %img{:srcset => next_srcset, :sizes => next_sizes, :src => next_src, :alt => next_alt}
                 .card-details
                     %p.card-title
                         %strong= next_card_title
                     %p.small= next_company_year
             %ion-icon{:name => "arrow-forward-outline"}
+

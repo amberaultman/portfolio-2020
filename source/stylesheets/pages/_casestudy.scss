@@ -332,7 +332,15 @@ section.hero, section.project-details {
             }
         }
         img {
-            width: auto;
+            display: none;
+            @media #{$mq-mobile} {
+                display: block;
+                width: 100%;
+                max-width: 120px;
+            }
+            @media #{$mq-tablet} {
+                max-width: 140px;
+            }
         }
         .card-details {
             padding: 14px;
