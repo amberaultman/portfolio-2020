@@ -1,3 +1,10 @@
+// Vanilla LazyLoad @ https://github.com/verlok/vanilla-lazyload/#-getting-started---script
+
+var lazyLoadInstance = new LazyLoad({
+  // Your custom settings go here
+});
+
+
 // Expands About section on homepage
 
 function showHide() {
@@ -93,6 +100,7 @@ var slider = tns({
   slideBy: 'page',
   mouseDrag: true,
   arrowKeys: true,
+  lazyload: true,
   nav: false,
   autoHeight: false,
   controlsText: ['<ion-icon name="arrow-back-outline"></ion-icon>', '<ion-icon name="arrow-forward-outline"></ion-icon>'],

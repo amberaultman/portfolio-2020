@@ -1,17 +1,17 @@
 .more-work
     %section
         %h2.s2 More work
-        = link_to '', :class => "previous no-button" do
+        = link_to prev_link, :class => "previous no-button" do
             %ion-icon{:name => "arrow-back-outline"}
             .card-wrapper
                 .card-details
                     %p.card-title
                         %strong= prev_card_title
                     %p.small= prev_company_year
-                %img{:srcset => prev_srcset, :sizes => prev_sizes, :src => prev_src, :alt => prev_alt}
-        = link_to '', :class => "next no-button" do
+                %img.lazy{:data => {:srcset => prev_srcset, :sizes => prev_sizes, :src => prev_src}, :alt => prev_alt}
+        = link_to next_link, :class => "next no-button" do
             .card-wrapper
-                %img{:srcset => next_srcset, :sizes => next_sizes, :src => next_src, :alt => next_alt}
+                %img.lazy{:data => {:srcset => next_srcset, :sizes => next_sizes, :src => next_src}, :alt => next_alt}
                 .card-details
                     %p.card-title
                         %strong= next_card_title

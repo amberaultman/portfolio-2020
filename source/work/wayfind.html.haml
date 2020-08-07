@@ -36,7 +36,7 @@ title: Wayfind: building a career-pathing app
             %li Sales: Is our product appealing to HR executives?
         %p We received a strong enough signal from each of these tests to move forward with the next phase of product development.
         %figure.img-left
-            %img{:srcset => "../images/wayfind-2a-500.jpg 500w, ../images/wayfind-2a-1000.jpg 1000w, ../images/wayfind-2a-2000.jpg 2000w", :sizes => "(max-width: 991px) 100vw, (max-width: 1439) 60vw, 850px", :src => "../images/wayfind-2a-1000.jpg", :alt => "A comp of the Wayfind jobs directory"}
+            %img.lazy{:data => {:srcset => "../images/wayfind-2a-500.jpg 500w, ../images/wayfind-2a-1000.jpg 1000w, ../images/wayfind-2a-2000.jpg 2000w", :sizes => "(max-width: 991px) 100vw, (max-width: 1439) 60vw, 850px", :src => "../images/wayfind-2a-1000.jpg"}, :alt => "A comp of the Wayfind jobs directory"}
             %figcaption.small
                 %strong Smart career recommendations.
                 We are currently rolling out the third iteration of Wayfind. After completing a short onboarding process, users are given career recommendations based on their personality, background, and areas of interest. 
@@ -47,9 +47,9 @@ title: Wayfind: building a career-pathing app
             %figcaption.small
                 %strong The whole picture.
                 Clicking on a role card reveals more information about the role as well as an in-depth score breakdown and possible career paths. We want to give the user enough data to determine if this role is a potential fit for them, now or in the future. Breaking the score into intrinsic and extrinsic measures gives the user a more realistic sense of their compatibility with a role regardless of readiness. We want people thinking not only about their next job, but about planning their future career path as well.  
-            %img{:srcset => "../images/wayfind-3a-500.jpg 500w, ../images/wayfind-3a-1000.jpg 1000w, ../images/wayfind-3a-2000.jpg 2000w", :sizes => "(max-width: 991px) 100vw, (max-width: 1439) 60vw, 850px", :src => "../images/wayfind-3a-1000.jpg", :alt => "A comp of the job detail page"}
+            %img.lazy{:data => {:srcset => "../images/wayfind-3a-500.jpg 500w, ../images/wayfind-3a-1000.jpg 1000w, ../images/wayfind-3a-2000.jpg 2000w", :sizes => "(max-width: 991px) 100vw, (max-width: 1439) 60vw, 850px", :src => "../images/wayfind-3a-1000.jpg"}, :alt => "A comp of the job detail page"}
         %figure.img-left
-            %img{:srcset => "../images/wayfind-4a-500.jpg 500w, ../images/wayfind-4a-1000.jpg 1000w, ../images/wayfind-4a-2000.jpg 2000w", :sizes => "(max-width: 991px) 100vw, (max-width: 1439) 60vw, 850px", :src => "../images/wayfind-4a-1000.jpg", :alt => "A comp of the career-pathing part of the app"}
+            %img.lazy{:data => {:srcset => "../images/wayfind-4a-500.jpg 500w, ../images/wayfind-4a-1000.jpg 1000w, ../images/wayfind-4a-2000.jpg 2000w", :sizes => "(max-width: 991px) 100vw, (max-width: 1439) 60vw, 850px", :src => "../images/wayfind-4a-1000.jpg"}, :alt => "A comp of the career-pathing part of the app"}
             %figcaption.small
                 %strong From A to B.
                 Once a user has identified a role that they like, Wayfind will walk them through the process of creating a plan to get there.
@@ -74,4 +74,4 @@ title: Wayfind: building a career-pathing app
             Product Management &amp; Strategy
     
 
-= partial "partials/more_work", :locals => { :prev_card_title => "A better experience for IBM alumni", :prev_company_year => "Ignite by Adecco / 2015", :prev_srcset => "../images/home-ibm-140.jpg 140w, ../images/home-ibm-280.jpg 280w", :prev_sizes => "140px", :prev_src => "../images/home-ibm-280.jpg", :prev_alt => "A wall full of sticky notes from an ideation session.", :next_card_title => "Inspiring change with design thinking workshops", :next_company_year => "Ignite by Adecco / 2014", :next_srcset => "../images/home-catalyst-140.jpg 140w, ../images/home-catalyst-280.jpg 280w", :next_sizes => "140px", :next_src => "../images/home-catalyst-280.jpg", :next_alt => "Workshop participants rush to the whiteboard for an ideation exercise." }
+= partial "partials/more_work", :locals => {:prev_link => "ibm.html", :prev_card_title => "A better experience for IBM alumni", :prev_company_year => "Ignite by Adecco / 2015", :prev_srcset => "../images/home-ibm-140.jpg 140w, ../images/home-ibm-280.jpg 280w", :prev_sizes => "140px", :prev_src => "../images/home-ibm-280.jpg", :prev_alt => "A wall full of sticky notes from an ideation session.", :next_link => "catalyst.html", :next_card_title => "Inspiring change with design thinking workshops", :next_company_year => "Ignite by Adecco / 2014", :next_srcset => "../images/home-catalyst-140.jpg 140w, ../images/home-catalyst-280.jpg 280w", :next_sizes => "140px", :next_src => "../images/home-catalyst-280.jpg", :next_alt => "Workshop participants rush to the whiteboard for an ideation exercise."}

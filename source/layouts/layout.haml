@@ -14,13 +14,14 @@
   %body
     = yield
     = partial "partials/footer"
-    %script{src: "https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"}
-    = javascript_include_tag "site"
-    / Global site tag (gtag.js) - Google Analytics
-    %script{:async => "", :src => "https://www.googletagmanager.com/gtag/js?id=UA-72119071-1"}
-    :javascript
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+  %script{src: "https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.0/dist/lazyload.min.js"}
+  %script{src: "https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"}
+  = javascript_include_tag "site"
+  / Global site tag (gtag.js) - Google Analytics
+  %script{:async => "", :src => "https://www.googletagmanager.com/gtag/js?id=UA-72119071-1"}
+  :javascript
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-      gtag('config', 'UA-72119071-1');
+    gtag('config', 'UA-72119071-1');
