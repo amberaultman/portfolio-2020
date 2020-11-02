@@ -30,6 +30,12 @@ title: All work
                         %h3.s5 I’ll take my product page with mayo, please
                         %p Tuft &amp; Needle / 2019
             .card-wrapper
+                = link_to 'work/cxtxmx', :class => "card" do
+                    %img{:srcset => "../images/home-cxtxmx-400.jpg 400w, ../images/home-cxtxmx-600.jpg 600w, ../images/home-cxtxmx-800.jpg 800w, ../images/home-cxtxmx-1200.jpg 1200w", :sizes => "(max-width: 479px) 100vw, (max-width: 767) 50vw,(max-width: 959) 33vw, 25vw", :src => "../images/home-cxtxmx-600.jpg", :alt => "A color gradient over a photo of a taco."}
+                    .card-details
+                        %h3.s5 Overhauling our CX admin app
+                        %p Tuft &amp; Needle / 2016
+            .card-wrapper
                 = link_to 'work/configurator', :class => "card" do
                     %img{:srcset => "../images/home-configurator-400.jpg 400w, ../images/home-configurator-600.jpg 600w, ../images/home-configurator-800.jpg 800w, ../images/home-configurator-1200.jpg 1200w", :sizes => "(max-width: 479px) 100vw, (max-width: 767) 50vw,(max-width: 959) 33vw, 25vw", :src => "../images/home-configurator-600.jpg", :alt => "One of the early sketches for a better product page"}
                     .card-details

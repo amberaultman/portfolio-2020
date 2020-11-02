@@ -1,0 +1,120 @@
+---
+title: Overhauling our CX admin app
+---
+
+%header.work
+    = partial "partials/nav"
+
+    %section.hero
+        %p Tuft & Needle / 2016
+        %h1.s2 Overhauling our CX admin app
+        %img{:srcset => "../images/cxtxmx-1a-500.jpg 500w, ../images/cxtxmx-1a-1000.jpg 1000w, ../images/cxtxmx-1a-1400.jpg 1400w, ../images/cxtxmx-1a-2800.jpg 2800w", :sizes => "(max-width: 1400px) 100vw, 1400px", :src => "../images/cxtxmx-1a-1400.jpg", :alt => "One of the early sketches for a better product page"}
+
+    %section.project-details
+        .problem
+            %h6.s6 Problem
+            %p The customer experience team was stuck using an inefficient, obfuscating app that created frustration, longer service times, and errors.
+        .result
+            %h6.s6 Result
+            %p We added five new app features to update their workflow, leading to increased happiness, efficiency, and shorter customer contact times. 
+        .role
+            %h6.s6 My Role
+            %p Product Strategy, User Research and Testing, UX Design, Visual Design, Facilitation
+        %hr
+
+%main.work
+    %section.summary
+        %p.large Tuft & Needle’s customer experience (CX) team uses a bespoke app for their customer relationship and order management system. The app, built in-house by software engineers alone, had never benefited from a UX design process. My job was to quickly identify and create solutions to improve the system and better support our CX team. 
+
+    %section
+        %h2.s4 A painful status quo
+        %p We called this project CX Tex-Mex (CXTXMX) because we wanted to bring delight and ease to our CX team, primarily based in the southwest. Our project team consisted of a full-stack software engineer, a customer experience team member, and me, our UX designer. 
+        %p I started the project off with an intensive research week of shadowing and interviewing CXers. I was shocked at the amount of redundancy and friction in their process. Most of the time on each support ticket was spent trying to get context on the customer’s situation and any previous actions taken by the team. They were using upwards of six different webpages and apps to resolve even the simplest issues. The complexity increased drastically when the customer had more than one order, or multiple contacts were needed to fix a problem. 
+        %figure.img-1up
+            %img.lazy{:data => {:srcset => "../images/cxtxmx-2a-500.jpg 500w, ../images/cxtxmx-2a-1000.jpg 1000w, ../images/cxtxmx-2a-1400.jpg 1400w, ../images/cxtxmx-2a-2800.jpg 2800w", :sizes => "(max-width: 1400px) 100vw, 1400px", :src => "../images/cxtxmx-2a-1400.jpg"}, :alt => "The serta.caom navigation drawer opens because the mouse is hovering over the mattresses link"}
+            %figcaption.small
+                %strong User reseach findings. 
+                A very messy series of notes on the problems I discovered in user testing.
+
+    %section
+        %h2.s4 Diverge, converge, go.
+        %p Once I downloaded the findings to our CXTXMX project team, I facilitated a 2-day ideation session, which generated more than 30 feasible ideas for improvement. We then mapped these items to an Eisenhower matrix to identify the most significant wins achievable in four 1-week sprints. Each week, we paired to design, build, and launch one new feature. 
+        %figure.img-1up
+            %img.lazy{:data => {:srcset => "../images/cxtxmx-3a-500.jpg 500w, ../images/cxtxmx-3a-1000.jpg 1000w, ../images/cxtxmx-3a-1400.jpg 1400w, ../images/cxtxmx-3a-2800.jpg 2800w", :sizes => "(max-width: 1400px) 100vw, 1400px", :src => "../images/cxtxmx-3a-1400.jpg"}, :alt => "The serta.caom navigation drawer opens because the mouse is hovering over the mattresses link"}
+            %figcaption.small
+                %strong Initial ideas. 
+                Ultimately the solutions all centered around giving CXers the most relevant customer context in one place and hiding or removing superfluous information. 
+        %figure.img-1up
+            %img.lazy{:data => {:srcset => "../images/cxtxmx-4a-500.jpg 500w, ../images/cxtxmx-4a-1000.jpg 1000w, ../images/cxtxmx-4a-1400.jpg 1400w, ../images/cxtxmx-4a-2800.jpg 2800w", :sizes => "(max-width: 1400px) 100vw, 1400px", :src => "../images/cxtxmx-4a-1400.jpg"}, :alt => "The serta.caom navigation drawer opens because the mouse is hovering over the mattresses link"}
+            %figcaption.small
+                %strong Mapping to an Eisenhower Matrix. 
+                We chose to build features that we could launch quickly and that would have the biggest impact. And so we focused mostly on the upper right corner.
+
+    %section 
+        %h2.s4 Pinned notes on the order page
+        %p Adding the ability to pin a single note to the top of the order page allowed users to get instant context on each order. Pinned notes also ensured that CXers didn’t miss essential information or waste time going down the wrong path. 
+        %figure.img-left
+            %img.lazy{:data => {:srcset => "../images/cxtxmx-5a-500.jpg 500w, ../images/cxtxmx-5a-1000.jpg 1000w, ../images/cxtxmx-5a-2000.jpg 2000w", :sizes => "(max-width: 991px) 100vw, (max-width: 1439) 60vw, 850px", :src => "../images/cxtxmx-5a-1000.jpg"}, :alt => "A wireframe for the first step of the product page selector"}
+            %figcaption.small
+                %strong Pinning a note from the notes section would add it to the top of page. 
+                To remove or edit the pinned note, the user would make the edit in the notes section.  
+
+    %section 
+        %h2.s4 Helpscout email drawer on the order page
+        %p By pulling any related email conversations into a drawer on the order page, we saved CXers from having to bounce back and forth between the admin app and Helpscout, our CX email management tool. On one screen, they were able to see the order details and track the conversation.  
+        %figure.img-right
+            %figcaption.small
+                %strong Reducing app switching. 
+                By adding the Helpscout drawer, which pulled in all relevant email threads per order, we were able to keep CXers from having to bounce back and forth between the two apps.  
+            %img.lazy{:data => {:srcset => "../images/cxtxmx-6a-500.jpg 500w, ../images/cxtxmx-6a-1000.jpg 1000w, ../images/cxtxmx-6a-2000.jpg 2000w", :sizes => "(max-width: 991px) 100vw, (max-width: 1439) 60vw, 850px", :src => "../images/cxtxmx-6a-1000.jpg"}, :alt => "Another wireframe of the product page showing a upgrades in a different way"}
+
+    %section 
+        %h2.s4 Activity feed on the person page
+        %p To provide context for even the most complicated order histories, we created an activity feed on the person page. This section tracked all history, interactions, and status changes for the customer in a clickable color-coded timeline.
+        %figure.img-left
+            %img.lazy{:data => {:srcset => "../images/cxtxmx-7a-500.jpg 500w, ../images/cxtxmx-7a-1000.jpg 1000w, ../images/cxtxmx-7a-2000.jpg 2000w", :sizes => "(max-width: 991px) 100vw, (max-width: 1439) 60vw, 850px", :src => "../images/cxtxmx-7a-1000.jpg"}, :alt => "Another wireframe option that focuses on the benefits of the upgrades, not the features"}
+            %figcaption.small
+                %strong Giving more visibility across orders. 
+                Each order was assigned a color to help CXers quickly gain context on each timeline event. Events that were not tied to a specific order were specified with a gray dot. 
+
+    %section 
+        %h2.s4 Targeted navigation
+        %p When we started, the admin app had 15 top-level navigation elements! Most CXers only used 2-5 items in a day. People in different roles used the remaining navigational elements. The massive navigation was especially challenging for new CXers trying to learn the system. In response, we created a context switcher, a global dropdown which grouped navigational elements by role. The new context-switcher nav allowed users to focus only on the links relevant to their current tasks.
+        %figure.img-right
+            %figcaption.small
+                %strong Making space and reducing cognitive load. 
+                By cleaning up the nav and showing only relevant navigational items depending on the  user’s role, we were able to increase usability and start saving space for future improvements.  
+            %img.lazy{:data => {:srcset => "../images/cxtxmx-8a-500.jpg 500w, ../images/cxtxmx-8a-1000.jpg 1000w, ../images/cxtxmx-8a-2000.jpg 2000w", :sizes => "(max-width: 991px) 100vw, (max-width: 1439) 60vw, 850px", :src => "../images/cxtxmx-8a-1000.jpg"}, :alt => "The next screen of the prototype. The right side updates with the user's choices."}
+
+    %section 
+        %h2.s4 User testing confirmed the need for further improvements.
+        %p.no-image Once we completed the sprints, I began testing the new features with our CX team while our software engineer cleaned up tech debt. In user testing, my suspicions were confirmed that while these improvements were increasing efficiency, some broader architecture still needed resolving. And so, we decided to tackle one more feature: merging the people and order pages. 
+
+    %section 
+        %h2.s4 A combined order/person view
+        %p By combining the order and person pages into one tabbed view, we brought all the new features together under one roof. This integrated view gave CXers even more context around order history and minimized clicks. Figuring out spacing and hierarchy was definitely a challenge. Luckily, the app was only ever used on desktop, so that simplified things significantly. 
+        %figure.img-left
+            %img.lazy{:data => {:srcset => "../images/cxtxmx-9a-500.jpg 500w, ../images/cxtxmx-9a-1000.jpg 1000w, ../images/cxtxmx-9a-2000.jpg 2000w", :sizes => "(max-width: 991px) 100vw, (max-width: 1439) 60vw, 850px", :src => "../images/cxtxmx-9a-1000.jpg"}, :alt => "Another wireframe option that focuses on the benefits of the upgrades, not the features"}
+            %figcaption.small
+                %strong Bringing it all together. 
+                By combining the person and order pages, we were able to merge all of the CXTXMX work into a cohesive flow. While there was still a lot of work to do, these changes brought huge improvements to the CX workflow.
+
+    %section.summary
+        %p.large The features designed, built, and released during CXTXMX decreased CXers frustration around gaining customer context across multiple views and apps and ultimately increased efficiency by 14%. But the best part for me was being able to show some design love to the people who take fantastic care of our customers every day. CXTXMX made them feel valued and heard. They were thrilled to be a priority, and they were fascinated by our process. 
+
+    %section.closing
+        %hr
+        %h6.s6 Thank Yous
+        %p
+            %strong Jimmy Le Thai
+            Full Stack Development
+        %p
+            %strong Ray Rita
+            Customer Experience Lead 
+        %p
+            %strong Jeff Wells
+            Stakeholder &amp; Strategy
+
+    
+
+= partial "partials/more_work", :locals => {:prev_link => "pdp-sandwich.html", :prev_card_title => "I’ll take my product page with mayo, please", :prev_company_year => "Tuft & Needle / 2019", :prev_srcset => "../images/home-sandwich-140.jpg 140w, ../images/home-sandwich-280.jpg 280w", :prev_sizes => "140px", :prev_src => "../images/home-sandwich-280.jpg", :prev_alt => "Part of the T&N Original Mattress product page special sauce section", :next_link => "configurator.html", :next_card_title => "Minimizing decision fatigue on product pages", :next_company_year => "Tuft & Needle / 2018", :next_srcset => "../images/home-configurator-140.jpg 140w, ../images/home-configurator-280.jpg 280w", :next_sizes => "140px", :next_src => "../images/home-configurator-280.jpg", :next_alt => "One of the early sketches for a better product page"}
