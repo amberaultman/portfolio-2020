@@ -4,6 +4,21 @@ title: Hey, Google.
 
 %header
     %nav.home#top
+        %h1.s3 Amber Aultman
+        .links
+            = link_to 'About me', '#aboutme', :class => "button-tertiary"
+            = link_to 'Why Google', '#whygoogle', :class => "button-tertiary"
+            = link_to 'Case studies', '#casestudies', :class => "button-tertiary"
+            = link_to 'References', 'references', :class => "button-tertiary"
+            = link_to 'Design principles', 'designprinciples', :class => "button-tertiary"
+        .buttons
+            = link_to 'Portfolio', 'index.html', :class => "button-primary"
+            = link_to 'Résumé', '#', :class => "button-secondary"
+        .contact
+            %h5 Get in touch
+            = link_to 'amber.aultman@gmail.com', 'mailto:amber.aultman@gmail.com', :target => "_blank"
+            (904) 234-4213
+
     %section.intro
         %h1.s1
             Hey,
@@ -14,16 +29,16 @@ title: Hey, Google.
     %section.summary
         %p.large I’m Amber, a UX design leader who works ardently to solve unmet human needs. I’m ready to make the move to California to work for my favorite company. That’s you, Google. ;)
 
-    %section
+    %section#aboutme
         %h2.s4 A little about me
         %p I’m a maker who loves solving problems through empathy, collaboration, and experiments. I love unearthing new insights and digging deep on a challenge, whether that’s creating a better team process, building a new service, or revamping an interaction. I’m an amalgamation: equal parts science and art. My psychology and medical background melded with my UX and brand experience gives me a unique perspective on people, their needs, and behaviors. I work hard, have an unflagging devotion to the user, and learn from my mistakes. 
         %p For the last 3 years, I’ve been leading the design team at Tuft & Needle. I’ve been responsible for both the visual and UX of all aspects of the brand with the exception of physical product design and architecture of retail stores. I love mentoring my team but I also love getting my hands in the work. 
 
-    %section
+    %section#whygoogle
         %h2.s4 Why Google?
         %p You’re a forward-thinking, people-first company who champions the user. You’ve solved incalculable needs and continue to do so. You demand the best from your teams, and push beyond what’s thought possible. Not only do you excel at digital interactions, but you extend your design philosophy elegantly to the physical, creating products that rival Rams and the greats. Ultimately, you need hard-working people who can bring a new perspective and continue crafting the future. I’d be honored to be one of those people.  
 
-    %section
+    %section#casestudies
         %h2.s4 A few case studies
         %p I haven’t been doing much hands-on project work since leading a team of 10. My role has been mostly focused on setting strategy, guiding ideations, and helping my team do their best work. 
         %p The case studies below are projects where I was the lead designer. Admittedly, these aren’t the best representation of my skill set; I’ve learned so much more in the last several years. But hopefully these can give you a sense of my thought process and experience:
@@ -33,11 +48,38 @@ title: Hey, Google.
         %p If you’d like to view my whole portfolio, you can jump in here.
         = link_to 'View portfolio', 'index.html', :class => "button-primary"
 
-    %section
+    %section#references
         %h2.s4 References
         %p 
             Here are a few things that past colleagues have said about working with me. I’m happy to connect you if you’d like to speak with any personally. 
             = link_to 'Just let me know', 'mailto:amber.aultman@gmail.com', :target => "_blank"
+        %article.quote
+            .quote-mark
+            .quote-content
+                %p “I have worked closely with Amber for the past four and a half years in my role as Head of CX at Tuft & Needle and as VP, CX Transformation at Serta Simmons Bedding (parent company of Tuft & Needle). Throughout this time, Amber has consistently devoted herself to creating an effortless and engaging experience for Tuft & Needle customers. She has developed our creative strategy from top to bottom and has raised the standard of our unique brand identity to be memorable, accessible, and mission-driven. 
+                %p Amber is passionate about customer experience and has led several strategic initiatives to holistically understand our customers’ needs and improve our site experience to meet those needs.  Under Amber’s creative leadership, customer-centricity has been woven into the Tuft & Needle brand identity and design. Her efforts have been instrumental in achieving cross-functional goals and ensuring that the Tuft & Needle brand remains innovative and bold.
+                %p Amber is a very strong leader who cares deeply about the individual contributors and leaders on her team. She is the definition of a mentor, coach, and advocate. Amber prioritizes individual development and growth, so that her team members become better designers and leaders in their own right. Amber holds her team to a high standard and delegates effectively. She has a deep understanding of the strengths and opportunities of her team members.k with her and be part of her successful team.”
+                %p.attribution
+                    %strong &mdash; Aaron Bata
+                    %br
+                    VP, CX Transformation at Serta Simmons Bedding
+        %article.quote
+            .quote-mark
+            .quote-content
+                %p As a designer Amber takes a user/customer first approach driving toward interactions and solutions that truly shine at the intersection of business value and first class user experience. Always one to let data make the decision Amber has a test and learn approach that rapidly iterates toward ideal interactions. She has an innate ability to see through the complexity and arrive at intuitive interactions and experiences that support complex workflows and journeys. As someone whose roots lie in UX, she has flexed and excelled in art direction, graphic design, and customer research evolving into a robust creative leader capable of approaching problems from multiple perspectives and leveraging her vast experience to arrive at optimal solutions for the user and the business. 
+                %p As a leader Amber brings out the best in the people she works with. She leads with a true servant mentality grounded in empathy. Amber’s teams have always been motivated and performant. She approaches leadership with ears wide open, taking the time to listen and learn from her direct reports so that she can know how best to support them.  As a manager she takes the time needed with each of direct reports to know what their strengths are and how best to capitalize on them, while also identifying their growth areas and how to invest in them so that individuals are constantly growing and becoming more valuable assets to the business and our community at large. 
+                %p.attribution
+                    %strong &mdash; Chris Cardello
+                    %br
+                    VP, Engineering at Tuft &amp; Needle
+        %article.quote
+            .quote-mark
+            .quote-content
+                %p “I have had the pleasure of working with Amber at various companies over the past few years and she’s been paramount to the success of the design team as a whole. Her ability to both strategically lead initiatives as well as contribute to the ground level design make her an irreplaceable team member. She’s always thoughtful with her approach and more importantly manages to get consensus fast because of her collaborative methods of ideation. I would work with Amber again in a heartbeat and highly recommend her to anyone looking for their next key player on their design team.”
+                %p.attribution
+                    %strong &mdash; Dennis Eusebio
+                    %br
+                    Director of UX/UI at Capital Rx
         %article.quote
             .quote-mark
             .quote-content
@@ -47,5 +89,47 @@ title: Hey, Google.
                     %strong &mdash; Beatriz Vizcaino
                     %br
                     Product Designer at Facebook
+        %article.quote
+            .quote-mark
+            .quote-content
+                %p “Amber has been my direct leader since 2018 when I joined the Tuft & Needle team as a UX Designer. Over time, I’ve continually been impressed and inspired by her exceptional leadership skills, especially during times of uncertainty. Amber has led the Design Team through a corporate merger, a design team restructuring defined by executive leadership, and a global pandemic. Throughout all of this, she has consistently advocated for the team and has made herself available at all times for candid conversations with team members; all while guiding the team to produce high-quality design work. 
+                %p This strong leadership also extends to her approach to product and brand strategy. At the beginning of all projects, Amber ensures that designers are gaining a complete understanding of the problem and maintaining a strong advocacy for the user. Throughout projects, she consistently provides feedback that is both constructive for the project and instructive for the designer. When taking on her own projects, she follows this same strategy rigorously. I had the opportunity to work directly with Amber as she led a brand refocusing project, and I was in awe of her ability to easily transition from guiding designer-led projects to managing her own.
+                %p Personally, I consider Amber to be one of the most influential design and professional mentors that I’ve had in my career. She has been instrumental in building my UX design skills from my foundation in architecture and remains fully invested in my growth as a professional. Throughout my career, I’ve found that there are bosses and leaders in management roles, and Amber is certainly the latter.”
+                %p.attribution
+                    %strong &mdash; Darin Barnes
+                    %br
+                    UX Designer at Tuft &amp; Needle
+        %article.quote
+            .quote-mark
+            .quote-content
+                %p “I’ve had the privilege of working with Amber over the last four years at Tuft & Needle. Her excitement and passion for UX, brand, and strategy are contagious.
+                %p Amber’s mentorship has helped me grow in my visual and UX skills. She is the master of key commands and has a very detail-oriented eye for design elements and art direction. She has also coached me in becoming confident in public speaking and has shared her skillful strategy in presenting projects to teams and stakeholders.
+                %p She is a compassionate leader who wants to meet her team where they’re at and also creates goals to help the team get better through their daily craft. She’s someone you depend on to represent design at every level of the company because she cares deeply for the process, brand-perception, and business goal alignment.”
+                %p.attribution
+                    %strong &mdash; Rachel Rose
+                    %br
+                    UX Designer at Tuft &amp; Needle
+
+    %section
+        %h2.s4 Get in touch
+        %p As you can tell, I think you’re pretty great. I’d love to learn more about your challenges and needs and see if I might be able to help.
+        %p
+            = link_to 'amber.aultman@gmail.com', 'mailto:amber.aultman@gmail.com', :target => "_blank"
+        %p (904) 234-4213
+
+    %section#designprinciples
+        %h2.s4 Design principles
+        %p In case you want to learn a little more, below are a handful of guiding principles that I use in my work:
+        %ol
+            %li The fundamentals of human-centered design can and should be used by everyone. This is how we build meaningfully for people. 
+            %li Companies should exist to make the world better in some way. And I want to be a part of the revolution, no matter how small or quiet.  
+            %li Empathy, research, and testing are vital to good design. They help identify unmet human needs and solve meaningfully. 
+            %li Design should be intentional and essential. Every decision should be carefully considered and deliberate, the right amount of design for the problem.
+            %li Interactions should bring delight. Whether overt or just a subconscious relief at the ease of an action.
+            %li Collaboration and candid feedback make the work stronger. My job is to facilitate these conversations and use them to find the best way forward.
+
+    %section.thanks
+        %hr
+        %h2.s2 Keep being awesome, Google.
 
 
