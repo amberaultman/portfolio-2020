@@ -14,6 +14,20 @@ function showHide() {
   rotateIcon.classList.toggle("rotate");
 }
 
+// Expands Sidenav
+
+function menuOpen() {
+  let sidenav = document.getElementById("sidenav");
+  sidenav.classList.add("menuOpen");
+}
+
+// Closes Sidenav
+
+function menuClose() {
+  let sidenav = document.getElementById("sidenav");
+  sidenav.classList.remove("menuOpen");
+}
+
 
 // Vanilla JavaScript Scroll to Anchor
 // @ https://perishablepress.com/vanilla-javascript-scroll-anchor/

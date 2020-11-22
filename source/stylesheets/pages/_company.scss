@@ -1,0 +1,123 @@
+// Header
+
+header.company {
+    background: linear-gradient($alternate-background 114px, $background 114px);
+    overflow-x: hidden;
+
+    @media #{$mq-tablet} {
+        background: linear-gradient($alternate-background 160px, $background 160px);
+    }
+
+      @media #{$mq-desktop} {
+        background: linear-gradient($alternate-background 200px, $background 200px);
+    }
+
+    section.intro {
+        background-color: none;
+    }
+}
+
+section.on-page-nav {
+    height: 114px;
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 28px;
+    padding-right: 8%;
+
+    @media #{$mq-tablet} {
+      height: 160px;
+    }
+
+    @media #{$mq-desktop} {
+      height: 200px;
+    }
+
+    #menu-icon {
+        padding-top: 23px;
+    }
+  }
+
+nav#sidenav {
+    height: 100%;
+    display: block;
+    width: 0;
+    overflow-x: hidden;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: -26px;
+    transition: 0.3s;
+
+    &.menuOpen {
+        width: 100%;
+        right: 0;
+        padding-left: 10%;
+        padding-right: 8%;
+        transition: 0.3s;
+    }
+
+    button {
+        display: block;
+        float: right;
+    }
+
+    h1.s4 {
+        font-family: $heading-font-family;
+        font-weight: 400;
+    }
+
+    .links {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    a {
+        display: block;
+        margin-bottom: 10px;
+
+        &.button-primary, 
+        &.button-secondary {
+        text-align: center;
+        max-width: 200px;
+        }
+
+        &.button-tertiary {
+            margin-bottom: 20px;
+        }
+    }
+
+    .s4 {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+}
+
+main.company section {
+    max-width: 1440px;
+    margin: 0 auto;
+    @include grid-12;
+    
+    h2,
+    h3,
+    h6, 
+    p,
+    ol,
+    hr,
+    article,
+    .button-primary {
+        grid-column: 2 / span 10;
+
+        @media #{$mq-desktop} {
+            grid-column: 3 / span 8;
+        }
+    }
+
+    h2,
+    h3 {
+      margin-bottom: 28px;  
+    }
+
+    .button-primary {
+        text-align: center;
+    }
+}

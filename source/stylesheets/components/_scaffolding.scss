@@ -421,7 +421,7 @@ a {
   }
 }
 
-a.button-primary {
+a.button-primary, a.button-secondary {
   display: inline-block;
   color: white;
   font-family: $font-family-bold;
@@ -430,12 +430,14 @@ a.button-primary {
   letter-spacing: 2px;
   padding: 10px 22px 8px;
   border-radius: 30px;
+  border: 3px solid $primary-color;
 
   &:hover,
   &:active,
   &:focus {
     background-color: $secondary-color;
     cursor: pointer;
+    border: 3px solid $secondary-color;
   }
 
   @media #{$mq-xldesktop} {
@@ -448,6 +450,20 @@ a.button-primary {
     font-size: 22px;
     letter-spacing: 3px;
     padding: 18px 30px 16px;
+  }
+}
+
+a.button-secondary {
+  color: $primary-color;
+  background-color: white;
+  border: 3px solid $primary-color;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: white;
+    border: 3px solid $secondary-color;
+    color: $secondary-color;
   }
 }
 
