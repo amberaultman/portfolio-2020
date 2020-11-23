@@ -461,9 +461,10 @@ a.button-secondary {
   &:hover,
   &:active,
   &:focus {
-    background-color: white;
+    background-color: $secondary-color;
+    cursor: pointer;
     border: 3px solid $secondary-color;
-    color: $secondary-color;
+    color: white;
   }
 }
 

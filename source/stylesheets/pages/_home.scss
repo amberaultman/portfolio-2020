@@ -28,7 +28,8 @@ section.intro {
     padding: 0;
 
     &:hover, 
-    &:active {
+    &:active,
+    &:focus {
       color: $secondary-color;
       ion-icon {
         color: $secondary-color;

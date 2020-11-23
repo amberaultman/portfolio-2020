@@ -1,0 +1,26 @@
+.work-samples
+    = link_to cs1_link, :class => "next no-button" do
+        .card-wrapper
+            %img.lazy{:data => {:srcset => cs1_srcset, :sizes => cs1_sizes, :src => cs1_src}, :alt => cs1_alt}
+            .card-details
+                %p.card-title
+                    %strong= cs1_card_title
+                %p.small= cs1_company_year
+        %ion-icon{:name => "arrow-forward-outline"}
+    = link_to cs2_link, :class => "next no-button" do
+        .card-wrapper
+            %img.lazy{:data => {:srcset => cs2_srcset, :sizes => cs2_sizes, :src => cs2_src}, :alt => cs2_alt}
+            .card-details
+                %p.card-title
+                    %strong= cs2_card_title
+                %p.small= cs2_company_year
+        %ion-icon{:name => "arrow-forward-outline"}
+    = link_to cs3_link, :class => "next no-button" do
+        .card-wrapper
+            %img.lazy{:data => {:srcset => cs3_srcset, :sizes => cs3_sizes, :src => cs3_src}, :alt => cs3_alt}
+            .card-details
+                %p.card-title
+                    %strong= cs3_card_title
+                %p.small= cs3_company_year
+        %ion-icon{:name => "arrow-forward-outline"}
+

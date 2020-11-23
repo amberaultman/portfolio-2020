@@ -10,11 +10,11 @@ title: Hey, Google.
             %ion-icon{:name => "close-outline", :onclick => "menuClose()"}
         %h1.s4 Amber Aultman
         .links
-            = link_to 'About me', '#aboutme', :class => "button-tertiary"
-            = link_to 'Why Google', '#whygoogle', :class => "button-tertiary"
-            = link_to 'Case studies', '#casestudies', :class => "button-tertiary"
-            = link_to 'References', '#references', :class => "button-tertiary"
-            = link_to 'Principles', '#designprinciples', :class => "button-tertiary"
+            = link_to 'About me', '#aboutme', :class => "button-tertiary", :onclick => "menuClose()"
+            = link_to 'Why Google', '#whygoogle', :class => "button-tertiary", :onclick => "menuClose()"
+            = link_to 'Case studies', '#casestudies', :class => "button-tertiary", :onclick => "menuClose()"
+            = link_to 'References', '#references', :class => "button-tertiary", :onclick => "menuClose()"
+            = link_to 'Principles', '#designprinciples', :class => "button-tertiary", :onclick => "menuClose()"
         .buttons
             = link_to 'Portfolio', 'index.html', :class => "button-primary"
             = link_to 'Résumé', '#', :class => "button-secondary"
@@ -46,19 +46,20 @@ title: Hey, Google.
         %h2.s4 A few case studies
         %p I haven’t been doing much hands-on project work since leading a team of 10. My role has been mostly focused on setting strategy, guiding ideations, and helping my team do their best work. 
         %p The case studies below are projects where I was the lead designer. Admittedly, these aren’t the best representation of my skill set; I’ve learned so much more in the last several years. But hopefully these can give you a sense of my thought process and experience:
-        %p INSERT CASE STUDIES HERE
-        %p INSERT CASE STUDIES HERE
-        %p INSERT CASE STUDIES HERE
-        %p If you’d like to view my whole portfolio, you can jump in here.
-        = link_to 'View portfolio', 'index.html', :class => "button-primary"
+
+        = partial "partials/work_samples", :locals => {:cs1_link => "wayfind.html", :cs1_card_title => "Wayfind: building a career-pathing app", :cs1_company_year => "Ignite by Adecco / 2015", :cs1_srcset => "../images/home-wayfind-140.jpg 140w, ../images/home-wayfind-280.jpg 280w", :cs1_sizes => "140px", :cs1_src => "../images/home-wayfind-280.jpg", :cs1_alt => "An illustration of two characters looking up at the stars. The Wayfind logo sits in the sky.", :cs2_link => "serta.html", :cs2_card_title => "A new direct-to-consumer priority for Serta", :cs2_company_year => "Tuft & Needle / 2019", :cs2_srcset => "../images/home-serta-140.jpg 140w, ../images/home-serta-280.jpg 280w", :cs2_sizes => "140px", :cs2_src => "../images/home-serta-280.jpg", :cs2_alt => "A man and woman drinking wine on an iComfort mattress in a bedroom", :cs3_link => "serta.html", :cs3_card_title => "A new direct-to-consumer priority for Serta", :cs3_company_year => "Tuft & Needle / 2019", :cs3_srcset => "../images/home-serta-140.jpg 140w, ../images/home-serta-280.jpg 280w", :cs3_sizes => "140px", :cs3_src => "../images/home-serta-280.jpg", :cs3_alt => "A man and woman drinking wine on an iComfort mattress in a bedroom"}
+
+        %p If you’d like to view my whole portfolio, you can jump in here:
+        = link_to 'Entire portfolio', 'index.html', :class => "button-primary"
 
     %section#references
         %h2.s4 References
         %p 
-            Here are a few things that past colleagues have said about working with me. I’m happy to connect you if you’d like to speak with any personally. 
+            Here are a few things that colleagues have said about working with me. I’m happy to connect you if you’d like to speak with any personally. 
             = link_to 'Just let me know', 'mailto:amber.aultman@gmail.com', :target => "_blank"
         %article.quote
             .quote-mark
+                %img{:src => "../images/quote.svg"}
             .quote-content
                 %p “I have worked closely with Amber for the past four and a half years in my role as Head of CX at Tuft & Needle and as VP, CX Transformation at Serta Simmons Bedding (parent company of Tuft & Needle). Throughout this time, Amber has consistently devoted herself to creating an effortless and engaging experience for Tuft & Needle customers. She has developed our creative strategy from top to bottom and has raised the standard of our unique brand identity to be memorable, accessible, and mission-driven. 
                 %p Amber is passionate about customer experience and has led several strategic initiatives to holistically understand our customers’ needs and improve our site experience to meet those needs.  Under Amber’s creative leadership, customer-centricity has been woven into the Tuft & Needle brand identity and design. Her efforts have been instrumental in achieving cross-functional goals and ensuring that the Tuft & Needle brand remains innovative and bold.
@@ -69,6 +70,7 @@ title: Hey, Google.
                     VP, CX Transformation at Serta Simmons Bedding
         %article.quote
             .quote-mark
+                %img{:src => "../images/quote.svg"}
             .quote-content
                 %p As a designer Amber takes a user/customer first approach driving toward interactions and solutions that truly shine at the intersection of business value and first class user experience. Always one to let data make the decision Amber has a test and learn approach that rapidly iterates toward ideal interactions. She has an innate ability to see through the complexity and arrive at intuitive interactions and experiences that support complex workflows and journeys. As someone whose roots lie in UX, she has flexed and excelled in art direction, graphic design, and customer research evolving into a robust creative leader capable of approaching problems from multiple perspectives and leveraging her vast experience to arrive at optimal solutions for the user and the business. 
                 %p As a leader Amber brings out the best in the people she works with. She leads with a true servant mentality grounded in empathy. Amber’s teams have always been motivated and performant. She approaches leadership with ears wide open, taking the time to listen and learn from her direct reports so that she can know how best to support them.  As a manager she takes the time needed with each of direct reports to know what their strengths are and how best to capitalize on them, while also identifying their growth areas and how to invest in them so that individuals are constantly growing and becoming more valuable assets to the business and our community at large. 
@@ -78,6 +80,7 @@ title: Hey, Google.
                     VP, Engineering at Tuft &amp; Needle
         %article.quote
             .quote-mark
+                %img{:src => "../images/quote.svg"}
             .quote-content
                 %p “I have had the pleasure of working with Amber at various companies over the past few years and she’s been paramount to the success of the design team as a whole. Her ability to both strategically lead initiatives as well as contribute to the ground level design make her an irreplaceable team member. She’s always thoughtful with her approach and more importantly manages to get consensus fast because of her collaborative methods of ideation. I would work with Amber again in a heartbeat and highly recommend her to anyone looking for their next key player on their design team.”
                 %p.attribution
@@ -86,6 +89,7 @@ title: Hey, Google.
                     Director of UX/UI at Capital Rx
         %article.quote
             .quote-mark
+                %img{:src => "../images/quote.svg"}
             .quote-content
                 %p “Amber is a fantastic and energetic product design leader with a passion for mentorship and strategy. I’ve seen her manage a team of designers & navigate stakeholders & corporate leadership in a very seamless way. As a mentor/leader, Amber’s pushed me to try things outside my comfort zone, which has always resulted in me expanding my skills and increasing my creative confidence. As a designer, Amber has top notch product skills. Her design outcomes are intentional and rooted in the needs of the user and business.
                 %p Anyone who works with Amber will see she’s an incredible asset to have, and I would welcome the opportunity to work with her and be part of her successful team.”
@@ -95,6 +99,7 @@ title: Hey, Google.
                     Product Designer at Facebook
         %article.quote
             .quote-mark
+                %img{:src => "../images/quote.svg"}
             .quote-content
                 %p “Amber has been my direct leader since 2018 when I joined the Tuft & Needle team as a UX Designer. Over time, I’ve continually been impressed and inspired by her exceptional leadership skills, especially during times of uncertainty. Amber has led the Design Team through a corporate merger, a design team restructuring defined by executive leadership, and a global pandemic. Throughout all of this, she has consistently advocated for the team and has made herself available at all times for candid conversations with team members; all while guiding the team to produce high-quality design work. 
                 %p This strong leadership also extends to her approach to product and brand strategy. At the beginning of all projects, Amber ensures that designers are gaining a complete understanding of the problem and maintaining a strong advocacy for the user. Throughout projects, she consistently provides feedback that is both constructive for the project and instructive for the designer. When taking on her own projects, she follows this same strategy rigorously. I had the opportunity to work directly with Amber as she led a brand refocusing project, and I was in awe of her ability to easily transition from guiding designer-led projects to managing her own.
@@ -105,6 +110,7 @@ title: Hey, Google.
                     UX Designer at Tuft &amp; Needle
         %article.quote
             .quote-mark
+                %img{:src => "../images/quote.svg"}
             .quote-content
                 %p “I’ve had the privilege of working with Amber over the last four years at Tuft & Needle. Her excitement and passion for UX, brand, and strategy are contagious.
                 %p Amber’s mentorship has helped me grow in my visual and UX skills. She is the master of key commands and has a very detail-oriented eye for design elements and art direction. She has also coached me in becoming confident in public speaking and has shared her skillful strategy in presenting projects to teams and stakeholders.
@@ -117,9 +123,10 @@ title: Hey, Google.
     %section
         %h2.s4 Get in touch
         %p As you can tell, I think you’re pretty great. I’d love to learn more about your challenges and needs and see if I might be able to help.
-        %p
-            = link_to 'amber.aultman@gmail.com', 'mailto:amber.aultman@gmail.com', :target => "_blank"
-        %p (904) 234-4213
+        %p.get-in-touch
+            = link_to 'amber.aultman@gmail.com', 'mailto:amber.aultman@gmail.com'
+            %br
+            = link_to '(904) 234-4213', 'tel:1-904-234-4213', :target => "_blank"
 
     %section#designprinciples
         %h2.s4 Design principles
@@ -134,6 +141,6 @@ title: Hey, Google.
 
     %section.thanks
         %hr
-        %h2.s2 Keep being awesome, Google.
+        %h2.s2 Have a great day.
 
 
