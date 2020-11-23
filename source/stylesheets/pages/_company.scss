@@ -11,10 +11,6 @@ header.company {
       @media #{$mq-desktop} {
         background: linear-gradient($alternate-background 200px, $background 200px);
     }
-
-    section.intro {
-        background-color: none;
-    }
 }
 
 section.on-page-nav {
@@ -38,6 +34,10 @@ section.on-page-nav {
         right: 8%;
         background-color: white;
         padding: 8px;
+
+        @media #{$mq-desktop} {
+            display: none;
+        }
     }
   }
 
@@ -49,7 +49,7 @@ nav#sidenav {
     position: fixed;
     z-index: 1;
     top: 0;
-    right: -26px;
+    right: -8%;
     transition: all .3s ease;
     background-color: $accent-color;
 
@@ -58,7 +58,7 @@ nav#sidenav {
         right: 0;
         padding-left: 10%;
         padding-right: 8%;
-        transition: 0.3s;
+        transition: all .3s ease;
     }
 
     button {
@@ -66,14 +66,28 @@ nav#sidenav {
         float: right;
     }
 
-    h1.s4 {
+    h1.s5 {
         font-family: $heading-font-family;
         font-weight: 400;
+
+        @media #{$mq-desktop} {
+            margin-top: 100px;
+        }
     }
 
     .links {
         margin-top: 40px;
         margin-bottom: 20px;
+        flex-direction: column;
+
+        @media #{$mq-desktop} {
+            margin-top: 60px;
+        }
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
     }
 
     a {
@@ -108,49 +122,133 @@ nav#sidenav {
             }
         }
     }
-}
 
-main.company section {
-    max-width: 1440px;
-    margin: 0 auto 20px;
-    @include grid-12;
-    
-    h2,
-    h3,
-    h6, 
-    p,
-    hr,
-    article,
-    .button-primary,
-    .work-samples {
-        grid-column: span 12;
+    @media #{$mq-desktop} {
+        display: block;
+        width: 33%;
+        overflow-x: hidden;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: transparent;
 
-        @media #{$mq-desktop} {
-            grid-column: 3 / span 8;
+        button {
+            display: none;
         }
     }
 
-    ol {
-        grid-column: 2 / span 11;
+    @media #{$mq-lgdesktop} {
+        width: 29%;
+    }
+}
+
+main.company {
+
+    @media #{$mq-desktop} {
+        width: 66%;
+        margin-left: 33%;
     }
 
-    h2,
-    h3 {
-      margin-bottom: 28px;  
+    @media #{$mq-lgdesktop} {
+        width: 71%;
+        margin-left: 29%;
     }
 
-    .button-primary {
-        text-align: center;
-        max-width: 240px;
-    }
+    section {
+        max-width: 1440px;
+        margin: 0 auto 20px;
+        @include grid-12;
+        
+        h1,
+        h2,
+        h3,
+        h6, 
+        p,
+        hr,
+        article,
+        .button-primary,
+        .work-samples {
+            grid-column: span 12;
 
-    &#casestudies {
-        margin-bottom: 60px;
+            @media #{$mq-mobile} {
+                grid-column: 2 / span 10;
+            }
+
+            @media #{$mq-desktop} {
+                grid-column: span 12;
+            }
+
+            @media #{$mq-lgdesktop} {
+                grid-column: span 10;
+            }
+
+            @media #{$mq-xldesktop} {
+                grid-column: 2 / span 8;
+            }
+        }
+
+        ol {
+            grid-column: 2 / span 11;
+
+            @media #{$mq-mobile} {
+                grid-column: 2 / span 10;
+            }
+
+            @media #{$mq-desktop} {
+                grid-column: span 12;
+            }
+
+            @media #{$mq-lgdesktop} {
+                grid-column: span 10;
+            }
+
+            @media #{$mq-xldesktop} {
+                grid-column: 2 / span 8;
+            }
+        }
+
+        h2,
+        h3 {
+        margin-bottom: 28px;  
+        }
+
+        .button-primary {
+            text-align: center;
+            max-width: 260px;
+
+            @media #{$mq-xldesktop} {
+                max-width: 300px;
+            }
+        }
+
+        &#casestudies {
+            margin-bottom: 60px;
+        }
+
+        section.intro {
+            background-color: none;
+        }
+    }
+}
+
+main.company + footer {
+
+    @media #{$mq-desktop} {
+        padding-top: 20px;
+
+        .bottom {
+            margin-top: 0;
+        }
     }
 }
 
 .work-samples {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+    max-width: 700px;
+
+    @media #{$mq-tablet} {
+        margin-bottom: 60px;
+    }
 
     .next {
         border-bottom: 0;
@@ -164,6 +262,7 @@ main.company section {
             flex-grow: 4;
             display: flex;
             height: 100%;
+            width: 100%;
 
             &:hover,
             &:active,
@@ -225,13 +324,25 @@ article.quote {
     .quote-mark {
         grid-column: span 2;
 
+        @media #{$mq-mobile} {
+            grid-column: span 1;
+        }
+
         img {
             max-width: 30px;
+
+            @media #{$mq-desktop} {
+                max-width: 40px;
+            }
         }
     }
 
     .quote-content {
         grid-column: span 10;
+
+        @media #{$mq-mobile} {
+            grid-column: span 11;
+        }
     }
 }
 

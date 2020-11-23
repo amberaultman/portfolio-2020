@@ -21,6 +21,7 @@ body {
   color: $font-color;
   font-size: $body-size;
   min-height: 100vh;
+  background-color: $background;
 }
 
 nav {
@@ -718,16 +719,20 @@ hr {
 }
 
 // Footer
+
 footer {
+  background-color: white;
   padding: 4%;
   padding-bottom: 0;
   ion-icon {
     font-size: 28px;
     margin-bottom: -6px;
   }
+
   .left {
     @include flex-column;
   }
+
   .right {
     margin-top: 28px;
   }
