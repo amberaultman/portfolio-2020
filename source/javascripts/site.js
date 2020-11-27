@@ -12,6 +12,12 @@ function showHide() {
   about.classList.toggle("slide");
   let rotateIcon = document.getElementById("arrow");
   rotateIcon.classList.toggle("rotate");
+  let readless = document.getElementById("less");
+  if (readless.innerHTML === "More") {
+    readless.innerHTML = "Less";
+  } else {
+    readless.innerHTML = "More";
+  }
 }
 
 // Expands Sidenav

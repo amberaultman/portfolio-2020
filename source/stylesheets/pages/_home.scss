@@ -35,9 +35,35 @@ section.intro {
         color: $secondary-color;
       }
     }
+
+    span {
+      text-transform: uppercase;
+      font-family: $font-family-bold;
+      letter-spacing: 2px;
+      font-size: $body-size;
+      line-height: $body-line-height;
+      margin-left: 20px;
+      margin-right: -6px;
+
+      @media #{$mq-desktop} {
+        font-size: $body-large-size;
+        line-height: $body-large-line-height;
+      }
+
+      @media #{$mq-xldesktop} {
+        font-size: 20px;
+        letter-spacing: 3px;
+      }
+    
+      @media #{$mq-xxldesktop} {
+        font-size: 22px;
+        letter-spacing: 3px;
+      }
+    }
   }
+
   ion-icon {
-    margin-bottom: -7px;
+    margin-bottom: -9px;
   }
 
   @media #{$mq-mobile} {
@@ -125,14 +151,17 @@ section#about {
   overflow: hidden;
   max-height: 0px;
   padding: 0;
+
   &.slide {
     max-height: 120vh;
     }
+
   .wrapper {
     background: $accent-color;
     @include grid-12;
     padding: 4%;
   }
+
   article {
     @include flex-column;
     justify-content: space-between;
@@ -143,6 +172,7 @@ section#about {
         grid-column: 7 / span 6;
     }
   }
+
   img {
     grid-column: span 12;
 
@@ -150,13 +180,16 @@ section#about {
         grid-column: 1 / span 6;
     }
   }
+
   .bio {
     flex: 6 2 auto;
   }
+
   .close {
     appearance: none;
     border: none;
     background: transparent;
+
     ion-icon {
       display: block;
       margin: 0 auto;
@@ -170,6 +203,10 @@ section#about {
         font-size: 54px;
       }
     }
+  }
+
+  .button-secondary {
+    margin-left: 10px;
   }
 }
 
@@ -258,6 +295,7 @@ section.work, section.experiences {
   footer {
     text-align: right;
     margin-right: 1%;
+    background-color: $background;
   }
 
   .s3 {
