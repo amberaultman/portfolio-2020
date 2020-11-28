@@ -232,6 +232,17 @@ main.company {
 }
 
 main.company + footer {
+    
+    .bottom {
+        display: none;
+    }
+
+    .left {
+
+        a:first-child {
+            display: none;
+        }
+    }
 
     @media #{$mq-desktop} {
         padding-top: 20px;

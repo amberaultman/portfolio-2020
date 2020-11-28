@@ -13,8 +13,8 @@ title: Hey, Google.
             = link_to 'About me', '#aboutme', :class => "button-tertiary", :onclick => "menuClose()"
             = link_to 'Why Google', '#whygoogle', :class => "button-tertiary", :onclick => "menuClose()"
             = link_to 'Case studies', '#casestudies', :class => "button-tertiary", :onclick => "menuClose()"
-            = link_to 'References', '#references', :class => "button-tertiary", :onclick => "menuClose()"
             = link_to 'Principles', '#designprinciples', :class => "button-tertiary", :onclick => "menuClose()"
+            = link_to 'References', '#references', :class => "button-tertiary", :onclick => "menuClose()"
         .buttons
             = link_to 'Portfolio', 'index.html', :class => "button-primary"
             = link_to 'Résumé', '#', :class => "button-secondary"
@@ -31,26 +31,37 @@ title: Hey, Google.
             %br
             Google.
     %section.summary
-        %p.large I’m Amber, a UX design leader who works ardently to solve unmet human needs. I’m ready to make the move to California to work for my favorite company. That’s you, Google. ;)
+        %p.large I’m Amber, a people-first UX design leader with an intent attention to detail and a synchronous understanding of the whole. Google’s innovation and user-centricity have inspired me for my entire career, and I am excited to show you what I can bring to your team.
 
     %section#aboutme
         %h2.s4 A little about me
-        %p I’m a maker who loves solving problems through empathy, collaboration, and experiments. I love unearthing new insights and digging deep on a challenge, whether that’s creating a better team process, building a new service, or revamping an interaction. I’m an amalgamation: equal parts science and art. My psychology and medical background melded with my UX and brand experience gives me a unique perspective on people, their needs, and behaviors. I work hard, have an unflagging devotion to the user, and learn from my mistakes. 
-        %p For the last 3 years, I’ve been leading the design team at Tuft & Needle. I’ve been responsible for both the visual and UX of all aspects of the brand with the exception of physical product design and architecture of retail stores. I love mentoring my team but I also love getting my hands in the work. 
+        %p I’m a maker who loves solving problems through empathy, collaboration, and experiments. I love unearthing new insights and digging deep on a challenge, whether that’s creating a better team process, building a new service, or revamping an interaction. I’m an amalgamation: equal parts science and art. My psychology and medical background, melded with my UX and brand experience, gives me a unique perspective on people, their needs, and behaviors. I work hard, have an unflagging devotion to the user, and learn from my mistakes. 
+        %p For the last three years, I’ve been leading the design team at Tuft & Needle. I’ve been responsible for both the visual design and UX of the brand. I love mentoring my team, but I also love getting my hands in the work.  
 
     %section#whygoogle
         %h2.s4 Why Google?
-        %p You’re a forward-thinking, people-first company who champions the user. You’ve solved incalculable needs and continue to do so. You demand the best from your teams, and push beyond what’s thought possible. Not only do you excel at digital interactions, but you extend your design philosophy elegantly to the physical, creating products that rival Rams and the greats. Ultimately, you need hard-working people who can bring a new perspective and continue crafting the future. I’d be honored to be one of those people.  
+        %p You’re a forward-thinking company that champions the user and values design. You’ve solved incalculable needs for the last 22 years and continue to do so. You demand the best from your teams and push beyond what’s thought possible. Not only do you excel at digital interactions, but you extend your design philosophy elegantly to the physical, creating products that rival Rams and the greats. Ultimately, you need hard-working people who can bring a new perspective and continue crafting the future. I’d be honored to be one of those people.  
 
     %section#casestudies
         %h2.s4 A few case studies
-        %p I haven’t been doing much hands-on project work since leading a team of 10. My role has been mostly focused on setting strategy, guiding ideations, and helping my team do their best work. 
-        %p The case studies below are projects where I was the lead designer. Admittedly, these aren’t the best representation of my skill set; I’ve learned so much more in the last several years. But hopefully these can give you a sense of my thought process and experience:
+        %p For the past three years, I’ve lead and mentored a team of 10 designers and producers while focusing on strategy. While this means I haven’t had time for much hands-on project work, my design skill set has continued to improve as I have guided my team through their projects. 
+        %p The case studies below are projects where I was the lead designer. Admittedly, these aren’t recent. But hopefully, seeing where I was, with the knowledge of my leadership experience, you’re able to get a sense of my thought process and aptitude.
 
         = partial "partials/work_samples", :locals => {:cs1_link => "wayfind.html", :cs1_card_title => "Wayfind: building a career-pathing app", :cs1_company_year => "Ignite by Adecco / 2015", :cs1_srcset => "../images/home-wayfind-140.jpg 140w, ../images/home-wayfind-280.jpg 280w", :cs1_sizes => "140px", :cs1_src => "../images/home-wayfind-280.jpg", :cs1_alt => "An illustration of two characters looking up at the stars. The Wayfind logo sits in the sky.", :cs2_link => "serta.html", :cs2_card_title => "A new direct-to-consumer priority for Serta", :cs2_company_year => "Tuft & Needle / 2019", :cs2_srcset => "../images/home-serta-140.jpg 140w, ../images/home-serta-280.jpg 280w", :cs2_sizes => "140px", :cs2_src => "../images/home-serta-280.jpg", :cs2_alt => "A man and woman drinking wine on an iComfort mattress in a bedroom", :cs3_link => "serta.html", :cs3_card_title => "A new direct-to-consumer priority for Serta", :cs3_company_year => "Tuft & Needle / 2019", :cs3_srcset => "../images/home-serta-140.jpg 140w, ../images/home-serta-280.jpg 280w", :cs3_sizes => "140px", :cs3_src => "../images/home-serta-280.jpg", :cs3_alt => "A man and woman drinking wine on an iComfort mattress in a bedroom"}
 
         %p If you’d like to view my whole portfolio, you can jump in here:
         = link_to 'Entire portfolio', 'index.html', :class => "button-primary"
+
+    %section#designprinciples
+        %h2.s4 Design principles
+        %p In case you want to learn a little more, below are a handful of guiding principles that I use in my work:
+        %ol
+            %li The fundamentals of human-centered design can and should be used by everyone. This is how we build meaningfully for people. 
+            %li Companies should exist to make the world better in some way. And I want to be a part of the revolution, no matter how small or quiet.  
+            %li Empathy, research, and testing are vital to good design. They help identify unmet human needs and solve them meaningfully. 
+            %li Design should be intentional and essential. Every decision should be carefully considered and deliberate, the right amount of design for the problem.
+            %li Interactions should bring delight — whether overt or a subconscious relief at the ease of an action.
+            %li Collaboration and candid feedback make the work stronger. My job is to facilitate these conversations and use them to find the best way forward.
 
     %section#references
         %h2.s4 References
@@ -127,17 +138,6 @@ title: Hey, Google.
             = link_to 'amber.aultman@gmail.com', 'mailto:amber.aultman@gmail.com'
             %br
             = link_to '(904) 234-4213', 'tel:1-904-234-4213', :target => "_blank"
-
-    %section#designprinciples
-        %h2.s4 Design principles
-        %p In case you want to learn a little more, below are a handful of guiding principles that I use in my work:
-        %ol
-            %li The fundamentals of human-centered design can and should be used by everyone. This is how we build meaningfully for people. 
-            %li Companies should exist to make the world better in some way. And I want to be a part of the revolution, no matter how small or quiet.  
-            %li Empathy, research, and testing are vital to good design. They help identify unmet human needs and solve meaningfully. 
-            %li Design should be intentional and essential. Every decision should be carefully considered and deliberate, the right amount of design for the problem.
-            %li Interactions should bring delight. Whether overt or just a subconscious relief at the ease of an action.
-            %li Collaboration and candid feedback make the work stronger. My job is to facilitate these conversations and use them to find the best way forward.
 
     %section.thanks
         %hr
