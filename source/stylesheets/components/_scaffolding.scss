@@ -493,6 +493,14 @@ a.button-tertiary {
   }
 }
 
+button {
+  &:hover,
+  &:active,
+  &:focus {
+    cursor: pointer;
+  }
+}
+
 button.no-button {
   appearance: none;
   background: transparent;
