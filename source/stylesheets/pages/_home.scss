@@ -14,6 +14,7 @@ nav.home {
 
 section.intro {
   background-color: $background;
+  padding: 4%;
   .s1 {
     margin-top: -60px;
   }
@@ -360,7 +361,7 @@ section.writing, section.speaking {
   }
 
   @media #{$mq-tablet} {
-    padding: 16% 8% 8% 8%;
+    padding:8% 8% 8% 4%;
   }
 }
 
