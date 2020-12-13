@@ -15,6 +15,7 @@ nav.home {
 section.intro {
   background-color: $background;
   padding: 4%;
+  max-width: 1500px;
   .s1 {
     margin-top: -60px;
   }
@@ -154,7 +155,7 @@ section#about {
   padding: 0;
 
   &.slide {
-    max-height: 120vh;
+    max-height: 300vh;
     }
 
   .wrapper {
@@ -206,8 +207,9 @@ section#about {
     }
   }
 
-  .button-secondary {
-    margin-left: 10px;
+  .button-primary {
+    margin-right: 10px;
+    margin-bottom: 10px;
   }
 }
 
