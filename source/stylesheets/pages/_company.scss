@@ -47,7 +47,7 @@ nav#sidenav {
     width: 0;
     overflow-x: hidden;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top: 0;
     right: -8%;
     transition: all .3s ease;
@@ -225,8 +225,11 @@ main.company {
             margin-bottom: 60px;
         }
 
-        section.intro {
+        &.intro {
             background-color: none;
+            position: relative;
+            top: 0;
+            z-index: 1;
         }
     }
 }
