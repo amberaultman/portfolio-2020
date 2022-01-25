@@ -1,0 +1,146 @@
+---
+title: Improving conversion rate through a focus on usability
+---
+
+%header.work
+    = partial "partials/nav"
+
+    %section.hero
+        %p Tuft & Needle / 2021
+        %h1.s2 Improving conversion rate through a focus on usability
+        %img{:srcset => "../images/cro-1a-500.jpg 500w, ../images/cro-1a-1000.jpg 1000w, ../images/cro-1a-1400.jpg 1400w, ../images/cro-1a-2800.jpg 2800w", :sizes => "(max-width: 1400px) 100vw, 1400px", :src => "../images/cro-1a-1400.jpg", :alt => "A graph of our projected versus actual revenue."}
+
+    %section.project-details
+        .problem
+            %h6.s6 Problem
+            %p An increasingly competitive marketplace was lowering site conversion rate and decreasing company revenue.
+        .result
+            %h6.s6 Result
+            %p Through a series of A/B tests focusing on usability and conversion, we increased annualized revenue by $35M.
+        .role
+            %h6.s6 My Role
+            %p Product Management, Strategy, Leadership, UX Direction, Mentorship
+        %hr
+
+%main.work
+    %section.summary
+        %p.large Tuft & Needle was struggling to compete in the increasingly crowded mattress industry. Competitor copycats made differentiation incredibly hard while competitors’ shady marketing tactics drowned our message.
+        %p.large We chose to focus on increasing the usability of our site as the primary way to increase conversion rate. I pulled together a team of UX designers, user researchers, engineering managers, and project managers across three product teams to work on improvements spanning the site funnel.
+
+    %section
+        %h2.s4 Identifying problem areas through a usability benchmarking study
+        %p To help identify problem areas (and serve as a means of measuring improvements), our user researcher conducted a usability benchmarking study across 15 metrics on nine major site pages. Meanwhile, I used Google Analytics to review page performance and identify the most significant areas of drop-off in our funnel. 
+        %p Following our initial research, I facilitated three ideation workshops, one each with the Customer Acquisition, Product Discovery, and Purchase Experience product teams. Using the benchmarking study as our guidepost, we ideated ways to improve usability and increase conversion. 
+        .img-sequence
+            %figure.img-sequence-left
+                %img.lazy{:data => {:srcset => "../images/cro-2a-500.jpg 500w, ../images/cro-2a-1000.jpg 1000w, ../images/cro-2a-2000.jpg 2000w", :sizes => "(max-width: 991px) 100vw, (max-width: 1439) 60vw, 850px", :src => "../images/cro-2a-1000.jpg"}, :alt => "Benchmarking data from the PDP"}
+                %figcaption.small
+                    %strong Benchmarking for the product detail page (PDP). 
+                    With each benchmarking, we looked at our performance in the context of other competitors.
+            %figure.img-sequence-right
+                %img.lazy{:data => {:srcset => "../images/cro-3a-500.jpg 500w, ../images/cro-3a-1000.jpg 1000w, ../images/cro-3a-2000.jpg 2000w", :sizes => "(max-width: 991px) 100vw, (max-width: 1439) 60vw, 850px", :src => "../images/cro-3a-1000.jpg"}, :alt => "Benchmarking data from the PDP continued"}
+
+    %section
+        %h2.s4 An imperfect prioritization process
+        %p Due to limited team resources and excessive priorities, I worked with the teams to identify the ideas with the highest potential impact and lowest implementation effort. Admittedly, the decision process was mostly subjective, based largely on gut and past performance.
+
+    %section
+        %h2.s4 Guiding strategy and removing roadblocks
+        %p The teams then got to work implementing the ideas as A/B tests. I met with them each week to guide strategy, provide feedback on designs, interface with data science, troubleshoot implementation issues, and unblock resources. Each month, I presented our progress and findings to the executive leadership team and addressed any problems while getting more buy-in for the work.
+
+    %section
+        %h2.s4 $8 million in Q1, but wanting to do more
+        %p In Q1 of 2021, we launched 12 experiments. We had some successes and, of course, some failures. These led to $7.58M in incremental annualized revenue for the company. While I was happy with our momentum, I wanted to find a more scientific way to prioritize what the teams worked on. And so, I went to work creating an algorithm to predict potential revenue for each experiment idea.
+
+    %section
+        %h2.s4 A closer look at conversion rate optimization (CRO)
+        %p To get started, I put together a general list of all the ways we might improve conversion by helping our customers:
+        %ul
+            %li Solving customers’ problems
+            %li Showing clear differentiation between options and between competitors
+            %li Simplifying options
+            %li Showing the benefit to the customer, not just speaking to features
+            %li Providing the right information at the right time
+            %li Following typical ecommerce patterns that people are familiar with
+            %li Decreasing clicks/steps to accomplish a goal
+            %li Letting customers know about money and time savings
+            %li Moving important information “above the fold” where the user is more likely to see it
+            %li Improving affordance
+            %li Being consistent with UI, writing, and flow
+            %li Using straightforward, instructive copywriting
+            %li Increasing accessibility
+            %li Maximizing site speed
+        %p I realized that I was not a good enough data scientist &mdash; or one at all ;) &mdash; to predict the impact of each of these types of changes and that we might make several of these changes at once, further compounding the algorithm. And so I tried another way of thinking about this.
+
+    %section
+        %h2.s4 A revenue algorithm is born
+        %p Zooming out a bit, I realized that revenue made from an experiment would generally be influenced by:
+        %ol
+            %li How many people see the experiment
+            %li How qualified the traffic is, or in other words, how far down the purchase path the person is
+            %li How significant the change is from the baseline
+        %p Using Google Analytics as the data source, I took a stab at creating an equation that matched the revenue data we were collecting and then calibrated it using additional past tests. 
+        %figure.img-1up
+            %img.lazy{:data => {:srcset => "../images/cro-4a-500.jpg 500w, ../images/cro-4a-1000.jpg 1000w, ../images/cro-4a-1400.jpg 1400w, ../images/cro-4a-2800.jpg 2800w", :sizes => "(max-width: 1400px) 100vw, 1400px", :src => "../images/cro-4a-1400.jpg"}, :alt => "The revenue algorithm that I created documented in a Confluence article"}
+            %figcaption.small
+                %strong The revenue projection algorithm in Confluence.
+
+    %section
+        %h2.s4 Algorithm success: 132% increase in Q2!
+        %p After vetting the algorithm with the data science team, I rolled it out to the CRO team to begin using for prioritization in Q2. I’m excited to report that we increased the annualized revenue by 132% that quarter by using this method!
+
+    %section
+        %h2.s4 A few of our CRO experiments
+        %figure.img-1up
+            %img.lazy{:data => {:srcset => "../images/cro-5a-500.jpg 500w, ../images/cro-5a-1000.jpg 1000w, ../images/cro-5a-1400.jpg 1400w, ../images/cro-5a-2800.jpg 2800w", :sizes => "(max-width: 1400px) 100vw, 1400px", :src => "../images/cro-5a-1400.jpg"}, :alt => "A presentation slide showing the Bullets-in-buybox experiment hypothesis, supporting data, expected result, and actual result"}
+            %img.lazy{:data => {:srcset => "../images/cro-6a-500.jpg 500w, ../images/cro-6a-1000.jpg 1000w, ../images/cro-6a-1400.jpg 1400w, ../images/cro-6a-2800.jpg 2800w", :sizes => "(max-width: 1400px) 100vw, 1400px", :src => "../images/cro-6a-1400.jpg"}, :alt => "Another presentation slide showing the Bullets-in-buybox experiment desktop implementation"}
+            %figcaption.small
+                %strong Adding bulleted details to the buybox.
+                This experiment performed much better than anticipated and reinforced how important the buybox real estate is. 
+        %figure.img-1up
+            %img.lazy{:data => {:srcset => "../images/cro-7a-500.jpg 500w, ../images/cro-7a-1000.jpg 1000w, ../images/cro-7a-1400.jpg 1400w, ../images/cro-7a-2800.jpg 2800w", :sizes => "(max-width: 1400px) 100vw, 1400px", :src => "../images/cro-7a-1400.jpg"}, :alt => "A presentation slide showing the Bullets-in-buybox experiment hypothesis, supporting data, expected result, and actual result"}
+            %figcaption.small
+                %strong Adding tax, shipping, and recycling fees to the cart. 
+                Even though we weren’t giving the user any more information about how much they would be charged, indicating that we’d calculate this information for them in checkout set better expectations and led to less drop-off in checkout. 
+        %figure.img-1up
+            %img.lazy{:data => {:srcset => "../images/cro-8a-500.jpg 500w, ../images/cro-8a-1000.jpg 1000w, ../images/cro-8a-1400.jpg 1400w, ../images/cro-8a-2800.jpg 2800w", :sizes => "(max-width: 1400px) 100vw, 1400px", :src => "../images/cro-8a-1400.jpg"}, :alt => "A presentation slide showing the Bullets-in-buybox experiment hypothesis, supporting data, expected result, and actual result"}
+            %figcaption.small
+                %strong Changing the position of the Sale link.
+                People want to save money. And drawing more attention to our sales by moving the link to the left was well received. 
+
+    %section.summary
+        %p.large The project was put on hold due to competing priorities and resource constraints during Q3. However, in total, we generated over $34.82M in incremental annualized revenue for the business during this time.
+
+    %section.closing
+        %hr
+        %h6.s6 Thank Yous
+        %p
+            %strong Brooke Kao
+            User Research
+        %p
+            %strong Ryan Evans
+            Product Design
+        %p
+            %strong Cristian Valdes
+            Product Design
+        %p
+            %strong Meaghan Socaciu
+            Product Design
+        %p
+            %strong LoriAnne Carpenter
+            Product & Project Management
+        %p
+            %strong Marilyn Cole
+            Engineering & Project Management
+        %p
+            %strong Valery Peep
+            Product & Project Management
+        %p
+            %strong Colin Darland
+            Engineering Management
+        %p
+            %strong Jayson Virissimo
+            Engineering Management
+    
+
+= partial "partials/more_work", :locals => {:prev_link => "catalyst.html", :prev_card_title => "Inspiring change with design thinking workshops", :prev_company_year => "Ignite by Adecco / 2014", :prev_srcset => "../images/home-catalyst-140.jpg 140w, ../images/home-catalyst-280.jpg 280w", :prev_sizes => "140px", :prev_src => "../images/home-catalyst-280.jpg", :prev_alt => "Workshop participants rush to the whiteboard for an ideation exercise.", :next_link => "pdp-sandwich.html", :next_card_title => "I’ll take my product page with mayo, please", :next_company_year => "Tuft & Needle / 2019", :next_srcset => "../images/home-sandwich-140.jpg 140w, ../images/home-sandwich-280.jpg 280w", :next_sizes => "140px", :next_src => "../images/home-sandwich-280.jpg", :next_alt => "Part of the T&N Original Mattress product page special sauce section"}

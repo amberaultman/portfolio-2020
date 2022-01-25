@@ -22,6 +22,7 @@ section.hero, section.project-details {
     h6, 
     p,
     ol,
+    ul,
     hr {
         grid-column: 2 / span 10;
         @media #{$mq-desktop} {
