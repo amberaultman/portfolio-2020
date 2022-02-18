@@ -494,6 +494,7 @@ a.button-tertiary {
 }
 
 button {
+  color: $primary-color;
   &:hover,
   &:active,
   &:focus {
