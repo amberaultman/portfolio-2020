@@ -1,0 +1,125 @@
+---
+title: Unlocking ecommerce table stakes with an updated OMS
+---
+
+%header.work
+    = partial "partials/nav"
+
+    %section.hero
+        %p Tuft & Needle / 2019
+        %h1.s2 Unlocking ecommerce table stakes with an updated OMS
+        %img{:srcset => "../images/oms-1a-500.jpg 500w, ../images/oms-1a-1000.jpg 1000w, ../images/oms-1a-1400.jpg 1400w, ../images/oms-1a-2800.jpg 2800w", :sizes => "(max-width: 1400px) 100vw, 1400px", :src => "../images/oms-1a-1400.jpg", :alt => "Several employees walk into the front door of the T&amp;N office."}
+
+    %section.project-details
+        .problem
+            %h6.s6 Problem
+            %p As the product catalog quadrupled, our order management system (OMS) fell woefully short. Originally designed to support one product with no promotions, our app needed an overhaul to align with the company's new product and promotional strategy.
+        .result
+            %h6.s6 Result
+            %p The updated OMS app unlocked promotional and product flexibility that is now ecommerce table stakes. The shipment, line item, and order summary updates allowed the CX team to work more efficiently, decreased refund errors, and reduced unnecessary shipping costs.
+        .role
+            %h6.s6 My Role
+            %p Strategy, Leadership, UX Direction
+        %hr
+
+%main.work
+    %section.summary
+        %p.large Tuft & Needle was established on an anthemic philosophy of excellent customer service above all. For the founders, this meant sticking to one product and doing it exceptionally well, eschewing promotions in favor of "the same fair price year-round," and ensuring every interaction with the customer experience (CX) team was full of surprise and delight. These philosophies shaped our custom tooling as well.  
+        %p.large But as the mattress industry became increasingly commoditized, newly acquired Tuft & Needle decided on a new product and promotional strategy to better compete in the overcrowded marketplace. And so, the team began overhauling the order management system to support 10x the products and continual overlapping promotions.
+ 
+
+    %section
+        %h2.s4 Building and allocating the team to support new company objectives
+        %p As the Head of Design, I built the in-house design team to support the company's objectives. I also created the design strategy for how we would support this new change in company philosophy. Since Tuft & Needle was not a Saas company, understandably, getting approval to allocate significant resources to overhaul internal tooling required some positioning. I explained the importance of this project to the executive leadership team and worked with the CTO to get it on the roadmap. Given this project's complexity, I assigned it to my most senior product designer. I knew she could handle the complex flows and problem solve amidst copious amounts of tech debt. I had been grooming her to be a strong design facilitator, and I knew her skills in this, coupled with her user research chops, would keep the project on track and validated with testing. 
+        %figure.img-left
+            %img.lazy{:data => {:srcset => "../images/oms-2a-500.png 500w, ../images/oms-2a-1000.png 1000w, ../images/oms-2a-2000.png 2000w", :sizes => "(max-width: 991px) 100vw, (max-width: 1439) 60vw, 850px", :src => "../images/oms-2a-1000.png"}, :alt => "A comp of the new Tuft and Needle order management page viewed at 1024px wide."}
+            %figcaption.small
+                %strong The updated order page. 
+                This is the culmination of the changes to the order summary, line items, and shipment sections.
+
+    %section
+        %h2.s4 A multidisciplinary research process that uncovers efficiency gains and recoups revenue
+        %p Coupling extensive user research interviews and shadowing with a multidisciplinary design sprint process, we rapidly identified the most critical problems to solve: time-consuming workflows and loss of revenue from missing functionality. Poor organization, lack of context, insufficient line-item visibility, and promotional, fulfiller, and shipping limitations created inefficiencies, bad customer experiences, and a loss of revenue.
+        %p I met with the team frequently to provide feedback and discuss limitations and other possibilities. Given our limited time and development resources, much of my guidance was about working around tech debt and other constraints to make the solution as efficient for development as possible. Done was definitively better than perfect here.
+        %figure.img-right
+            %figcaption.small
+                %strong The old order page. 
+                You can see how the timeline and poorly organized order summary take up most of the page.
+            %img.lazy{:data => {:srcset => "../images/oms-3a-500.png 500w, ../images/oms-3a-1000.png 1000w, ../images/oms-3a-2000.png 2000w", :sizes => "(max-width: 991px) 100vw, (max-width: 1439) 60vw, 850px", :src => "../images/oms-3a-1000.png"}, :alt => "A comp of the old order management page. Poor use of space, conflicting hierarchy, and limiting functionality are issues here."}
+
+    %section
+        %h2.s4 Redesigning the order summary and contextualizing the menus
+        %p More intuitive organization and hierarchy were needed as we improved workflows and added more functionality. We audited the frequency of each workflow and used that to drive placement and prominence. For example, user research revealed that while very helpful in certain situations, the timeline was not used for the most common customer experience workflows. So, we collapsed the timeline into a drawer where it was easily accessible when needed.
+        %figure.img-left
+            %img.lazy{:data => {:srcset => "../images/oms-4a-500.png 500w, ../images/oms-4a-1000.png 1000w, ../images/oms-4a-2000.png 2000w", :sizes => "(max-width: 991px) 100vw, (max-width: 1439) 60vw, 850px", :src => "../images/oms-4a-1000.png"}, :alt => "A comp of showing the expanded timeline drawer, viewed at 1024px wide."}
+            %figcaption.small
+                %strong The collapsible timeline.
+                The order page shifts off canvas to make room for the order timeline when opened.
+        %p To reduce cognitive load and prioritize the most common workflows, we grouped relevant information and moved order-level actions to a contextual "Manage" dropdown. Based on the shipment status, the context logic removed non-actionable menu items from the dropdown. In addition to making CXers more efficient, making the tool more intuitive helped lower CX onboarding times. 
+        %figure.img-right
+            %figcaption.small
+                %strong The manage order dropdown options after delivery.
+                By removing options like “Cancel order” and adding “Initiate returns” we kept the options relevant to the order’s context.
+            %img.lazy{:data => {:srcset => "../images/oms-5a-500.png 500w, ../images/oms-5a-1000.png 1000w, ../images/oms-5a-2000.png 2000w", :sizes => "(max-width: 991px) 100vw, (max-width: 1439) 60vw, 850px", :src => "../images/oms-5a-1000.png"}, :alt => "A comp of the manage dropdown showing the contextual menu options."}
+
+    %section 
+        %h2.s4 Increasing tracking and promotion flexibility with line-item visibility
+        %p In moving from one product to many products, the line-item section became an essential part of the OMS. Order details like promotions, returns, replacements, and trial periods mapped to individual items rather than whole orders. Without this level of specificity and control, the business was losing revenue to calculation errors and fraudulent returns.
+        %p Promotions, in particular, were enhanced by line-item tracking. While Tuft & Needle did not allow multiple promotions on a single item, they did enable multiple promotions on an order as long as they were applied to different products. This line-item visibility gave the customer experience team the necessary visibility to understand which promotions were associated with which items and make edits when necessary. 
+        %figure.img-1up
+            %img.lazy{:data => {:srcset => "../images/oms-7a-500.png 500w, ../images/oms-7a-1000.png 1000w, ../images/oms-7a-1400.png 1400w, ../images/oms-7a-2800.png 2800w", :sizes => "(max-width: 1400px) 100vw, 1400px", :src => "../images/oms-7a-1400.png"}, :alt => "A comp of the line item section on the order page."}
+            %figcaption.small
+                %strong A newly designed line-item section. 
+                Showing promotion amounts, returns, replacements, and trial periods on this level of specificity greatly helped the CX team.
+
+    %section
+        %h2.s4 Interactive shipments unlock a better customer experience, reclaim shipping costs, and increase CX capacity
+        %p Another critical area of focus was the shipments section. When reviewing customer contact reasons, 68% were related to shipments. So, streamlining processes here increased the CX team's velocity, allowing us to keep headcount low.
+        %p Although there was only a short time while an order was processing, catching issues — like canceling an order or updating the shipping address — within this period had a direct impact on net revenue. By clearly calling out the shipment status and employing contextual dropdown menus, we enabled the CX team to make these timely adjustments and saved the business unnecessary shipping costs.
+        %figure.img-left
+            %img.lazy{:data => {:srcset => "../images/oms-9a-500.png 500w, ../images/oms-9a-1000.png 1000w, ../images/oms-9a-2000.png 2000w", :sizes => "(max-width: 991px) 100vw, (max-width: 1439) 60vw, 850px", :src => "../images/oms-9a-1000.png"}, :alt => "A comp of the shipment menu dropdown in the processing state."}
+            %figcaption.small
+                %strong The shipment menu while the shipment is being processed.
+                CXers can take crucial actions to save the business unnecessary shipping costs during this time. The contextual menu highlights this.
+        %figure.img-right
+            %figcaption.small
+                %strong The shipment menu once the shipment is in process or has been delivered.
+                Now, the menu contains only those actions relevant to this phase of the shipment.
+            %img.lazy{:data => {:srcset => "../images/oms-10a-500.png 500w, ../images/oms-10a-1000.png 1000w, ../images/oms-10a-2000.png 2000w", :sizes => "(max-width: 991px) 100vw, (max-width: 1439) 60vw, 850px", :src => "../images/oms-10a-1000.png"}, :alt => "A comp of the shipment menu dropdown in the delivered state."}
+        %p New shipment controls also unlocked several features to better serve customers, like delivery holds, changing fulfillers, expedited processing, and tracking and fixing item defects.
+        %figure.img-1up
+            %img.lazy{:data => {:srcset => "../images/oms-11a-500.png 500w, ../images/oms-11a-1000.png 1000w, ../images/oms-11a-1400.png 1400w, ../images/oms-11a-2800.png 2800w", :sizes => "(max-width: 1400px) 100vw, 1400px", :src => "../images/oms-11a-1400.png"}, :alt => "A comp of the line item section on the order page."}
+            %figcaption.small
+                %strong A few screens from the defects flow. 
+                One of many flows that were now enabled from the new shipments section.
+
+
+    %section.summary
+        %p.large Shipment, line-item, and order summary updates unlocked promotional flexibility that allowed the company to better compete in a promotionally-heavy industry, saved unnecessary shipping costs, and enabled the CX team to work much more efficiently. While we didn't track efficiency gains directly, the CX team was able to take on managing two new brands while only increasing headcount minimally. This increase in scope was made possible in part by the efficiencies gained in this project. 
+
+    %section.closing
+        %hr
+        %h6.s6 Thank Yous
+        %p
+            %strong Beatriz Vizcaino
+            UX &amp; Visual Design
+        %p
+            %strong Breanne DeMore
+            Copywriting
+        %p
+            %strong Jackson Hardaker
+            Front-End Development
+        %p
+            %strong Eliza Marcum
+            Back-End Development
+        %p
+            %strong Chris Cardello
+            Engineering Leadership
+        %p
+            %strong Ray Rita
+            Customer Experience
+    
+
+= partial "partials/more_work", :locals => {:prev_link => "cro.html", :prev_card_title => "Improving conversion rate through a focus on usability", :prev_company_year => "Tuft & Needle / 2021", :prev_srcset => "../images/home-cro-140.jpg 140w, ../images/home-cro-280.jpg 280w", :prev_sizes => "140px", :prev_src => "../images/home-cro-280.jpg", :prev_alt => "A graph of our projected versus actual revenue", :next_link => "tn-rebrand.html", :next_card_title => "Workshop & refresh: the T&N brand", :next_company_year => "Tuft & Needle / 2017-2018", :next_srcset => "../images/home-tnbrand-140.jpg 140w, ../images/home-tnbrand-280.jpg 280w", :next_sizes => "140px", :next_src => "../images/home-tnbrand-280.jpg", :next_alt => "Team members sit in a circle to kickoff the brand refresh workshop."}
+
+
